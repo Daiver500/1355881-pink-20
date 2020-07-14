@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Aleksei Зенёв](https://up.htmlacademy.ru/adaptive/20/user/1355881).
-* Наставник: `Неизвестно`.
+* Студент: [Алексей Зенёв](https://up.htmlacademy.ru/adaptive/20/user/1355881).
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 
