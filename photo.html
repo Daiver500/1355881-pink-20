@@ -6,34 +6,90 @@
         <meta name="description" content="Взгляните на жизнь иначе"/>
     </head>
     <body>
-      <header class="main-header">
-        <nav class="main-header__navigation container">
-          <a class="main-header__logo">
+      <header class="header">
+        <nav class="navigation container">
+          <a class="logo">
             <img src="https://via.placeholder.com/" width="25" height="25" alt="Логотип PINK">
           </a>
-          <ul class="main-header__list">
-            <li class="main-header__item"><a class="" href="index.html">Главная</a></li>
-            <li class="main-header__item"><a class="" href="#">Фотографии</a></li>
-            <li class="main-header__item"><a class="" href="form.html">Конкурс</a></li>
-            <li class="main-header__item"><a class="" href="https://htmlacademy.ru/intensive/htmlcss">HTML ACADEMY</a></li>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Фотографии</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="form.html">Конкурс</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML ACADEMY</a></li>
           </ul>
         </nav>
         <p>Фотографии пользователей</p>
       </header>
     <main>
+      <h1 class="visually-hidden">Страница с фоточками</h1>
+      <section class="catalog">
+        <p>Взгляните на фотографии, которые выкладывают пользователи! Видите как не хватает Ваших?</p>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
+            <p class=""> Текст под фоточкой </p>
+            <button class="" type="button">лайк</a>
+            </li>
+          <li class="catalog__item">
+            <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
+            <p class=""> Текст под фоточкой </p>
+            <button class="" type="button">лайк</a>
+          </li>
+          <li class="catalog__item">
+            <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
+            <p class=""> Текст под фоточкой </p>
+            <button class="" type="button">лайк</a>
+          </li>
+          <li class="catalog__item">
+            <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
+            <p class=""> Текст под фоточкой </p>
+            <button class="" type="button">лайк</a>
+          </li>
+          <li class="catalog__item">
+            <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
+            <p class=""> Текст под фоточкой </p>
+            <button class="" type="button">лайк</a>
+          </li>
+          <li class="catalog__item">
+            <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
+            <p class=""> Текст под фоточкой </p>
+            <button class="" type="button">лайк</a>
+          </li>
+          <li class="catalog__item">
+            <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
+            <p class=""> Текст под фоточкой </p>
+            <button class="" type="button">лайк</a>
+          </li>
+         </ul>
+       </section>
+       <section class="container">
+         <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+         <form action="https://echo.htmlacademy.ru/" method="get">
+            <div>
+            <p class="">
+            <label class="" for="picture">Загрузить фоточку</label>
+            <input class="" type="file" name="picture" id="picture" placeholder="Загрузить фоточку"/>
+            </p>
+            </div>
+            <div>
+              <button class="" type="submit">Запостить</button>
+              <button class="" type="button">Отмена</button>
+            </div>
+         </form>
+       </section>
     </main>
     <footer>
-      <section class="main-footer container">
+      <section class="footer container">
         <img src="https://via.placeholder.com/" width="55" height="55" alt="Логотип PINK">
         <div class="">
-            <ul class="main-footer__list">
-                <li class="main-footer__item">
+            <ul class="footer__list">
+                <li class="footer__item">
                     <a class="" href="https://twitter.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наш twitter" /></a>
                 </li>
-                <li class="main-footer__item">
+                <li class="footer__item">
                     <a class="" href="https://www.facebook.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наша страница facebook" /></a>
                 </li>
-                <li class="main-footer__item">
+                <li class="footer__item">
                     <a class="" href="https://www.youtube.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наш канал Youtube" /></a>
                 </li>
             </ul>
