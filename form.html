@@ -8,7 +8,7 @@
   <body>
     <header class="header">
       <nav class="navigation container">
-        <a class="logo">
+        <a class="navigation__logo">
           <img src="https://via.placeholder.com/" width="25" height="25" alt="Логотип PINK">
         </a>
         <ul class="navigation__list">
@@ -17,143 +17,147 @@
           <li class="navigation__item"><a class="navigation__link" href="#">Конкурс</a></li>
           <li class="navigation__item"><a class="navigation__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML ACADEMY</a></li>
         </ul>
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
     </header>
     <main>
       <h1>Конкурс на самое безбашенное путешествие с ПИНК</h1>
-      <section class=" container">
-        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-        <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+      <section class="form container">
+        <h2 class="visually-hidden">Конкурс</h2>
+        <p class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <form class="form__list" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="form__item">
-            <legend class="">Часть 1 формы (ФИО):</legend>
             <p class="">
-            <label class="" for="surname">Фамилия:</label>
-            <input pattern="^[A-Za-zА-Яа-яЁё\s]+$" class="" type="text" name="surname" id="surname" placeholder="Укажите Фамилию*" required/>
+              <label class="form__item--name" for="surname">Фамилия:</label>
+              <input pattern="^[A-Za-zА-Яа-яЁё\s]+$" class="form__input" type="text" name="surname" id="surname" placeholder="Укажите Фамилию*" required/>
             </p>
             <p class="">
-            <label class="" for="name">Имя:</label>
-            <input pattern="^[A-Za-zА-Яа-яЁё\s]+$" class="" type="text" name="name" id="name" placeholder="Введите ваше имя:" required/>
+              <label class="form__item--name" for="name">Имя:</label>
+              <input pattern="^[A-Za-zА-Яа-яЁё\s]+$" class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя:" required/>
             </p>
             <p class="">
-            <label class="" for="second-name">Отчество:</label>
-            <input class="" type="text" name="second-name" id="second-name" placeholder="Ну и отчество тоже"/>
+              <label class="form__item--name" for="second-name">Отчество:</label>
+              <input class="form__input" type="text" name="second-name" id="second-name" placeholder="Ну и отчество тоже"/>
             </p>
           </fieldset>
           <fieldset class="form__item checkbox">
-            <legend class="">Ваши безбашенные достижения в путешествии:</legend>
+            <legend class="checkbox__title">Ваши безбашенные достижения в путешествии:</legend>
             <ul class="checkbox__list">
               <li class="checkbox__item">
-                  <label class="">
-                      <input class="" type="checkbox" name="Photo" checked />
-                      <span class="" tabindex="0"></span>
+                  <label class="checkbox__label">
+                      <input class="checkbox__input" type="checkbox" name="Photo" checked />
+                      <span class="checkbox__text" tabindex="0"></span>
                       Сделал селфи с акулой
                   </label>
               </li>
               <li class="checkbox__item">
-                  <label class="">
-                      <input class="" type="checkbox" name="Beach" checked />
-                      <span class="" tabindex="0"></span>
+                  <label class="checkbox__label">
+                      <input class="checkbox__input" type="checkbox" name="Beach" checked />
+                      <span class="checkbox__text" tabindex="0"></span>
                       Обгорел на пляже
                   </label>
               </li>
               <li class="checkbox__item">
-                  <label class="">
-                      <input class="" type="checkbox" name="Chuck Norris" />
-                      <span class="" tabindex="0"></span>
+                  <label class="checkbox__label">
+                      <input class="checkbox__input" type="checkbox" name="Chuck Norris" />
+                      <span class="checkbox__text" tabindex="0"></span>
                       Видел Чака Норриса
                   </label>
               </li>
               <li class="checkbox__item">
-                  <label class="">
-                      <input class="" type="checkbox" name="Souvenirs" />
-                      <span class="check_box" tabindex="0"></span>
+                  <label class="checkbox__label">
+                      <input class="checkbox__input" type="checkbox" name="Souvenirs" />
+                      <span class="checkbox__text" tabindex="0"></span>
                       Накупил сувениров
                   </label>
               </li>
               <li class="checkbox__item">
-                  <label class="">
-                      <input class="" type="checkbox" name="Hold the tower" checked />
-                      <span class="" tabindex="0"></span>
+                  <label class="checkbox__label">
+                      <input class="checkbox__input" type="checkbox" name="Hold the tower" checked />
+                      <span class="checkbox__text" tabindex="0"></span>
                       Удержал башню
                   </label>
               </li>
               <li class="checkbox__item">
-                <label class="">
-                    <input class="" type="checkbox" name="Destroy the hotel" />
-                    <span class="" tabindex="0"></span>
+                <label class="checkbox__label">
+                    <input class="checkbox__input" type="checkbox" name="Destroy the hotel" />
+                    <span class="checkbox__text" tabindex="0"></span>
                     Разгромил отель
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__item">
-            <legend class="">Часть формы 3 (контакты):</legend>
             <p class="">
-            <label class="" for="tel">Номер телефона:</label>
-            <input pattern="" class="" type="number" name="tel" id="tel" placeholder="Номер, пожалуйста"/>
+            <label class="form__item--tel" for="tel">Номер телефона:</label>
+            <input pattern="" class="form__input" type="number" name="tel" id="tel" placeholder="Номер, пожалуйста"/>
             </p>
             <p class="">
-            <label class="" for="email">Адрес почты:</label>
-            <input class="" type="email" name="email" id="email" placeholder="Введите почту*:" required/>
+            <label class="form__item--email" for="email">Адрес почты:</label>
+            <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту*:" required/>
             </p>
           </fieldset>
           <fieldset class="form__item radio">
-            <legend class="">С каким приложением путешествовали?:</legend>
+            <legend class="radio__title">С каким приложением путешествовали?:</legend>
             <ul class="radio__list">
                 <li class="radio__item">
-                    <label class="">
-                        <input class="" type="radio" name="radio input" value="iOS" checked />
-                        <span class="" tabindex="0"></span>
+                    <label class="radio__label">
+                        <input class="radio__input" type="radio" name="radio input" value="iOS" checked />
+                        <span class="radio__text" tabindex="0"></span>
                         Pink для iOS
                     </label>
                 </li>
                 <li class="radio__item">
-                    <label class="">
-                        <input class="" type="radio" name="radio input" value="Android" />
-                        <span class="" tabindex="0"></span>
+                    <label class="radio__label">
+                        <input class="radio__input" type="radio" name="radio input" value="Android" />
+                        <span class="radio__text" tabindex="0"></span>
                         Pink для Android
                     </label>
                 </li>
                 <li class="radio__item">
-                    <label class="">
-                        <input class="" type="radio" name="radio input" value="Windows" />
-                        <span class="" tabindex="0"></span>
+                    <label class="radio__label">
+                        <input class="radio__input" type="radio" name="radio input" value="Windows" />
+                        <span class="radio__text" tabindex="0"></span>
                         Windows Phone
                     </label>
                 </li>
              </ul>
           </fieldset>
-          <fieldset class="">
-            <legend class="">Опишите свои эмоции</legend>
+          <fieldset class="message">
+            <legend class="message__title">Опишите свои эмоции</legend>
             <p class="">
-            <label class="" for="comment"></label>
-            <textarea class="" name="text" rows="10" cols="20" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <label class="message__label" for="comment"></label>
+            <textarea class="message__text" name="text" rows="10" cols="20" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </fieldset>
-          <button class="" type="submit">ОТПРАВИТЬ ФОРМУ</button>
+          <button class="form__button" type="submit">ОТПРАВИТЬ ФОРМУ</button>
         </form>
         <p>*-обязательные поля</p>
       </section>
     </main>
     <footer>
       <section class="footer container">
-        <img src="https://via.placeholder.com/" width="55" height="55" alt="Логотип PINK">
+        <a class="footer__logo">
+          <img src="https://via.placeholder.com/" width="25" height="25" alt="Логотип PINK">
+        </a>
         <div class="">
             <ul class="footer__list">
                 <li class="footer__item">
-                    <a class="" href="https://twitter.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наш twitter" /></a>
+                    <a class="footer__link" href="https://twitter.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наш twitter" /></a>
                 </li>
                 <li class="footer__item">
-                    <a class="" href="https://www.facebook.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наша страница facebook" /></a>
+                    <a class="footer__link" href="https://www.facebook.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наша страница facebook" /></a>
                 </li>
                 <li class="footer__item">
-                    <a class="" href="https://www.youtube.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наш канал Youtube" /></a>
+                    <a class="footer__link" href="https://www.youtube.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наш канал Youtube" /></a>
                 </li>
             </ul>
         </div>
         <div>
-            <p class="">Разработано</p>
-            <a href="htmlacademy.ru"><img src="https://via.placeholder.com/" width="25" height="25" alt="Логотип HTML ACADEMY"></a>
+          <p class="footer__text">Разработано</p>
+          <a class="footer__link" href="htmlacademy.ru"><img src="https://via.placeholder.com/" width="25" height="25" alt="Логотип HTML ACADEMY"></a>
         </div>
     </footer>
   </body>

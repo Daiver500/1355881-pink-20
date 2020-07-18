@@ -8,7 +8,7 @@
     <body>
       <header class="header">
         <nav class="navigation container">
-          <a class="logo">
+          <a class="navigation__logo">
             <img src="https://via.placeholder.com/" width="25" height="25" alt="Логотип PINK">
           </a>
           <ul class="navigation__list">
@@ -17,85 +17,99 @@
             <li class="navigation__item"><a class="navigation__link" href="form.html">Конкурс</a></li>
             <li class="navigation__item"><a class="navigation__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML ACADEMY</a></li>
           </ul>
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </nav>
       </header>
     <main>
       <h1>Фотографии пользователей</h1>
-      <section class="catalog">
-        <p>Взгляните на фотографии, которые выкладывают пользователи! Видите как не хватает Ваших?</p>
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
-            <p class=""> Текст под фоточкой </p>
-            <button class="like" type="button"><span class="likes-number"></span></button>
+      <section class="container">
+        <div class="catalog">
+          <p class="catalog__title">Взгляните на фотографии, которые выкладывают пользователи! Видите как не хватает Ваших?</p>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
+              <p class="">Имя</p><!--не придумал название для класса-->
+              <p class="catalog__text"> Текст под фоточкой </p>
+              <button class="like" type="button"><span class="likes-number"></span></button>
+              </li>
+            <li class="catalog__item">
+              <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
+              <p class="">Имя</p><!--не придумал название для класса-->
+              <p class="catalog__text"> Текст под фоточкой </p>
+              <button class="like" type="button"><span class="likes-number"></span></button>
             </li>
-          <li class="catalog__item">
-            <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
-            <p class=""> Текст под фоточкой </p>
-            <button class="like" type="button"><span class="likes-number"></span></button>
-          </li>
-          <li class="catalog__item">
-            <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
-            <p class=""> Текст под фоточкой </p>
-            <button class="like" type="button"><span class="likes-number"></span></button>
-          </li>
-          <li class="catalog__item">
-            <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
-            <p class=""> Текст под фоточкой </p>
-            <button class="like" type="button"><span class="likes-number"></span></button>
-          </li>
-          <li class="catalog__item">
-            <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
-            <p class=""> Текст под фоточкой </p>
-            <button class="like" type="button"><span class="likes-number"></span></button>
-          </li>
-          <li class="catalog__item">
-            <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
-            <p class=""> Текст под фоточкой </p>
-            <button class="like" type="button"><span class="likes-number"></span></button>
-          </li>
-          <li class="catalog__item">
-            <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
-            <p class=""> Текст под фоточкой </p>
-            <button class="like" type="button"><span class="likes-number"></span></button>
-          </li>
-         </ul>
-       </section>
-       <section class="container">
-         <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-         <form action="https://echo.htmlacademy.ru/" method="get">
+            <li class="catalog__item">
+              <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
+              <p class="">Имя</p><!--не придумал название для класса-->
+              <p class="catalog__text"> Текст под фоточкой </p>
+              <button class="like" type="button"><span class="likes-number"></span></button>
+            </li>
+            <li class="catalog__item">
+              <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
+              <p class="">Имя</p><!--не придумал название для класса-->
+              <p class="catalog__text"> Текст под фоточкой </p>
+              <button class="like" type="button"><span class="likes-number"></span></button>
+            </li>
+            <li class="catalog__item">
+              <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
+              <p class="">Имя</p><!--не придумал название для класса-->
+              <p class="catalog__text"> Текст под фоточкой </p>
+              <button class="like" type="button"><span class="likes-number"></span></button>
+            </li>
+            <li class="catalog__item">
+              <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
+              <p class="">Имя</p><!--не придумал название для класса-->
+              <p class="catalog__text"> Текст под фоточкой </p>
+              <button class="like" type="button"><span class="likes-number"></span></button>
+            </li>
+            <li class="catalog__item">
+              <img src="https://via.placeholder.com/" width="150" height="50" alt="Фоточка" />
+              <p class="">Имя</p><!--не придумал название для класса-->
+              <p class="catalog__text"> Текст под фоточкой </p>
+              <button class="like" type="button"><span class="likes-number"></span></button>
+            </li>
+          </ul>
+        </div>
+        <div class="upload">
+          <p class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p><!--форма для загрузки фото-->
+          <form class="upload__form" action="https://echo.htmlacademy.ru/" method="get">
             <div>
-            <p class="">
-            <label class="" for="picture">Загрузить фоточку</label>
-            <input class="" type="file" name="picture" id="picture" placeholder="Загрузить фоточку"/>
+            <p class="upload__item">
+            <label class="upload__label" for="picture">Загрузить фоточку</label>
+            <input class="upload__input" type="file" name="picture" id="picture" placeholder="Загрузить фоточку"/>
             </p>
             </div>
             <div>
-              <button class="" type="submit">Запостить</button>
-              <button class="" type="button">Отмена</button>
+              <button class="upload__button" type="submit">Запостить</button>
+              <button class="upload__button" type="button">Отмена</button>
             </div>
-         </form>
-       </section>
+          </form>
+         </div>
+      </section>
     </main>
     <footer>
       <section class="footer container">
-        <img src="https://via.placeholder.com/" width="55" height="55" alt="Логотип PINK">
+        <a class="footer__logo">
+          <img src="https://via.placeholder.com/" width="25" height="25" alt="Логотип PINK">
+        </a>
         <div class="">
             <ul class="footer__list">
                 <li class="footer__item">
-                    <a class="" href="https://twitter.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наш twitter" /></a>
+                    <a class="footer__link" href="https://twitter.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наш twitter" /></a>
                 </li>
                 <li class="footer__item">
-                    <a class="" href="https://www.facebook.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наша страница facebook" /></a>
+                    <a class="footer__link" href="https://www.facebook.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наша страница facebook" /></a>
                 </li>
                 <li class="footer__item">
-                    <a class="" href="https://www.youtube.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наш канал Youtube" /></a>
+                    <a class="footer__link" href="https://www.youtube.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наш канал Youtube" /></a>
                 </li>
             </ul>
         </div>
         <div>
-            <p class="">Разработано</p>
-            <a href="htmlacademy.ru"><img src="https://via.placeholder.com/" width="25" height="25" alt="Логотип HTML ACADEMY"></a>
+          <p class="footer__text">Разработано</p>
+          <a class="footer__link" href="htmlacademy.ru"><img src="https://via.placeholder.com/" width="25" height="25" alt="Логотип HTML ACADEMY"></a>
         </div>
     </footer>
    </body>
