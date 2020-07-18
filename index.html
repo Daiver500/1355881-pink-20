@@ -18,21 +18,23 @@
           <li class="navigation__item"><a class="navigation__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML ACADEMY</a></li>
         </ul>
       </nav>
-      <div class="download">
-        <p class="">Взгляните на жизнь иначе!</p>
-        <button class="button" type="button">Скачать приложение</button>
-        <a class="download__link" href="#"><img src="https://via.placeholder.com/" width="25" height="25" alt="AppStore"></a>
-        <a class="download__link" href="#"><img src="https://via.placeholder.com/" width="25" height="25" alt="GooglePlay"></a>
-        <a class="download__link" href="#"><img src="https://via.placeholder.com/" width="25" height="25" alt="WindowsStore"></a>
-        <p class="">Доступно для Iphone, Ipad, Android, WindowsPhone, OS X, Windows 8</p>
-      </div>
-      <div class="">
-      <img src="https://via.placeholder.com/" width="150" height="150" alt="Картинка в шапке на главной странице">
-      </div>
     </header>
-    <main class="description">
+    <main class="main-page">
       <h1 class="visually-hidden">Сайт поднятия настроения PINK</h1>
-      <section class="container">
+      <section class="download container">
+        <div class="">
+          <p class="">Взгляните на жизнь иначе!</p>
+          <button class="download__button" type="button">Скачать приложение</button>
+          <a class="download__link" href="#"><img src="https://via.placeholder.com/" width="25" height="25" alt="AppStore"></a>
+          <a class="download__link" href="#"><img src="https://via.placeholder.com/" width="25" height="25" alt="GooglePlay"></a>
+          <a class="download__link" href="#"><img src="https://via.placeholder.com/" width="25" height="25" alt="WindowsStore"></a>
+          <p class="">Доступно для Iphone, Ipad, Android, WindowsPhone, OS X, Windows 8</p>
+        </div>
+        <div class="">
+        <img src="https://via.placeholder.com/" width="150" height="150" alt="Картинка в шапке на главной странице">
+        </div>
+      </section>
+      <section class="description container">
         <p>Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
         <ul class="description__list">
           <li class="description__item">
@@ -53,68 +55,70 @@
         </ul>
       </section>
       <section class="container">
-        <ul class="">
-          <li class="active">
-            <p>"Это приложение перевернуло мой мир и позволило по новом взглянуть на привычные серые вещи! А я еще познакомился
-            со своей будущей женой в комментариях к выложенной фотографии!</p>
-          </li>
-          <li class="">
-            <p>"Это приложение перевернуло мой мир и позволило по новом взглянуть на привычные серые вещи! А я еще познакомился
-            со своей будущей женой в комментариях к выложенной фотографии!</p>
-          </li>
-          <li class="">
-            <p>"Это приложение перевернуло мой мир и позволило по новом взглянуть на привычные серые вещи! А я еще познакомился
-            со своей будущей женой в комментариях к выложенной фотографии!</p>
-          </li>
-        </ul>
-        <div class="slider-controls">
+        <div class="reviews">
+          <ul class="reviews__list">
+            <li class="reviews__item active">
+              <p>"Это приложение перевернуло мой мир и позволило по новом взглянуть на привычные серые вещи! А я еще познакомился
+              со своей будущей женой в комментариях к выложенной фотографии!</p>
+            </li>
+            <li class="reviews__item">
+              <p>"Это приложение перевернуло мой мир и позволило по новом взглянуть на привычные серые вещи! А я еще познакомился
+              со своей будущей женой в комментариях к выложенной фотографии!</p>
+            </li>
+            <li class="reviews__item">
+              <p>"Это приложение перевернуло мой мир и позволило по новом взглянуть на привычные серые вещи! А я еще познакомился
+              со своей будущей женой в комментариях к выложенной фотографии!</p>
+            </li>
+          </ul>
+          <div class="slider-controls">
             <button class="toggle-button active" type="button" aria-label="Первый слайд"></button>
             <button class="toggle-button" type="button" aria-label="Второй слайд"></button>
             <button class="toggle-button" type="button" aria-label="Третий слайд"></button>
+          </div>
         </div>
-       </section>
-       <section class="table">
-         <table>
-           <caption class="table-header"></caption>
-           <tr>
-             <td class="table-item-description">Эконом</td>
-             <td class="table-item-description">Стандарт</td>
-             <td class="table-item-description">ВИП</td>
-           </tr>
-           <tr class="table-line">
-             <td class="table-item">1</td>
-             <td class="table-item">Розовый фильтр</td>
-             <td class="table-item">3</td>
-           </tr>
-           <tr>
-             <td class="table-item">1</td>
-             <td class="table-item">Смайлики</td>
-             <td class="table-item">2</td>
-           </tr>
-           <tr>
-             <td class="table-item">1</td>
-             <td class="table-item">Комментарии</td>
-             <td class="table-item">2</td>
+        <div class="table">
+          <table class="table__list">
+            <caption class="table-header"></caption>
+            <tr class="table__item">
+              <td class="table__item-description">Эконом</td>
+              <td class="table__item-description">Стандарт</td>
+              <td class="table__item-description">ВИП</td>
+            </tr>
+            <tr class="table__item">
+              <td class="table__item-description">1</td>
+              <td class="table__item-description">Розовый фильтр</td>
+              <td class="table__item-description">3</td>
+            </tr>
+            <tr class="table__item">
+              <td class="table__item-description">1</td>
+              <td class="table__item-description">Смайлики</td>
+              <td class="table__item-description">2</td>
+            </tr>
+            <tr class="table__item">
+              <td class="table__item-description">1</td>
+              <td class="table__item-description">Комментарии</td>
+              <td class="table__item-description">2</td>
             </tr>
           </table>
-          <div class="slider-controls">
-            <button class="toggle-button" type="button" aria-label="Первый слайд"></button>
-            <button class="toggle-button active" type="button" aria-label="Второй слайд"></button>
-            <button class="toggle-button" type="button" aria-label="Третий слайд"></button>
-          </div>
-       </section>
-       <section class="contacts container">
+            <div class="slider-controls">
+              <button class="toggle-button" type="button" aria-label="Первый слайд"></button>
+              <button class="toggle-button active" type="button" aria-label="Второй слайд"></button>
+              <button class="toggle-button" type="button" aria-label="Третий слайд"></button>
+            </div>
+        </div>
+      </section>
+      <section class="container">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="">
+        <div class="contacts">
           <h3 class="">Остались вопросы, свяжитесь с нами</h4>
           <p class="">Звоните</p>
-          <a class="" href="tel:78122757575">тел.+7(812) 555-66-66</a>
+          <a class="contacts__link" href="tel:78122757575">тел.+7(812) 555-66-66</a>
           <p class="">Пишите</p>
-          <a class="" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="contacts__link" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           <p class="">Приезжайте в гости</p>
           <p class="">ул. Большая конюшенная 19/8</p>
         </div>
-        <div class="">
+        <div class="address">
           <iframe src=""></iframe>
         </div>
         <img src="https://via.placeholder.com/" width="1000" height="400" alt="Карта" />
