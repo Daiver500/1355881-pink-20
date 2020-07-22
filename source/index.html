@@ -1,12 +1,168 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <meta charset="utf-8"/>
+    <title>HTML Academy: PINK</title>
+    <meta name="description" content="Взгляните на жизнь иначе"/>
+    <link rel="stylesheet" href="https://yastatic.net/bem-components/latest/desktop/bem-components.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="header">
+      <nav class="navigation container">
+        <a class="navigation__logo">
+          <img src="https://via.placeholder.com/" width="25" height="25" alt="Логотип PINK">
+        </a>
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" href="#">Главная</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="photo.html">Фотографии</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="form.html">Конкурс</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML ACADEMY</a></li>
+        </ul>
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </nav>
+    </header>
+    <main class="main-page">
+      <h1 class="visually-hidden">Сайт поднятия настроения PINK</h1>
+      <section class="download container">
+        <div class="download__list">
+          <button class="download__button" type="button">Скачать приложение</button>
+          <a class="download__link" href="#"><img src="https://via.placeholder.com/" width="25" height="25" alt="AppStore"></a>
+          <a class="download__link" href="#"><img src="https://via.placeholder.com/" width="25" height="25" alt="GooglePlay"></a>
+          <a class="download__link" href="#"><img src="https://via.placeholder.com/" width="25" height="25" alt="WindowsStore"></a>
+          <p class="download__text">Доступно для Iphone, Ipad, Android, WindowsPhone, OS X, Windows 8</p>
+        </div>
+        <div class=""> <!--не придумал название для класса-->
+          <p class="">Взгляните на жизнь иначе!</p> <!--не придумал название для класса-->
+          <img src="https://via.placeholder.com/" width="150" height="150" alt="Картинка в шапке на главной странице">
+        </div>
+      </section>
+      <section class="description container">
+        <h2 class="visually-hidden">Уникальное предложение</h2>
+        <p class="description__header">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+        <ul class="description__list">
+          <li class="description__item">
+            <img src="https://via.placeholder.com/" width="300" height="150" alt="первая картинка"/>
+            <h3 class="description__title">Поднимает настроение</h3>
+            <p class="description__text">Приложение позволит вам победить осенню хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="description__item">
+            <img src="https://via.placeholder.com/" width="300" height="150" alt="первая картинка"/>
+            <h3 class="description__title">Меняет мир вокруг</h3>
+            <p class="description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="description__item">
+            <img src="https://via.placeholder.com/" width="300" height="150" alt="первая картинка"/>
+            <h3 class="description__title">Заводит новых друзей</h3>
+            <p class="description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+      <section class="container">
+        <div class="reviews slider">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <div class="reviews__list slider-list">
+            <blockquote class="reviews__item reviews__item--active">
+              <div class="">
+                <p class="reviews__author">Николай Петров</p>
+                <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по новом взглянуть на привычные серые вещи! А я еще познакомился
+                со своей будущей женой в комментариях к выложенной фотографии!"</p>
+              </div>
+            </blockquote>
+            <blockquote class="reviews__item">
+              <div class="">
+                <p class="reviews__author">Василий Афанасов</p>
+                <p class="reviews__text">"Это приложение перевернуло мой мир!"</p>
+              </div>
+            </blockquote>
+            <blockquote class="reviews__item">
+              <div class="">
+                <p class="reviews__author">Дарья Васечкина</p>
+                <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по новом взглянуть на привычные серые вещи! А я еще познакомилась
+                  со своим будущим мужем в комментариях к выложенной фотографии!"</p>
+              </div>
+            </blockquote>
+          </div>
+          <div class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--active" type="button" aria-label="Первый слайд"></button>
+            <button class="slider__toggle" type="button" aria-label="Второй слайд"></button>
+            <button class="slider__toggle" type="button" aria-label="Третий слайд"></button>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="table">
+            <table class="table__list">
+              <caption class="table-header"></caption>
+              <tr class="table__item">
+                <td class="table__item-description">Эконом</td>
+                <td class="table__item-description">Стандарт</td>
+                <td class="table__item-description">ВИП</td>
+              </tr>
+              <tr class="table__item">
+                <td class="table__item-description">1</td>
+                <td class="table__item-description">Розовый фильтр</td>
+                <td class="table__item-description">3</td>
+              </tr>
+              <tr class="table__item">
+                <td class="table__item-description">1</td>
+                <td class="table__item-description">Смайлики</td>
+                <td class="table__item-description">2</td>
+              </tr>
+              <tr class="table__item">
+                <td class="table__item-description">1</td>
+                <td class="table__item-description">Комментарии</td>
+                <td class="table__item-description">2</td>
+              </tr>
+            </table>
+          </div>
+          <div class="table_toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--active" type="button" aria-label="Первый слайд"></button>
+            <button class="slider__toggle" type="button" aria-label="Второй слайд"></button>
+            <button class="slider__toggle" type="button" aria-label="Третий слайд"></button>
+          </div>
+        </div>
+      </section>
+      <section class="contacts container">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__list">
+          <h3 class="contacts__title">Остались вопросы, свяжитесь с нами</h3>
+          <p class="contacts__text">Звоните</p>
+          <a class="contacts__link" href="tel:78122757575">тел.+7(812) 555-66-66</a>
+          <p class="contacts__text">Пишите</p>
+          <a class="contacts__link" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <p class="contacts__text">Приезжайте в гости</p>
+          <a href="#" class="contacts__link">ул. Большая конюшенная 19/8</a>
+        </div>
+        <div class="contacts__address">
+          <iframe src=""></iframe>
+        </div>
+        <img src="https://via.placeholder.com/" width="1000" height="400" alt="Карта" />
+      </section>
+    </main>
+    <footer>
+      <section class="footer container">
+        <a class="footer__logo">
+          <img src="https://via.placeholder.com/" width="25" height="25" alt="Логотип PINK">
+        </a>
+        <div class=""><!--не придумал название для класса-->
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__link" href="https://twitter.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наш twitter" /></a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="https://www.facebook.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наша страница facebook" /></a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="https://www.youtube.com/"><img src="https://via.placeholder.com/" width="15" height="15" alt="Наш канал Youtube" /></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p class="footer__text">Разработано</p>
+            <a class="footer__link" href="htmlacademy.ru"><img src="https://via.placeholder.com/" width="25" height="25" alt="Логотип HTML ACADEMY"></a>
+        </div>
+    </footer>
+    <script src="https://yastatic.net/bem-components/latest/desktop/bem-components.js+bemhtml.js"></script>
   </body>
 </html>
