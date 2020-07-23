@@ -1,0 +1,32 @@
+$navigation-color: #000000;
+
+
+.navigation {
+  margin-bottom: 29px;
+
+}
+
+.navigation__inner {
+  background-color: $navigation-color;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+}
+
+.navigation__logo {
+  padding-right: 190px;
+  min-width: 74px;
+  height: 23px;
+
+}
+
+.navigation__list {
+   display:none;
+}
+
+.navigation__toggle {
+  min-width: 50px;
+  height: 24px;
+
+
+}

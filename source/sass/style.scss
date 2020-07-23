@@ -1,6 +1,9 @@
-@import "fonts.scss";
-@import "visually-hidden.scss";
-@import "normalize.scss";
-@import "container.scss";
-@import "page-body.scss";
+@import "fonts";
+@import "visually-hidden";
+@import "container";
+@import "blocks/page";
+@import "blocks/navigation";
+@import "blocks/navigation.scss";
+@import "blocks/download.scss";
+
 
