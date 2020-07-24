@@ -19,6 +19,7 @@ $color:  #1d2631;
   padding: 21px 39px;
   border: 3px solid $download-color;
   margin: 28px 20px 0;
+  border-radius: 50px/50px;
 }
 
 .download__button--text {
@@ -32,7 +33,7 @@ $color:  #1d2631;
 .download__button:hover,
 .download__button:focus {
   background-color: #ffffff;
-  color: #d22856
+  color: #d22856;
 }
 
 .download__button:active {

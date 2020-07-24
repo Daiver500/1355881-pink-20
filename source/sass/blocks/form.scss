@@ -1,0 +1,172 @@
+.form__group {
+  border: none;
+}
+
+.form__title {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 55px;
+  margin-top: 0;
+}
+
+.form__legend,
+.apps__legend,
+.achievements__legend {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.apps__legend,
+.achievements__legend {
+  background-color: #f2f2f2;
+}
+
+.form__button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 23px 45px;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+}
+
+.form__button:hover,
+.form__buttom:focus {
+  background-color: #1c9b5e;
+  border: 2px solid #1c9b5e;
+}
+
+.form__button:active {
+  background-color: #1c9b5e;
+  border: 2px solid #1c9b5e;
+  color: #36a670;
+}
+
+.apps {
+  background-color: #f2f2f2;
+  padding: 0;
+}
+
+.apps__list {
+  list-style: none;
+}
+
+.apps__item {
+  margin-bottom: 62px;
+}
+
+.apps__label {
+  padding-left: 50px;
+}
+
+.apps__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.apps__text {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  margin-left: -45px;
+  background-image: url("../img/radiooff.svg");
+  background-repeat: no-repeat;
+}
+
+.apps__input:checked + .apps__text {
+  background-image: url("../img/ellipse.svg");
+  background-repeat: no-repeat;
+}
+
+.apps__input:hover + .apps__text,
+.apps__input:focus + .apps__text {
+  background-image: url("../../img/radiooff.svg");
+  background-repeat: no-repeat;
+}
+
+.apps__input:checked:hover + .apps__text,
+.apps__input:checked:focus + .apps__text {
+  background-image: url("../../img/radiooff.svg");
+  background-repeat: no-repeat;
+}
+
+.apps__input:disabled + .apps__text {
+  background-image: url("../../img/radiooff.svg");
+  background-repeat: no-repeat;
+}
+
+.apps__input:checked:disabled + .apps__text {
+  background-image: url("../../img/radiooff.svg");
+  background-repeat: no-repeat;
+}
+
+.achievements {
+  background-color: #f2f2f2;
+  padding: 0;
+}
+
+.achievements__list {
+  list-style: none;
+}
+
+.achievements__item {
+  margin-bottom: 59px;
+}
+
+.achievements__label {
+  padding-left: 50px;
+}
+
+.achievements__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.achievements__text {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  margin-left: -45px;
+  background-image: url("../img/checkbox.svg");
+  background-repeat: no-repeat;
+}
+
+.achievements__input:checked + .achievements__text {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+}
+
+.achievements__input:hover + .achievements__text,
+.achievements__input:focus + .achievements__text {
+  background-image: url("../../img/checkbox.svg");
+  background-repeat: no-repeat;
+}
+
+.achievements__input:checked:hover + .achievements__text,
+.achievements__input:checked:focus + .achievements__text {
+  background-image: url("../../img/checkbox.svg");
+  background-repeat: no-repeat;
+}
+
+.achievements__input:disabled + .achievements__text {
+  background-image: url("../../img/checkbox.svg");
+  background-repeat: no-repeat;
+}
+
+.achievements__input:checked:disabled + .achievements__text {
+  background-image: url("../../img/checkbox.svg");
+  background-repeat: no-repeat;
+}
+
+
+
+
