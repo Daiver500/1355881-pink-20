@@ -1,7 +1,11 @@
 $page-color: #283645;
 
+html {
+  height: 100%;
+}
+
 .page {
-  display:grid;
+  display: grid;
   grid-template-rows: min-content 1fr min-content;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -9,9 +13,13 @@ $page-color: #283645;
   font-weight: normal;
   min-height: 100%;
   color: $page-color;
-  background-image: url(../../img/bg-back-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../../img/bg-back-mobile.jpg") no-repeat 50% 50%;
 }
 
-
+.page-title {
+  text-align: center;
+  margin: 0;
+  min-height: 84px;
+  padding-left: 500px;
+  padding-right: 500px;
+}

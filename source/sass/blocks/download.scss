@@ -1,12 +1,9 @@
 $download-color: #ffffff;
-$color:  #1D2631;
+$color:  #1d2631;
 
 .download__inner {
   margin-bottom: 46px;
-}
-
-.download__slogan {
-
+  box-sizing: content-box;
 }
 
 .download__slogan-text {
@@ -25,18 +22,29 @@ $color:  #1D2631;
 }
 
 .download__button--text {
-  color:$download-color;
+  color: $download-color;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  text-align:center;
+  text-align: center;
+}
 
+.download__button:hover,
+.download__button:focus {
+  background-color: #ffffff;
+  color: #d22856
+}
+
+.download__button:active {
+  background-color: #ffffff;
+  color: #f2bfcc;
 }
 
 .download__list {
   background-color: $color;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
+  box-sizing: content-box;
 }
 
 .download__text {
@@ -60,7 +68,11 @@ $color:  #1D2631;
   padding-top: 44px;
 }
 
-.download__link:not(:last-child){
+.download__link:not(:last-child) {
   padding-right: 35px;
+}
+
+.download__link {
+  box-sizing: content-box;
 }
 

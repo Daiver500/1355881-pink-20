@@ -11,8 +11,38 @@
   margin-top: 0;
   margin-bottom: 13px;
   text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  padding-top: 20px;
 }
 
-.contacts__link {
-  margin-bottom: 35px;
+.contacts__link,
+.contacts__address {
+  padding-left: 45px;
+  font-size: 24px;
+  line-height: 33px;
+  color: #d22856;
+  text-align: center;
+}
+
+.contacts__address {
+  padding-left: 0;
+  margin-bottom: 41px;
+}
+
+.contacts__inner {
+  box-sizing: content-box;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color:#283645;
+  text-decoration: underline;
+}
+
+.contacts__link:active {
+  color:#283645;
+  text-decoration: underline;
+  opacity: 0.3;
 }

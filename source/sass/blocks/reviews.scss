@@ -1,0 +1,40 @@
+.slider__item {
+  display: none;
+}
+
+.slider__item--active {
+  display: block;
+}
+
+.reviews__item {
+  background-color: #ffffff;
+}
+
+.reviews__author-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-align: center;
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.reviews__inner {
+  position: relative;
+  box-sizing: content-box;
+}
+
+.reviews__toggles {
+  position: absolute;
+  top: 230px;
+  left: 150px;
+}
+
+.reviews {
+  margin-bottom: 81px;
+}
