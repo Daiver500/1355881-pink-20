@@ -7,8 +7,11 @@ $page-color: #283645;
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
-  min-width: 1200px;
+  min-height: 100%;
   color: $page-color;
+  background-image: url(../../img/bg-back-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
