@@ -17,7 +17,11 @@ $white: #ffffff;
 }
 
 .description__image {
-  padding-left: 68px;
+  /*padding-left: 68px;*/
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  min-height: 280px;
 }
 
 .description__image--desktop {

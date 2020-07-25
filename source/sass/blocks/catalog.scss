@@ -1,39 +1,29 @@
 $white: #ffffff;
 $primary-color: #283645;
 $secondary-color: #d22856;
+$super-light-red: #df6889;
+$light-white: #babfc2;
 
 .catalog__inner {
   background-color: $white;
 }
 
-
-.filter-item {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-.range-filter {
-  width: 240px;
-}
-
-.range-controls {
+.upload__controls {
   position: relative;
-  height: 41px;
-  background-color: red;
-  border-radius: 5px;
+  height: 40px;
+  background-color: yellow;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
   box-sizing: content-box;
 }
 
-.range-controls .scale {
+.upload__scale {
   height: 2px;
   background: $primary-color;
 }
 
-.range-controls .toggle {
+.upload__toggle {
   position: absolute;
   top: 31px;
   left: 0;
@@ -47,6 +37,53 @@ $secondary-color: #d22856;
   box-sizing: content-box;
 }
 
-.range-controls .toggle {
+.upload__toggle {
   left: 67%;
+}
+
+.upload__title {
+  line-height: 30px;
+  text-align: center;
+}
+
+.upload__button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $secondary-color;
+  padding: 15px 90px;
+  background-color: $white;
+  border: 3px solid $secondary-color;
+  border-radius: 30px;
+}
+
+.upload__button:hover,
+.upload__buttom:focus {
+  background-color: $secondary-color;
+  color: $white;
+}
+
+.upload__button:active {
+  background-color: $secondary-color;
+  color: $super-light-red;
+}
+
+.upload__button-reset {
+  opacity: 0.1;
+  border: 3px solid $primary-color;
+  color:$primary-color;
+  padding: 15px 104px;
+}
+
+.upload__button-reset:hover,
+.upload__buttom-reset:focus {
+  opacity: 0.3;
+  background-color: transparent;
+  color:$primary-color;
+}
+
+.upload__button-reset:active {
+  background-color: $secondary-color;
+  color: $light-white;
+  background-color: $primary-color;
 }

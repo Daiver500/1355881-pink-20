@@ -114,13 +114,10 @@
         <div class="upload container">
           <p class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p><!--форма для загрузки фото-->
           <form class="upload__form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="filter-item">
-                    <div class="range-controls">
-                      <div class="scale"></div>
-                      <div class="toggle" tabindex="0"></div>
-                    </div>
-                </div>
-          </fieldset>
+            <div class="upload__controls">
+              <div class="upload__scale"></div>
+                <div class="upload__toggle" tabindex="0"></div>
+            </div>
             <!--<div class="upload__image">
               <img src="https://via.placeholder.com/" width="150" height="50" alt="Фото формы" />
             </div>
@@ -136,9 +133,9 @@
             <div class="upload__item">
               <label class="upload__label" for="picture">Загрузить фото</label>
               <input class="upload__input" type="file" name="picture" id="picture">
-            </div>
+            </div>-->
             <button class="upload__button" type="submit">Запостить</button>
-            <button class="upload__button" type="reset">Отмена</button>-->
+            <button class="upload__button upload__button-reset" type="reset">Отмена</button>
           </form>
         </div>
       </section>
