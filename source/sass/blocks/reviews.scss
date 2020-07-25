@@ -1,3 +1,6 @@
+$white: #ffffff;
+$dark-blue:#000000;
+
 .slider__item {
   display: none;
 }
@@ -7,14 +10,14 @@
 }
 
 .reviews__item {
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .reviews__author-name {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  color: #000000;
+  color: $dark-blue;
   text-align: center;
 }
 

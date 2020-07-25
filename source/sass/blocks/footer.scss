@@ -1,3 +1,6 @@
+$primary-color: #283645;
+$secondary-color: #d22856;
+
 .footer__social {
   box-sizing: content-box;
 }
@@ -32,7 +35,7 @@
 
 .social__link:hover,
 .social__link:focus {
-  border: 3px solid #283645;
+  border: 3px solid $primary-color;
 }
 
 .social__link:active {
@@ -86,19 +89,19 @@
 }
 
 .copyright__link svg:hover > path {
-  fill: #283645;
+  fill: $primary-color;
 }
 
 .copyright__link svg:active > path {
-  fill: #283645;
+  fill: $primary-color;
   opacity: 0.3;
 }
 
 .footer__logo-glasses:hover > path {
-  fill: #d22856;
+  fill: $secondary-color;
 }
 
 .footer__logo-glasses:active > path:nth-child(-n+4) {
   opacity: 0.3;
-  fill: #283645;
+  fill: $primary-color;
 }

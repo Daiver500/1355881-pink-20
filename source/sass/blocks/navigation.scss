@@ -1,29 +1,32 @@
-$navigation-color: #000000;
-
+$primary-bg-color: #f2f2f2;
+$white: #ffffff;
+$secondary-color: #d22856;
+$primary-color: #283645;
+$dark-blue:#000000;
 
 .navigation {
   margin-bottom: 29px;
 }
 
 .navigation__inner {
-  background-color: $navigation-color;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  background-color: $dark-blue;
   box-sizing: content-box;
+  padding: 21px 0;
 }
 
 .navigation__logo {
-  padding-right: 185px;
+  padding-right: 180px;
+  padding-left: 5px;
   min-width: 74px;
   height: 23px;
 }
 
 .navigation__logo svg:hover > path {
-  fill: #d22856;
+  fill: $secondary-color;
 }
 
 .navigation__logo svg:active > path {
-  fill: #ffffff;
+  fill: $white;
   opacity: 0.3;
 }
 
@@ -32,15 +35,15 @@ $navigation-color: #000000;
   list-style: none;
   display: flex;
   flex-direction: column;
-  color: #ffffff;
-  display:none;
+  color: $white;
+  display: none;
 }
 
 .navigation__toggle {
   padding: 0;
   margin: 0;
-  background-color: #000000;
-  border-color: #000000;
+  background-color: $dark-blue;
+  border-color: $dark-blue;
 }
 
 .navigation__item {
@@ -49,23 +52,23 @@ $navigation-color: #000000;
 
 .navigation__link:hover,
 .navigation__link:focus {
-  color: #d22856;
+  color: $secondary-color;
 }
 
 .navigation__link:active {
   opacity: 0.3;
-  color: #ffffff;
+  color: $white;
 }
 
 .navigation__link--active {
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid $white;
 }
 
 .navigation__toggle-svg:hover > path {
-  fill: #d22856;
+  fill: $secondary-color;
 }
 
 .navigation__toggle-svg:active > path {
-  fill: #d22856;
+  fill: $secondary-color;
   opacity: 0.3;
 }

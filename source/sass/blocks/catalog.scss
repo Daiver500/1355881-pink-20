@@ -1,0 +1,52 @@
+$white: #ffffff;
+$primary-color: #283645;
+$secondary-color: #d22856;
+
+.catalog__inner {
+  background-color: $white;
+}
+
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 240px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  background-color: red;
+  border-radius: 5px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-sizing: content-box;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: $primary-color;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: 2px solid $secondary-color;
+  background-color: $white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+.range-controls .toggle {
+  left: 67%;
+}

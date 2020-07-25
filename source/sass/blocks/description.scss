@@ -1,9 +1,11 @@
+$primary-bg-color: #f2f2f2;
+$white: #ffffff;
 
 .description__header {
   font-size: 24px;
   line-height: 120%;
   text-align: center;
-  background-color: #ffffff;
+  background-color: $white;
   margin-bottom: 123px;
   margin-top: 0;
 }
@@ -11,7 +13,7 @@
 .description__list {
   list-style: none;
   padding-left: 0;
-  background-color: #f2f2f2;
+  background-color: $primary-bg-color;
 }
 
 .description__image {
@@ -38,5 +40,5 @@
 }
 
 .navigation__link {
-  color: #ffffff;
+  color: $white;
 }

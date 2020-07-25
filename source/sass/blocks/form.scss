@@ -1,5 +1,22 @@
+$primary-bg-color: #f2f2f2;
+$white: #ffffff;
+$dark:#1d2631;
+$light-red:#fbbfcc;
+$primary-color: #283645;
+$secondary-color: #d22856;
+$green: #2aab6d;
+$dark-green: #1c9b5e;
+$light-green: #60b98e;
+$light-grey: #e5e5e5;
+
+.form {
+  background-color: $white;
+}
+
 .form__group {
   border: none;
+  margin-bottom: 44px;
+  padding: 0;
 }
 
 .form__title {
@@ -7,7 +24,41 @@
   line-height: 30px;
   text-align: center;
   margin-bottom: 55px;
-  margin-top: 0;
+  padding-top: 50px;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__name {
+  font-size: 14px;
+  line-height: 30px;
+  color: $secondary-color;
+  padding-left: 23px;
+  margin-bottom: 17px;
+}
+
+.form__input {
+  min-width: 276px;
+  min-height: 59px;
+  padding-left: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border: 2px solid $light-grey;
+  border-radius: 1px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form__input:hover,
+.form__input:focus {
+  border: 2px solid $primary-color;
+}
+
+.form__input:active {
+  border: 2px solid $secondary-color;
 }
 
 .form__legend,
@@ -17,12 +68,31 @@
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: #d22856;
+  color: $secondary-color;
 }
 
 .apps__legend,
 .achievements__legend {
-  background-color: #f2f2f2;
+  background-color: $primary-bg-color;
+  padding-top: 42px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.achievements__list {
+  padding-left: 22px;
+}
+
+.achievements__legend {
+  padding-left: 21px;
+  padding-right: 21px;
+  margin-bottom: 44px;
+}
+
+.apps__legend {
+  margin-bottom: 40px;
 }
 
 .form__button {
@@ -30,28 +100,37 @@
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #ffffff;
-  padding: 23px 45px;
-  background-color: #2aab6d;
-  border: 2px solid #2aab6d;
+  color: $white;
+  padding: 13px 45px;
+  background-color: $green;
+  border: 2px solid $green;
   border-radius: 1px;
+  margin-bottom: 46px;
 }
 
 .form__button:hover,
 .form__buttom:focus {
-  background-color: #1c9b5e;
-  border: 2px solid #1c9b5e;
+  background-color: $dark-green;
+  border: 2px solid $dark-green;
 }
 
 .form__button:active {
-  background-color: #1c9b5e;
-  border: 2px solid #1c9b5e;
-  color: #36a670;
+  background-color: $dark-green;
+  border: 2px solid $dark-green;
+  color: $light-green;
 }
 
-.apps {
-  background-color: #f2f2f2;
+.form__button:disabled {
+  background: $light-grey;
+  border: 2px solid $light-grey;
+  border-radius: 1px;
+}
+
+.apps,
+.achievements {
+  background-color: $primary-bg-color;
   padding: 0;
+  margin-bottom: 42px;
 }
 
 .apps__list {
@@ -74,43 +153,38 @@
 
 .apps__text {
   position: absolute;
-  width: 37px;
-  height: 37px;
+  width: 41px;
+  height: 41px;
   margin-left: -45px;
-  background-image: url("../img/radiooff.svg");
+  background-image: url("../img/radio.svg");
   background-repeat: no-repeat;
 }
 
 .apps__input:checked + .apps__text {
-  background-image: url("../img/ellipse.svg");
+  background-image: url("../img/radio-checked.svg");
   background-repeat: no-repeat;
 }
 
 .apps__input:hover + .apps__text,
 .apps__input:focus + .apps__text {
-  background-image: url("../../img/radiooff.svg");
+  background-image: url("../img/radio-hover.svg");
   background-repeat: no-repeat;
 }
 
 .apps__input:checked:hover + .apps__text,
 .apps__input:checked:focus + .apps__text {
-  background-image: url("../../img/radiooff.svg");
+  background-image: url("../img/radio-checked-hover.svg");
   background-repeat: no-repeat;
 }
 
 .apps__input:disabled + .apps__text {
-  background-image: url("../../img/radiooff.svg");
+  background-image: url("../img/radio-disabled.svg");
   background-repeat: no-repeat;
 }
 
 .apps__input:checked:disabled + .apps__text {
-  background-image: url("../../img/radiooff.svg");
+  background-image: url("../img/radio-checked-disabled.svg");
   background-repeat: no-repeat;
-}
-
-.achievements {
-  background-color: #f2f2f2;
-  padding: 0;
 }
 
 .achievements__list {
@@ -122,7 +196,7 @@
 }
 
 .achievements__label {
-  padding-left: 50px;
+  padding-left: 72px;
 }
 
 .achievements__input {
@@ -133,40 +207,66 @@
 
 .achievements__text {
   position: absolute;
-  width: 35px;
-  height: 35px;
-  margin-left: -45px;
+  width: 41px;
+  height: 41px;
+  margin-left: -67px;
   background-image: url("../img/checkbox.svg");
   background-repeat: no-repeat;
 }
 
 .achievements__input:checked + .achievements__text {
-  background-image: url("../img/tick.svg");
+  background-image: url("../img/checkbox-checked.svg");
   background-repeat: no-repeat;
 }
 
 .achievements__input:hover + .achievements__text,
 .achievements__input:focus + .achievements__text {
-  background-image: url("../../img/checkbox.svg");
+  background-image: url("../img/checkbox-hover.svg");
   background-repeat: no-repeat;
 }
 
 .achievements__input:checked:hover + .achievements__text,
 .achievements__input:checked:focus + .achievements__text {
-  background-image: url("../../img/checkbox.svg");
+  background-image: url("../img/checkbox-checked-hover.svg");
   background-repeat: no-repeat;
 }
 
 .achievements__input:disabled + .achievements__text {
-  background-image: url("../../img/checkbox.svg");
+  background-image: url("../img/checkbox-disabled.svg");
   background-repeat: no-repeat;
 }
 
 .achievements__input:checked:disabled + .achievements__text {
-  background-image: url("../../img/checkbox.svg");
+  background-image: url("../img/checkbox-checked-disabled.svg");
   background-repeat: no-repeat;
 }
 
+.form__legend {
+  margin-bottom: 22px;
+}
 
+.message__text {
+  padding: 22px 25px 132px 20px;
+  min-width: 276px;
+  max-height: 197px;
+  border: 2px solid $light-grey;
+  border-radius: 1px;
+}
 
+.message__text:hover,
+.message__text:focus {
+  border: 2px solid $primary-color;
+}
 
+.message__text:active {
+  border: 2px solid $secondary-color;
+}
+
+.form__required {
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 66px;
+  padding-left: 49px;
+}
