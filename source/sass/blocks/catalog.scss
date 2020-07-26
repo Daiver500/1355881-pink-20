@@ -3,6 +3,80 @@ $primary-color: #283645;
 $secondary-color: #d22856;
 $super-light-red: #df6889;
 $light-white: #babfc2;
+$primary-bg-color: #f2f2f2;
+$light-grey: #e5e5e5;
+$super-light-grey: #ededed;
+
+.catalog__title {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 54px;
+  margin-bottom: 186px;
+}
+
+.catalog__inner {
+  background-image: url("../img/panorama-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 193px;
+  min-height: 137px;
+  min-width: 320px;
+  position: relative;
+}
+
+.catalog__label {
+  position: absolute;
+  top: 193px;
+  left: 160px;
+  background-color: $secondary-color;
+  color: $white;
+  padding: 8px 20px;
+  min-width: 140px;
+}
+
+.name {
+  margin: 0;
+}
+
+.catalog__list {
+  list-style: none;
+  padding: 0;
+}
+
+.catalog__item {
+  margin-bottom: 20px;
+}
+
+.catalog__item-info {
+  background-color: $primary-bg-color;
+}
+
+.catalog__item-info .text {
+  padding-left: 17px;
+}
+
+.catalog__item-info .like {
+  margin-left: 17px;
+}
+
+.catalog__image {
+  background-color: $primary-bg-color;
+}
+
+.first-name {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  padding-left: 17px;
+}
+
+
+
+.upload__form {
+  background-color: $primary-bg-color;
+}
 
 .catalog__inner {
   background-color: $white;
@@ -11,10 +85,10 @@ $light-white: #babfc2;
 .upload__controls {
   position: relative;
   height: 40px;
-  background-color: yellow;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
+  margin-bottom: 44px;
   box-sizing: content-box;
 }
 
@@ -23,7 +97,7 @@ $light-white: #babfc2;
   background: $primary-color;
 }
 
-.upload__toggle {
+.upload__range {
   position: absolute;
   top: 31px;
   left: 0;
@@ -37,8 +111,12 @@ $light-white: #babfc2;
   box-sizing: content-box;
 }
 
-.upload__toggle {
+.upload__range {
   left: 67%;
+}
+
+.upload__range:active {
+  background-color: $secondary-color;
 }
 
 .upload__title {
@@ -51,10 +129,12 @@ $light-white: #babfc2;
   font-size: 18px;
   line-height: 18px;
   color: $secondary-color;
-  padding: 15px 90px;
+  padding: 15px 70px;
   background-color: $white;
   border: 3px solid $secondary-color;
   border-radius: 30px;
+  margin-bottom: 12px;
+  margin-left: 20px;
 }
 
 .upload__button:hover,
@@ -64,15 +144,17 @@ $light-white: #babfc2;
 }
 
 .upload__button:active {
-  background-color: $secondary-color;
-  color: $super-light-red;
+  background-color: $light-grey;
+  color: $super-light-grey;
+  border-color: $super-light-grey;
 }
 
 .upload__button-reset {
   opacity: 0.1;
   border: 3px solid $primary-color;
   color:$primary-color;
-  padding: 15px 104px;
+  padding: 15px 84px;
+  margin-bottom: 41px;
 }
 
 .upload__button-reset:hover,
@@ -86,4 +168,51 @@ $light-white: #babfc2;
   background-color: $secondary-color;
   color: $light-white;
   background-color: $primary-color;
+}
+
+.upload__image {
+  background-image: url("../img/form-photo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 20px;
+  min-height: 374px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 42px;
+}
+
+.upload__toggles {
+  background-color: $primary-bg-color;
+  display: flex;
+}
+
+.upload__toggle {
+  border: none;
+  opacity: 0.3;
+}
+
+.upload__toggle:not(:last-child) {
+  padding-right: 35px;
+}
+
+.upload__toggle-cut {
+  padding-left: 37px;
+}
+
+.upload__toggle svg {
+  align-self: center;
+}
+
+.upload__toggle:hover,
+.upload__toggle:focus {
+  opacity: 0.5;
+}
+
+.upload__toggle:active {
+  opacity: 1;
+  fill: $secondary-color;
+}
+
+.upload__toggle svg:active > path {
+  fill: $secondary-color;
 }
