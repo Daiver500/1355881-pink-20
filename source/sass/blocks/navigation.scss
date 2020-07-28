@@ -3,18 +3,32 @@ $white: #ffffff;
 $secondary-color: #d22856;
 $primary-color: #283645;
 $dark-blue:#000000;
+$super-light-red:#55344f;
 
 .navigation {
-  margin-bottom: 29px;
+  background-color:rgba(0, 0, 0, 0.3);
+}
+
+.navigation__close {
+  background-color: inherit;
+  border: none;
+  margin-left: 270px;
+  display: none;
+}
+
+.navigation__close svg:hover > path,
+.navigation__close svg:focus > path {
+  fill: $secondary-color;
+}
+
+.navigation__close svg:active > path {
+  fill: $secondary-color;
+  opacity: 0.3;
 }
 
 .navigation__inner {
-  background-color: $dark-blue;
-  box-sizing: content-box;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 21px 0;
+  min-height: 61px;
 }
 
 .navigation__logo {
@@ -24,6 +38,7 @@ $dark-blue:#000000;
   height: 23px;
 }
 
+.navigation__logo svg:hover > path,
 .navigation__logo svg:hover > path {
   fill: $secondary-color;
 }
@@ -39,17 +54,43 @@ $dark-blue:#000000;
   display: flex;
   flex-direction: column;
   color: $white;
+  margin: 0;
+  padding: 0;
   display: none;
+}
+
+.navigation__list a {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $primary-color;
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-decoration: none;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+}
+
+.navigation__item:nth-child(1) a,
+.navigation__item:nth-child(3) a {
+  padding-left: 116px;
+}
+
+.navigation__item:nth-child(2) a {
+  padding-left: 93px;
+}
+
+.navigation__item:nth-child(4) a {
+  padding-left: 87px;
 }
 
 .navigation__toggle {
   margin: 0;
-  background-color: $dark-blue;
-  border-color: $dark-blue;
-}
-
-.navigation__item {
-  align-self: flex-end;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
 }
 
 .navigation__link:hover,
@@ -58,8 +99,7 @@ $dark-blue:#000000;
 }
 
 .navigation__link:active {
-  opacity: 0.3;
-  color: $white;
+  color: $super-light-red;
 }
 
 .navigation__link--active {

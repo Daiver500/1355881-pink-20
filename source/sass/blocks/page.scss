@@ -15,6 +15,7 @@ html {
   min-height: 100%;
   color: $primary-color;
   background: url("../img/bg-back-mobile.jpg") no-repeat 50% 0;
+  background-size: 100%;
 }
 
 .page-title {
@@ -29,7 +30,7 @@ html {
   line-height: 33px;
   text-align: center;
   padding-left: 10%;
-  padding-right: 10%
+  padding-right: 10%;
 }
 
 .page-footer {

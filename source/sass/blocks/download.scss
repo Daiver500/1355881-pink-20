@@ -6,7 +6,12 @@ $light-red:#fbbfcc;
 
 .download__inner {
   margin-bottom: 46px;
-  box-sizing: content-box;
+  padding: 0;
+}
+
+.download__image {
+  position: relative;
+  top: 8px;
 }
 
 .download__slogan-text {
@@ -14,15 +19,15 @@ $light-red:#fbbfcc;
   font-size: 24px;
   line-height: 120%;
   text-align: center;
-  margin-bottom: 34px;
-  margin-top: 0;
+  margin-bottom: 27px;
+  margin-top: 29px;
 }
 
 .download__button {
   padding: 21px 39px;
   border: 3px solid $white;
   margin: 28px 20px 0;
-  border-radius: 50px/50px;
+  border-radius: 50px 50px;
 }
 
 .download__button--text {
@@ -48,7 +53,6 @@ $light-red:#fbbfcc;
   background-color: $dark;
   display: flex;
   flex-wrap: wrap;
-  box-sizing: content-box;
 }
 
 .download__text {
@@ -60,7 +64,7 @@ $light-red:#fbbfcc;
 }
 
 .download__link:nth-child(2) {
-  padding-left: 58px;
+  padding-left: 38px;
   padding-top: 32px;
 }
 

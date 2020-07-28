@@ -11,6 +11,17 @@
     <header class="page-header">
       <nav class="navigation">
         <div class="navigation__inner container">
+          <button class="navigation__close" type="button" aria-label="Закрыть"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.8487 1.37761e-06L0 20.8487L2.15131 23L23 2.15131L20.8487 1.37761e-06Z" fill="white"/>
+            <path d="M2.15131 0L0 2.15131L20.8487 23L23 20.8487L2.15131 0Z" fill="white"/>
+            </svg>
+          </button>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link">Главная</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="photo.html">Фотографии</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="form.html">Конкурс</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="https://htmlacademy.ru/intensive/htmlcss">Html academy</a></li>
+          </ul>
           <a class="navigation__logo"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
               <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
               <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
@@ -25,12 +36,6 @@
             </svg>
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="navigation__list">
-            <li class="navigation__item"><a class="navigation__link">Главная</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="photo.html">Фотографии</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="form.html">Конкурс</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="https://htmlacademy.ru/intensive/htmlcss">Html academy</a></li>
-          </ul>
         </div>
       </nav>
     </header>
@@ -40,7 +45,7 @@
         <div class="download__inner container">
           <div class="download__slogan">
             <p class="download__slogan-text">Взгляните на жизнь иначе!</p>
-            <img src="img/iphone-hand-mobile@1x.png" width="280" height="286" alt="Картинка в шапке на главной странице">
+            <img class="download__image" src="img/iphone-hand-mobile@1x.png" width="280" height="286" alt="Картинка в шапке на главной странице">
           </div>
           <div class="download__list">
             <a class="download__button download__button--text" href="#">Скачать приложение</a>
@@ -53,8 +58,8 @@
       </section>
       <section class="description">
         <h2 class="visually-hidden">Уникальное предложение</h2>
+        <p class="description__header">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
         <div class="description__inner container">
-           <p class="description__header">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
           <ul class="description__list">
             <li class="description__item">
               <div>
@@ -171,10 +176,10 @@
             <p class="contacts__text">Приезжайте в гости</p>
             <address class="contacts__address">ул. Большая конюшенная 19/8</address>
           </div>
-          <div class="contacts__map">
-            <img src="img/bg-map-mobile.png" width="320" height="645" alt="Карта" />
-          </div>
         </div>
+      </section>
+      <section class="contacts__map">
+        <img src="img/bg-map-mobile.png" width="320" height="645" alt="Карта" />
       </section>
      </main>
      <footer class="page-footer">
