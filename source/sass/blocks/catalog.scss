@@ -62,9 +62,7 @@ $super-light-grey: #ededed;
   padding-left: 17px;
 }
 
-
-
-.upload__form {
+.upload {
   background-color: $primary-bg-color;
 }
 
@@ -79,7 +77,6 @@ $super-light-grey: #ededed;
   padding-right: 20px;
   padding-left: 20px;
   margin-bottom: 44px;
-  box-sizing: content-box;
 }
 
 .upload__scale {
@@ -89,8 +86,8 @@ $super-light-grey: #ededed;
 
 .upload__range {
   position: absolute;
-  top: 31px;
-  left: 0;
+  top: 33px;
+  left: 67%;
   width: 14px;
   height: 14px;
   padding: 0;
@@ -98,11 +95,6 @@ $super-light-grey: #ededed;
   background-color: $white;
   border-radius: 50%;
   cursor: pointer;
-  box-sizing: content-box;
-}
-
-.upload__range {
-  left: 67%;
 }
 
 .upload__range:active {
@@ -112,6 +104,7 @@ $super-light-grey: #ededed;
 .upload__title {
   line-height: 30px;
   text-align: center;
+  background-color: $white;
 }
 
 .upload__button {
@@ -119,12 +112,12 @@ $super-light-grey: #ededed;
   font-size: 18px;
   line-height: 18px;
   color: $secondary-color;
-  padding: 15px 70px;
+  padding: 15px 91px;
   background-color: $white;
   border: 3px solid $secondary-color;
   border-radius: 30px;
   margin-bottom: 12px;
-  margin-left: 20px;
+  width: 100%;
 }
 
 .upload__button:hover,
@@ -142,8 +135,8 @@ $super-light-grey: #ededed;
 .upload__button-reset {
   opacity: 0.1;
   border: 3px solid $primary-color;
-  color:$primary-color;
-  padding: 15px 84px;
+  color: $primary-color;
+  padding: 15px 103px;
   margin-bottom: 41px;
 }
 
@@ -151,7 +144,7 @@ $super-light-grey: #ededed;
 .upload__buttom-reset:focus {
   opacity: 0.3;
   background-color: transparent;
-  color:$primary-color;
+  color: $primary-color;
 }
 
 .upload__button-reset:active {
@@ -161,13 +154,7 @@ $super-light-grey: #ededed;
 }
 
 .upload__image {
-  background-image: url("../img/form-photo-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 20px;
   min-height: 374px;
-  margin-left: 20px;
-  margin-right: 20px;
   margin-bottom: 42px;
 }
 
@@ -179,14 +166,15 @@ $super-light-grey: #ededed;
 .upload__toggle {
   border: none;
   opacity: 0.3;
+  padding: 0;
 }
 
 .upload__toggle:not(:last-child) {
-  padding-right: 35px;
+  margin-right: 35px;
 }
 
 .upload__toggle-cut {
-  padding-left: 37px;
+  margin-left: 37px;
 }
 
 .upload__toggle svg {

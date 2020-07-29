@@ -2,24 +2,12 @@ $primary-color: #283645;
 $secondary-color: #d22856;
 
 
-.footer__social {
-  box-sizing: content-box;
-}
-
-.social {
-  box-sizing: content-box;
-}
-
-.social__item {
-  box-sizing: content-box;
-}
-
 .social__list {
   list-style: none;
   margin: 0;
+  padding: 0;
   display: flex;
-  padding-left: 54px;
-  padding-top: 41px;
+  justify-content: center;
   margin-bottom: 41px;
 }
 
@@ -28,10 +16,12 @@ $secondary-color: #d22856;
   height: 48px;
   background-color: inherit;
   border-radius: 50%;
-  display: inline-block;
-  vertical-align: top;
+  display: inline-flex;
   border: 3px solid rgba(0, 0, 0, 0.3);
-  box-sizing: content-box;
+}
+
+.social__link img {
+  margin: auto;
 }
 
 .social__link:hover,
@@ -51,30 +41,15 @@ $secondary-color: #d22856;
 .footer__logo {
   padding-left: 68px;
   margin-bottom: 41px;
-}
-
-.social__link img {
-  box-sizing: content-box;
-}
-
-.social__icon-twitter {
-  padding: 17px 15px;
-}
-
-.social__icon-fb {
-  padding: 15px 20px;
-}
-
-.social__icon-youtube {
-  padding: 18px 14px 17px 19px;
+  display: inline-flex;
 }
 
 .social__item:first-child {
-  padding-right: 12px;
+  margin-right: 12px;
 }
 
 .social__item:nth-child(2) {
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .footer__copyright {
@@ -89,12 +64,17 @@ $secondary-color: #d22856;
   line-height: 18px;
 }
 
-.copyright__link svg:hover > path {
-  fill: $primary-color;
+.copyright__link {
+  color: $secondary-color;
 }
 
-.copyright__link svg:active > path {
-  fill: $primary-color;
+.copyright__link:hover,
+.copyright__link:focus {
+  color: $primary-color;
+}
+
+.copyright__link:active {
+  color: $primary-color;
   opacity: 0.3;
 }
 
