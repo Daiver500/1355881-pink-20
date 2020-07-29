@@ -10,19 +10,20 @@ $super-light-red:#55344f;
 }
 
 .navigation__close {
-  background-color: inherit;
+  background-color: transparent;
   border: none;
   margin-left: 270px;
-  display: none;
+  /*display: none;*/
+  color: $white;
 }
 
-.navigation__close svg:hover > path,
-.navigation__close svg:focus > path {
-  fill: $secondary-color;
+.navigation__close:hover,
+.navigation__close:focus {
+  color: $secondary-color;
 }
 
-.navigation__close svg:active > path {
-  fill: $secondary-color;
+.navigation__close:active {
+  color: $secondary-color;
   opacity: 0.3;
 }
 
@@ -35,15 +36,16 @@ $super-light-red:#55344f;
   padding-left: 20px;
   min-width: 74px;
   height: 23px;
+  color: $white;
 }
 
-.navigation__logo svg:hover > path,
-.navigation__logo svg:hover > path {
-  fill: $secondary-color;
+.navigation__logo:hover,
+.navigation__logo:focus {
+  color: $secondary-color;
 }
 
-.navigation__logo svg:active > path {
-  fill: $white;
+.navigation__logo:active {
+  color: $white;
   opacity: 0.3;
 }
 
@@ -93,6 +95,7 @@ $super-light-red:#55344f;
   margin: 0;
   background-color: rgba(0, 0, 0, 0.1);
   border: none;
+  color: $white;
 }
 
 .navigation__link:hover,
@@ -108,11 +111,12 @@ $super-light-red:#55344f;
   border-bottom: 1px solid $white;
 }
 
-.navigation__toggle-svg:hover > path {
-  fill: $secondary-color;
+.navigation__toggle:hover,
+.navigation__toggle:focus {
+  color: $secondary-color;
 }
 
-.navigation__toggle-svg:active > path {
-  fill: $secondary-color;
+.navigation__toggle:active {
+  color: $secondary-color;
   opacity: 0.3;
 }
