@@ -270,3 +270,7 @@ $light-grey: #e5e5e5;
   margin-bottom: 66px;
   padding-left: 49px;
 }
+
+.form__required::first-letter {
+  color: $secondary-color;
+}
