@@ -6,7 +6,7 @@ $light-grey: #e5e5e5;
 .price {
   margin-bottom: 50px;
   background-color: $primary-bg-color;
-  min-height: 550px;
+  min-height: 505px;
   position: relative;
 }
 
@@ -32,7 +32,7 @@ $light-grey: #e5e5e5;
   padding-top: 19px;
   padding-bottom: 35px;
   border-right: 2px solid $primary-bg-color;
-
+  min-width: 276px;
 }
 
 .price__item-description {
@@ -43,24 +43,16 @@ $light-grey: #e5e5e5;
   padding-top: 25px;
   padding-bottom: 25px;
   border: 2px solid $light-grey;
-  border-radius: 1px 0px 0px 0px;
+  border-radius: 1px 0 0 0;
   position: relative;
 }
 
 
 .slider__toggles {
   position: absolute;
-  top: 470px;
+  top: 460px;
   left: 130px;
 }
-
-/*td {
-  display: none;
-}
-
-td:nth-child(2) {
-  display: block;
-}*/
 
 tr:first-child {
   text-align: center;
@@ -80,10 +72,6 @@ tr:first-child {
   margin-left: 60px;
 }
 
-.price__item-title {
-  min-width: 276px;
-}
-
 .price__item-price {
   font-size: 18px;
   line-height: 30px;
@@ -92,16 +80,13 @@ tr:first-child {
   text-transform: uppercase;
 }
 
-.price::before {
+/*.price::before {
   content: "";
   position: absolute;
   top: -35px;
   left: 0;
   right: 20px;
-  background-image: url("../img/bg-triangle-white-test.svg");
+  background-image: url("../img/bg-triangle-white.svg");
   min-width: 320px;
   min-height: 94px;
-}
-
-
-
+}*/

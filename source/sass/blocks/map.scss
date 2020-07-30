@@ -1,0 +1,25 @@
+.map {
+  position: relative;
+  background-image: url("../img/bg-map-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  min-height: 200px;
+}
+
+/*.map::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -140px;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  min-width: 595px;
+  min-height: 62px;
+}*/
+
+.map__marker {
+  border: none;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  background-color: transparent;
+}

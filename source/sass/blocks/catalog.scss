@@ -7,31 +7,51 @@ $primary-bg-color: #f2f2f2;
 $light-grey: #e5e5e5;
 $super-light-grey: #ededed;
 
+.catalog__inner {
+  margin-bottom: 49px;
+  background-color: $white;
+}
+
+.catalog__image-panorama {
+  width: 100%;
+  padding: 0;
+}
+
 .catalog__title {
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   padding-top: 54px;
-  margin-bottom: 186px;
+  padding-bottom: 60px;
+  margin: 0;
+  background-color: $white;
 }
 
 .catalog__label {
-  position: absolute;
-  top: 193px;
-  left: 160px;
+  max-height: 180px;
+}
+
+.catalog__label::before {
+  content: "Панорама дня";
+  top: 427px;
+  left: 150px;
   background-color: $secondary-color;
   color: $white;
-  padding: 8px 20px;
+  padding: 6px 20px;
   min-width: 140px;
+  position: absolute;
 }
 
 .name {
   margin: 0;
+  padding-top: 25px;
+  padding-bottom: 14px;
 }
 
 .catalog__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .catalog__item {
@@ -44,30 +64,29 @@ $super-light-grey: #ededed;
 
 .catalog__item-info .text {
   padding-left: 17px;
+  margin: 0;
+  padding-bottom: 25px;
 }
 
 .catalog__item-info .like {
-  margin-left: 17px;
+  margin-left: 10px;
+  border: none;
+  margin-bottom: 25px;
 }
 
 .catalog__image {
-  background-color: $primary-bg-color;
+  max-height: 180px;
 }
 
 .first-name {
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
-  text-align: center;
   padding-left: 17px;
 }
 
 .upload {
   background-color: $primary-bg-color;
-}
-
-.catalog__inner {
-  background-color: $white;
 }
 
 .upload__controls {
@@ -105,6 +124,8 @@ $super-light-grey: #ededed;
   line-height: 30px;
   text-align: center;
   background-color: $white;
+  margin-top: 0;
+  padding-bottom: 52px;
 }
 
 .upload__button {
@@ -117,7 +138,6 @@ $super-light-grey: #ededed;
   border: 3px solid $secondary-color;
   border-radius: 30px;
   margin-bottom: 12px;
-  width: 100%;
 }
 
 .upload__button:hover,
@@ -148,14 +168,14 @@ $super-light-grey: #ededed;
 }
 
 .upload__button-reset:active {
-  background-color: $secondary-color;
   color: $light-white;
   background-color: $primary-color;
 }
 
 .upload__image {
-  min-height: 374px;
+  max-height: 374px;
   margin-bottom: 42px;
+  margin-top: 20px;
 }
 
 .upload__toggles {

@@ -1,5 +1,6 @@
 $white: #ffffff;
 $dark-blue:#000000;
+$primary-color: #283645;
 
 .slider__item {
   display: none;
@@ -11,6 +12,7 @@ $dark-blue:#000000;
 
 .reviews__item {
   background-color: $white;
+  margin: 0;
 }
 
 .reviews__author-name {
@@ -19,12 +21,17 @@ $dark-blue:#000000;
   line-height: 30px;
   color: $dark-blue;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 31px;
 }
 
 .reviews__text {
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  margin: 0;
+  min-width: 280px;
+  white-space: normal;
 }
 
 .reviews__inner {
@@ -33,10 +40,39 @@ $dark-blue:#000000;
 
 .reviews__toggles {
   position: absolute;
-  top: 280px;
+  top: 250px;
   left: 130px;
 }
 
 .reviews {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+}
+
+.slider__toggle {
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: $primary-color;
+  opacity: 0.3;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  border: none;
+}
+
+.slider__toggle:not(:last-child) {
+  margin-right: 19px;
+}
+
+.slider__toggle--active::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: $white;
+  border: 3px solid $primary-color;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: -1px;
+  left: -1px;
 }

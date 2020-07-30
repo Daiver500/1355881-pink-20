@@ -15,7 +15,7 @@ $light-grey: #e5e5e5;
 
 .form__group {
   border: none;
-  margin-bottom: 44px;
+  margin-bottom: 15px;
   padding: 0;
 }
 
@@ -30,6 +30,8 @@ $light-grey: #e5e5e5;
 .form__item {
   display: flex;
   flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 29px;
 }
 
 .form__name {
@@ -83,6 +85,8 @@ $light-grey: #e5e5e5;
 
 .achievements__list {
   padding-left: 22px;
+  margin: 0;
+  list-style: none;
 }
 
 .achievements__legend {
@@ -131,21 +135,29 @@ $light-grey: #e5e5e5;
   background-color: $primary-bg-color;
   padding: 0;
   margin-bottom: 42px;
+  padding-bottom: 44px;
 }
 
 .apps__list {
   list-style: none;
+  padding-left: 22px;
+  margin: 0;
 }
 
-.apps__item {
+.apps__item:not(:last-child) {
   margin-bottom: 62px;
 }
 
 .apps__label {
-  padding-left: 50px;
+  padding-left: 59px;
+  position: relative;
+  display: flex;
+  min-height: 39px;
+  align-items: center;
 }
 
-.apps__input {
+.apps__input,
+.achievements__input {
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -153,9 +165,9 @@ $light-grey: #e5e5e5;
 
 .apps__text {
   position: absolute;
-  width: 41px;
-  height: 41px;
-  margin-left: -45px;
+  width: 39px;
+  height: 39px;
+  left: 0;
   background-image: url("../img/radio.svg");
   background-repeat: no-repeat;
 }
@@ -187,29 +199,24 @@ $light-grey: #e5e5e5;
   background-repeat: no-repeat;
 }
 
-.achievements__list {
-  list-style: none;
-}
-
-.achievements__item {
+.achievements__item:not(:last-child) {
   margin-bottom: 59px;
 }
 
 .achievements__label {
-  padding-left: 72px;
-}
-
-.achievements__input {
-  position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  padding-left: 59px;
+  position: relative;
+  display: flex;
+  min-height: 37px;
+  align-items: center;
 }
 
 .achievements__text {
   position: absolute;
-  width: 41px;
-  height: 41px;
-  margin-left: -67px;
+  width: 37px;
+  height: 37px;
+  /*margin-left: -67px;*/
+  left: 0;
   background-image: url("../img/checkbox.svg");
   background-repeat: no-repeat;
 }
@@ -267,7 +274,7 @@ $light-grey: #e5e5e5;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 66px;
+  margin-bottom: 26px;
   padding-left: 49px;
 }
 
