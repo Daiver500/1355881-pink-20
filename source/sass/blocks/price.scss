@@ -51,7 +51,11 @@ $light-grey: #e5e5e5;
 .slider__toggles {
   position: absolute;
   top: 460px;
-  left: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
 }
 
 tr:first-child {
@@ -80,13 +84,12 @@ tr:first-child {
   text-transform: uppercase;
 }
 
-/*.price::before {
+.price::before {
   content: "";
   position: absolute;
-  top: -35px;
-  left: 0;
-  right: 20px;
+  top: -30px;
+  left: -490px;
+  right: 0px;
   background-image: url("../img/bg-triangle-white.svg");
-  min-width: 320px;
   min-height: 94px;
-}*/
+}

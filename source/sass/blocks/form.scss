@@ -278,6 +278,6 @@ $light-grey: #e5e5e5;
   padding-left: 49px;
 }
 
-.form__required::first-letter {
+.form__required sup {
   color: $secondary-color;
 }

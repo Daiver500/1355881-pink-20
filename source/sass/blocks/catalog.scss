@@ -74,8 +74,9 @@ $super-light-grey: #ededed;
   margin-bottom: 25px;
 }
 
-.catalog__image {
-  max-height: 180px;
+.catalog__image img,
+.catalog__label img {
+  display: block;
 }
 
 .first-name {

@@ -4,32 +4,13 @@ $white: #ffffff;
 .description {
   background-color: $primary-bg-color;
   margin-bottom: 50px;
+  position: relative;
 }
-
-.description__header {
-  font-size: 24px;
-  line-height: 120%;
-  text-align: center;
-  background-color: $white;
-  margin-bottom: 53px;
-  min-height: 204px;
-  padding: 0 20px;
-  margin-top: 0;
-}
-
-/*.description__inner::before {
-  content: "";
-  position: absolute;
-  bottom: -160px;
-  left: 0;
-  background-image: url("../img/bg-triangle-white.svg");
-  min-width: 320px;
-  min-height: 94px;
-}*/
 
 .description__list {
   list-style: none;
   padding-left: 0;
+  margin-top: 0;
 }
 
 .description__image {
@@ -50,7 +31,8 @@ $white: #ffffff;
   line-height: 24px;
   text-align: center;
   margin-bottom: 24px;
-  margin-top: 43px;
+  padding-top: 66px;
+  margin-top: 0;
 }
 
 .description__text {
@@ -60,4 +42,14 @@ $white: #ffffff;
 
 .navigation__link {
   color: $white;
+}
+
+.description::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -490px;
+  right: 0;
+  background-image: url("../img/bg-triangle-white.svg");
+  min-height: 94px;
 }

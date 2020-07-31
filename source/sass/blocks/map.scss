@@ -6,15 +6,15 @@
   min-height: 200px;
 }
 
-/*.map::before {
+.map::before {
   content: "";
   position: absolute;
   top: -15px;
   left: -140px;
   background-image: url("../img/bg-triangle-white-footer.svg");
-  min-width: 595px;
   min-height: 62px;
-}*/
+  min-width: 460px;
+}
 
 .map__marker {
   border: none;
@@ -25,4 +25,5 @@
   background-image: url("../img/map-marker.svg");
   width: 36px;
   height: 36px;
+  padding: 0;
 }
