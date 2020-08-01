@@ -1,0 +1,217 @@
+$white: #ffffff;
+$primary-color: #283645;
+$secondary-color: #d22856;
+$super-light-red: #df6889;
+$light-white: #babfc2;
+$primary-bg-color: #f2f2f2;
+$light-grey: #e5e5e5;
+$super-light-grey: #ededed;
+
+.catalog__inner {
+  margin-bottom: 49px;
+  background-color: $white;
+}
+
+.catalog__image-panorama {
+  width: 100%;
+  padding: 0;
+}
+
+.catalog__title {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 54px;
+  padding-bottom: 60px;
+  margin: 0;
+  background-color: $white;
+}
+
+.catalog__label {
+  max-height: 180px;
+}
+
+.catalog__label::before {
+  content: "Панорама дня";
+  top: 427px;
+  left: 150px;
+  background-color: $secondary-color;
+  color: $white;
+  padding: 6px 20px;
+  min-width: 140px;
+  position: absolute;
+}
+
+.name {
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 14px;
+}
+
+.catalog__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog__item {
+  margin-bottom: 20px;
+}
+
+.catalog__item-info {
+  background-color: $primary-bg-color;
+}
+
+.catalog__item-info .text {
+  padding-left: 17px;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.catalog__item-info .like {
+  margin-left: 10px;
+  border: none;
+  margin-bottom: 25px;
+}
+
+.catalog__image img,
+.catalog__label img {
+  display: block;
+}
+
+.first-name {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 17px;
+}
+
+.upload {
+  background-color: $primary-bg-color;
+}
+
+.upload__controls {
+  position: relative;
+  height: 40px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 44px;
+}
+
+.upload__scale {
+  height: 2px;
+  background: $primary-color;
+}
+
+.upload__range {
+  position: absolute;
+  top: 33px;
+  left: 67%;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: 2px solid $secondary-color;
+  background-color: $white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.upload__range:active {
+  background-color: $secondary-color;
+}
+
+.upload__title {
+  line-height: 30px;
+  text-align: center;
+  background-color: $white;
+  margin-top: 0;
+  padding-bottom: 52px;
+}
+
+.upload__button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $secondary-color;
+  padding: 15px 91px;
+  background-color: $white;
+  border: 3px solid $secondary-color;
+  border-radius: 30px;
+  margin-bottom: 12px;
+}
+
+.upload__button:hover,
+.upload__buttom:focus {
+  background-color: $secondary-color;
+  color: $white;
+}
+
+.upload__button:active {
+  background-color: $light-grey;
+  color: $super-light-grey;
+  border-color: $super-light-grey;
+}
+
+.upload__button-reset {
+  opacity: 0.1;
+  border: 3px solid $primary-color;
+  color: $primary-color;
+  padding: 15px 103px;
+  margin-bottom: 41px;
+}
+
+.upload__button-reset:hover,
+.upload__buttom-reset:focus {
+  opacity: 0.3;
+  background-color: transparent;
+  color: $primary-color;
+}
+
+.upload__button-reset:active {
+  color: $light-white;
+  background-color: $primary-color;
+}
+
+.upload__image {
+  max-height: 374px;
+  margin-bottom: 42px;
+  margin-top: 20px;
+}
+
+.upload__toggles {
+  background-color: $primary-bg-color;
+  display: flex;
+}
+
+.upload__toggle {
+  border: none;
+  opacity: 0.3;
+  padding: 0;
+}
+
+.upload__toggle:not(:last-child) {
+  margin-right: 35px;
+}
+
+.upload__toggle-cut {
+  margin-left: 37px;
+}
+
+.upload__toggle svg {
+  align-self: center;
+}
+
+.upload__toggle:hover,
+.upload__toggle:focus {
+  opacity: 0.5;
+}
+
+.upload__toggle:active {
+  opacity: 1;
+  fill: $secondary-color;
+}
+
+.upload__toggle svg:active > path {
+  fill: $secondary-color;
+}

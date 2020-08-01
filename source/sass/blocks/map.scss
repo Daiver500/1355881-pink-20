@@ -1,0 +1,29 @@
+.map {
+  position: relative;
+  background-image: url("../img/bg-map-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: 60% 100%;
+  min-height: 200px;
+}
+
+.map::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -140px;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  min-height: 62px;
+  min-width: 460px;
+}
+
+.map__marker {
+  border: none;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  background-color: transparent;
+  background-image: url("../img/map-marker.svg");
+  width: 36px;
+  height: 36px;
+  padding: 0;
+}

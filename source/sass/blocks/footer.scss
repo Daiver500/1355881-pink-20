@@ -1,0 +1,92 @@
+$primary-color: #283645;
+$secondary-color: #d22856;
+
+.page-footer {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 41px;
+}
+
+.social__link {
+  min-width: 48px;
+  height: 48px;
+  background-color: inherit;
+  border-radius: 50%;
+  display: inline-flex;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+.social__link img {
+  margin: auto;
+}
+
+.social__link:hover,
+.social__link:focus {
+  border: 3px solid $primary-color;
+}
+
+.social__link:active {
+  opacity: 0.3;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+.footer__logo:active {
+  opacity: 0.3;
+}
+
+.footer__logo {
+  padding-left: 68px;
+  margin-bottom: 41px;
+  display: inline-flex;
+}
+
+.social__item:first-child {
+  margin-right: 12px;
+}
+
+.social__item:nth-child(2) {
+  margin-right: 10px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright__text {
+  margin: 0;
+  padding-right: 15px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.copyright__link {
+  color: $secondary-color;
+}
+
+.copyright__link:hover,
+.copyright__link:focus {
+  color: $primary-color;
+}
+
+.copyright__link:active {
+  color: $primary-color;
+  opacity: 0.3;
+}
+
+.footer__logo-glasses:hover > path {
+  fill: $secondary-color;
+}
+
+.footer__logo-glasses:active > path:nth-child(-n+4) {
+  opacity: 0.3;
+  fill: $primary-color;
+}
