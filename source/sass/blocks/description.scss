@@ -1,5 +1,3 @@
-$primary-bg-color: #f2f2f2;
-$white: #ffffff;
 
 .description {
   background-color: $primary-bg-color;
@@ -13,12 +11,37 @@ $white: #ffffff;
   margin-top: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .description__list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .description__item {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+}
+
+
 .description__image {
   margin-top: 48px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position-x: center;
   min-height: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .description__image {
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
 }
 
 .description__image--desktop {

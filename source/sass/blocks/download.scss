@@ -1,8 +1,3 @@
-$primary-bg-color: #f2f2f2;
-$white: #ffffff;
-$secondary-color: #d22856;
-$dark:#1d2631;
-$light-red:#fbbfcc;
 
 .download {
   margin-bottom: 26px;
@@ -18,16 +13,42 @@ $light-red:#fbbfcc;
   display: block;
 }
 
+@media (min-width: $tablet-width) {
+  .download__image {
+    left: 250px;
+    top: -50px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .download__slogan {
+    max-height: 127px;
+  }
+}
+
 .download__slogan-name {
   color: $white;
   font-size: 24px;
   line-height: 120%;
   text-align: center;
   margin: 0;
-  padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+@media (min-width: $mobile-width) {
+  .download__slogan-name {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .download__slogan-name {
+    padding-left: 100px;
+    max-width: 127px;
+    display: flex;
+  }
 }
 
 .download__button {
@@ -61,6 +82,14 @@ $light-red:#fbbfcc;
   background-color: $dark;
   display: flex;
   flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .download__list {
+    max-width: 350px;
+    position: relative;
+    background-color: transparent;
+  }
 }
 
 .download__text {
