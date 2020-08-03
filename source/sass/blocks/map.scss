@@ -13,26 +13,30 @@
   }
 }
 
-/*@media (min-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .map::before {
     content: "";
     position: absolute;
-    top: -15px;
-    left: -140px;
-    background-image: url("../img/bg-triangle-white-footer.svg");
-    min-height: 62px;
-    min-width: 460px;
+    top: -55px;
+    left: 0;
+    background-image: url("../img/triangle-white-footer-tablet.svg");
+    min-height: 123px;
+    min-width: 660px;
+    z-index: 1;
   }
-}*/
+}
 
-.map::before {
-  content: "";
-  position: absolute;
-  top: -15px;
-  left: -140px;
-  background-image: url("../img/bg-triangle-white-footer.svg");
-  min-height: 62px;
-  min-width: 460px;
+@media (max-width: $mobile-width) {
+  .map::before {
+    content: "";
+    position: absolute;
+    top: -75px;
+    left: 0;
+    background-image: url("../img/triangle-white-footer.svg");
+    min-height: 123px;
+    min-width: 320px;
+    z-index: 1;
+  }
 }
 
 
