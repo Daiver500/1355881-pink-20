@@ -87,8 +87,20 @@
   padding-top: 10px;
 }
 
+@media (min-width: $tablet-width) {
+  .reviews__toggles {
+    top: 210px;
+  }
+}
+
 .reviews {
   margin-bottom: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    margin-bottom: 30px;
+  }
 }
 
 .slider__toggle {

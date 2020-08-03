@@ -2,9 +2,28 @@
   position: relative;
   background-image: url("../img/bg-map-desktop.jpg");
   background-repeat: no-repeat;
-  background-position: 60% 100%;
+  background-position: 80% 80%;
   min-height: 200px;
 }
+
+@media (min-width: $tablet-width) {
+  .map {
+    background-position: 60% 100%;
+    min-height: 374px;
+  }
+}
+
+/*@media (min-width: $tablet-width) {
+  .map::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -140px;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    min-height: 62px;
+    min-width: 460px;
+  }
+}*/
 
 .map::before {
   content: "";
@@ -15,6 +34,7 @@
   min-height: 62px;
   min-width: 460px;
 }
+
 
 .map__marker {
   border: none;

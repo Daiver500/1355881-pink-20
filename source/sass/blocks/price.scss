@@ -95,3 +95,9 @@ tr:first-child {
   background-image: url("../img/bg-triangle-white.svg");
   min-height: 94px;
 }
+
+@media (min-width: $tablet-width) {
+  .price::before {
+    top: 0;
+  }
+}

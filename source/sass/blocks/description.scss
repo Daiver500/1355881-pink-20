@@ -25,7 +25,6 @@
   }
 }
 
-
 .description__image {
   margin-top: 48px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
@@ -41,6 +40,7 @@
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 4;
+    z-index: 1;
   }
 }
 
@@ -63,6 +63,13 @@
   margin: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .description__text,
+  .description__title {
+    text-align: left;
+  }
+}
+
 .navigation__link {
   color: $white;
 }
@@ -76,3 +83,29 @@
   background-image: url("../img/bg-triangle-white.svg");
   min-height: 94px;
 }
+
+@media (min-width: $tablet-width) {
+  .description::before {
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .description__item:first-child {
+    padding-top: 102px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .description__item {
+    margin-bottom: 26px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .description__title {
+    padding-top: 0;
+  }
+}
+
