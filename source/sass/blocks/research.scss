@@ -1,0 +1,57 @@
+
+@media (max-width: $mobile-width) {
+  .research {
+    display: none;
+  }
+}
+
+.research {
+  margin-bottom: 109px;
+}
+
+.research__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.research__image {
+  fill: $timer-color;
+}
+
+.research__timer {
+  position: relative;
+}
+
+.research__image-circle {
+  position: absolute;
+  top: 57px;
+  left: 18px;
+  color: $secondary-color;
+}
+
+.research__image-number {
+  position: absolute;
+  top: 115px;
+  left: 65px;
+  color: $secondary-color;
+}
+
+.research__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: $dark-blue;
+  padding-right: 140px;
+  margin-bottom: 24px;
+  margin-top: 50px;
+}
+
+.research__text {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.research__link {
+  text-decoration: underline;
+  color: $secondary-color;
+}
