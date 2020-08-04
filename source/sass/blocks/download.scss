@@ -1,6 +1,6 @@
 
 .download {
-  margin-bottom: 26px;
+  margin-bottom: -7px;
 }
 
 .download__inner {
@@ -138,6 +138,9 @@
 @media (min-width: $desktop-width) {
   .download__text {
     margin-top: 58px;
+    margin-bottom: 130px;
+    padding-right: 50px;
+    padding-left: 30px;
   }
 }
 
