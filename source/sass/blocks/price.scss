@@ -100,3 +100,11 @@ tr:first-child {
     top: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .price::before {
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+}

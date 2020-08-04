@@ -13,6 +13,26 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .map {
+    background-position: 60% 100%;
+    min-height: 502px;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .map::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background-image: url("../img/triangle-white-footer-desktop.svg");
+    min-height: 123px;
+    min-width: 1200px;
+    z-index: 1;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .map::before {
     content: "";
@@ -39,12 +59,12 @@
   }
 }
 
-
 .map__marker {
   border: none;
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: transparent;
   background-image: url("../img/map-marker.svg");
   width: 36px;

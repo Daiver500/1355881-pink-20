@@ -5,6 +5,12 @@
   position: relative;
 }
 
+@media (min-width: $desktop-width) {
+  .description {
+    margin-bottom: 0;
+  }
+}
+
 .description__list {
   list-style: none;
   padding-left: 0;
