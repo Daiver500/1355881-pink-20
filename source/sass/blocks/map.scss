@@ -2,20 +2,20 @@
   position: relative;
   background-image: url("../img/bg-map-desktop.jpg");
   background-repeat: no-repeat;
-  background-position: 80% 80%;
+  background-position: 59% 95%;
   min-height: 200px;
 }
 
 @media (min-width: $tablet-width) {
   .map {
-    background-position: 60% 100%;
+    background-position: 60% 80%;
     min-height: 374px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map {
-    background-position: 60% 100%;
+    background-position: 10% 60%;
     min-height: 502px;
   }
 }
