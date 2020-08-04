@@ -8,6 +8,7 @@
 @media (min-width: $desktop-width) {
   .description {
     margin-bottom: 0;
+    padding-bottom: 59px;
   }
 }
 
@@ -24,6 +25,14 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .description__list {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: min-content min-content;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .description__item {
     grid-column-start: 2;
@@ -31,7 +40,33 @@
   }
 }
 
-.description__image {
+@media (min-width: $desktop-width) {
+  .description__item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding-top: 59px;
+  }
+
+  .description__item:nth-child(3) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding-top: 59px;
+  }
+
+  .description__item:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding-top: 59px;
+  }
+}
+
+.description__image-1 {
   margin-top: 48px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
@@ -40,7 +75,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .description__image {
+  .description__image-1 {
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     grid-column-start: 1;
     grid-column-end: 1;
@@ -50,8 +85,44 @@
   }
 }
 
-.description__image--desktop {
-  display: none;
+@media (max-width: $tablet-width) {
+  .description__image-2,
+  .description__image-3 {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__image-1 {
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 0;
+  }
+
+  .description__image-2 {
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-position-x: center;
+  }
+
+  .description__image-3 {
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-position-x: center;
+  }
 }
 
 .description__title {
@@ -59,9 +130,21 @@
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  margin-bottom: 24px;
-  padding-top: 66px;
+  padding-top: 43px;
   margin-top: 0;
+  color: $dark-blue;
+}
+
+@media (min-width: $tablet-width) {
+  .description__title {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__title {
+    margin-bottom: 35px;
+  }
 }
 
 .description__text {
@@ -73,6 +156,27 @@
   .description__text,
   .description__title {
     text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__text,
+  .description__title {
+    text-align: center;
+  }
+
+  .description__title {
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .description__text {
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -97,13 +201,13 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (width: $tablet-width) {
   .description__item:first-child {
     padding-top: 102px;
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (width: $tablet-width) {
   .description__item {
     margin-bottom: 26px;
   }

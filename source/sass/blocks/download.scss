@@ -53,27 +53,44 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .download__slogan-name {
+    padding: 0;
+    margin-bottom: 51px;
+    font-size: 50px;
+    line-height: 68px;
+    padding-right: 380px;
+    padding-left: 145px;
+  }
+}
+
 .download__button {
   padding: 18px 36px;
   border: 3px solid $white;
   margin-top: 28px;
   border-radius: 50px 50px;
-}
-
-@media (min-width: $tablet-width) {
-  .download__button {
-    margin-bottom: 14px;
-    padding-left: 46px;
-    padding-right: 47px;
-  }
-}
-
-.download__button--text {
   color: $white;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .download__button {
+    padding-left: 46px;
+    padding-right: 47px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download__button {
+    margin-top: 0;
+    padding-left: 29px;
+    padding-right: 29px;
+    margin-bottom: 0;
+    font-size: 21px;
+  }
 }
 
 .download__button:hover,
@@ -96,9 +113,18 @@
 
 @media (min-width: $tablet-width) {
   .download__list {
-    max-width: 350px;
+    width: 50%;
     position: relative;
     background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download__list {
+    width: 40%;
+    position: relative;
+    background-color: transparent;
+    padding-left: 145px;
   }
 }
 
@@ -109,24 +135,59 @@
   margin-bottom: 38px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
+  .download__text {
+    margin-top: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download__link:nth-child(2) {
+    margin-top: 67px;
+  }
+
+  .download__link:nth-child(3) {
+    margin-top: 75px;
+  }
+
+  .download__link:nth-child(4) {
+    margin-top: 79px;
+  }
+}
+
+@media (max-width: $tablet-width) {
   .download__text {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  .download__link:nth-child(2) {
+    margin-left: 56px;
+    margin-top: 46px;
+  }
+
+  .download__link:nth-child(3) {
+    margin-top: 51px;
+  }
+
+  .download__link:nth-child(4) {
+    margin-top: 54px;
+  }
 }
 
-.download__link:nth-child(2) {
-  margin-left: 38px;
-  margin-top: 32px;
-}
+@media (max-width: $mobile-width) {
+  .download__link:nth-child(2) {
+    margin-left: 38px;
+    margin-top: 32px;
+  }
 
-.download__link:nth-child(3) {
-  margin-top: 38px;
-}
+  .download__link:nth-child(3) {
+    margin-top: 38px;
+  }
 
-.download__link:nth-child(4) {
-  margin-top: 44px;
+  .download__link:nth-child(4) {
+    margin-top: 44px;
+  }
 }
 
 .download__link:not(:last-child) {

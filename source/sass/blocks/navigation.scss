@@ -9,6 +9,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .navigation {
+    margin-bottom: 114px;
+  }
+}
+
 .navigation__close {
   background-color: transparent;
   border: none;
@@ -36,7 +42,14 @@
 @media (min-width: $tablet-width) {
   .navigation__inner {
     padding-top: 27px;
-    padding-bottom: 43px;
+    padding-bottom: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__inner {
+    padding-top: 27px;
+    padding-bottom: 40px;
   }
 }
 
@@ -127,7 +140,7 @@
 
 @media (min-width: $tablet-width) {
   .navigation__list {
-    top: 115px;
+    top: 110px;
   }
 }
 

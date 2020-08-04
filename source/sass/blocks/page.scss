@@ -41,4 +41,13 @@ html {
   }
 }
 
+@media (min-width: $desktop-width) {
+  .page {
+    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop.jpg");
+    background-position: 95% 70%, 50% 25%;
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+  }
+}
+
 
