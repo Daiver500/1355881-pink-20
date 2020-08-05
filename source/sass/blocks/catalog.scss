@@ -163,7 +163,9 @@
   background-color: $primary-bg-color;
 }
 
-.upload__controls {
+.upload__controls,
+.upload__controls-1,
+.upload__controls-2 {
   position: relative;
   height: 40px;
   padding-top: 39px;
@@ -172,12 +174,17 @@
   margin-bottom: 44px;
 }
 
-.upload__scale {
+.upload__scale,
+.upload__scale-1,
+.upload__scale-2 {
   height: 2px;
   background: $primary-color;
+  width: 240px;
 }
 
-.upload__range {
+.upload__range,
+.upload__range-1,
+.upload__range-2 {
   position: absolute;
   top: 33px;
   left: 67%;
@@ -188,6 +195,13 @@
   background-color: $white;
   border-radius: 50%;
   cursor: pointer;
+}
+
+@media (max-width: $mobile-width) {
+  .upload__controls-1,
+  .upload__controls-2 {
+    display: none;
+  }
 }
 
 .upload__range:active {
@@ -287,4 +301,17 @@
 
 .upload__toggle svg:active > path {
   fill: $secondary-color;
+}
+
+@media (width: $tablet-width) {
+  .upload__svg {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width),
+  (min-width: $desktop-width) {
+  .upload__svg-tablet {
+    display: none;
+  }
 }
