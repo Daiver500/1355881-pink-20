@@ -130,6 +130,12 @@
   display: block;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog__label-tablet img {
+    display: block;
+  }
+}
+
 .first-name {
   font-weight: bold;
   font-size: 14px;
