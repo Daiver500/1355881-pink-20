@@ -63,10 +63,16 @@
       <section class="catalog">
         <div>
            <p class="catalog__title">Взгляните на фотографии, которые выкладывают пользователи! Видите как не хватает Ваших?</p>
-           <div class="catalog__label"><img class="catalog__image-panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорамное фото"></div>
-           <div class="catalog__label-tablet"><img class="catalog__image-panoramatablet" src="img/panorama-tablet@1x.jpg" width="700" height="509" alt="Панорамное фото"></div>
+           <div class="catalog__label">
+             <picture>
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
+              <img class="catalog__image-panorama" src="img/panorama-mobile@1x.jpg" alt="Панорамное фото">
+             </picture>
+           </div>
+           <!--<div class="catalog__label-tablet"><img class="catalog__image-panoramatablet" src="img/panorama-tablet@1x.jpg" width="700" height="509" alt="Панорамное фото"></div>
            <div class="catalog__label-desktop"><img class="catalog__image-panoramadesktop" src="img/panorama-desktop@1x.jpg" width="1200" height="506" alt="Панорамное фото"></div>
-        </div>
+        </div>-->
         <div class="catalog__inner container">
             <ul class="catalog__list">
             <li class="catalog__item">
@@ -82,21 +88,25 @@
             <li class="catalog__item">
               <div class="catalog__image">
                 <picture>
-                  <source media="(min-width=660px)" srcset="img/photo-car-tablet@1x.jpg"/>
-                  <source media="(min-width=1200px)" srcset="img/photo-car-desktop@1x.jpg"/>
-                  <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото карточки каталога"></img>
+                  <source media="(min-width:660px)" srcset="img/photo-car-tablet@1x.jpg"/>
+                  <source media="(min-width:1200px)" srcset="img/photo-car-desktop@1x.jpg"/>
+                  <img src="img/photo-car-mobile@1x.jpg" alt="Фото карточки каталога"></img>
                 </picture>
               </div>
                 <div class="catalog__item-info">
                   <p class="name"><span class="first-name">Левон</span><time class="time">(5 часов назад)</time></p>
-                  <p class="text"> Вчера он на луну летал, сегодня в руки к нам попал. </p>
+                  <p class="text text--low"> Вчера он на луну летал, сегодня в руки к нам попал. </p>
                   <button class="like" type="button"><img class="like__image" src="img/heart.svg"></button> <span class="likes-number">Нравится 356</span>
               </div>
 
             </li>
             <li class="catalog__item">
               <div class="catalog__image">
-                <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото карточки каталога" />
+                <picture>
+                  <source media="(min-width:660px)" srcset="img/photo-drumset-tablet@1x.jpg"/>
+                  <source media="(min-width:1200px)" srcset="img/photo-drumset-desktop@1x.jpg"/>
+                  <img src="img/photo-drumset-mobile@1x.jpg" alt="Фото карточки каталога"></img>
+                </picture>
               </div>
               <div class="catalog__item-info">
                 <p class="name"><span class="first-name">Антон</span><time class="time">(12 часов назад)</time></p>
@@ -107,18 +117,26 @@
             </li>
             <li class="catalog__item">
               <div class="catalog__image">
-                <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото карточки каталога" />
+                <picture>
+                  <source media="(min-width:660px)" srcset="img/photo-window-tablet@1x.jpg"/>
+                  <source media="(min-width:1200px)" srcset="img/photo-window-desktop@1x.jpg"/>
+                  <img src="img/photo-window-mobile@1x.jpg" alt="Фото карточки каталога"></img>
+                </picture>
               </div>
               <div class="catalog__item-info">
                 <p class="name"><span class="first-name">Борис</span><time class="time">(20 часов назад)</time></p>
-                <p class="text"> Здесь могла быть ваша цитата о высоком и вечном. </p>
+                <p class="text text--low"> Здесь могла быть ваша цитата о высоком и вечном. </p>
                 <button class="like" type="button"><img class="like__image" src="img/heart.svg"></button> <span class="likes-number">Нравится 215</span>
               </div>
 
             </li>
             <li class="catalog__item">
               <div class="catalog__image">
-                <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото карточки каталога" />
+                <picture>
+                  <source media="(min-width:660px)" srcset="img/photo-fair-tablet@1x.jpg"/>
+                  <source media="(min-width:1200px)" srcset="img/photo-fair-desktop@1x.jpg"/>
+                  <img src="img/photo-fair-mobile@1x.jpg" alt="Фото карточки каталога"></img>
+                </picture>
               </div>
               <div class="catalog__item-info">
                 <p class="name"><span class="first-name" >Сергей</span><time class="time">(25 часов назад)</time></p>
@@ -129,7 +147,11 @@
             </li>
             <li class="catalog__item">
               <div class="catalog__image">
-                <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото карточки каталога" />
+                <picture>
+                  <source media="(min-width:660px)" srcset="img/photo-pov-tablet@1x.jpg"/>
+                  <source media="(min-width:1200px)" srcset="img/photo-pov-desktop@1x.jpg"/>
+                  <img src="img/photo-pov-mobile@1x.jpg" alt="Фото карточки каталога"></img>
+                </picture>
               </div>
               <div class="catalog__item-info">
                 <p class="name"><span class="first-name">Максим</span><time class="time">(40 часов назад)</time></p>
@@ -140,7 +162,11 @@
             </li>
             <li class="catalog__item">
               <div class="catalog__image">
-                <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото карточки каталога" />
+                <picture>
+                  <source media="(min-width:660px)" srcset="img/photo-wing-tablet@1x.jpg"/>
+                  <source media="(min-width:1200px)" srcset="img/photo-wing-desktop@1x.jpg"/>
+                  <img src="img/photo-wing-mobile@1x.jpg" alt="Фото карточки каталога"></img>
+                </picture>
               </div>
               <div class="catalog__item-info">
                 <p class="name"><span class="first-name">Надежда</span><time class="time">(45 часов назад)</time></p>
@@ -152,13 +178,15 @@
           </ul>
         </div>
         <div class="upload">
-          <p class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="upload__title-1">Затмите их всех!</p>
+          <p class="upload__title-2">Выкладывайте все, что накопилось в телефоне!</p>
           <div class="upload__inner container">
           <form class="upload__form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="upload__image">
               <picture>
-                <source srcset="img/photo-road-tablet@1x.jpg" media="(min-width=660px)" width="300" height="400">
-                <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Загружаемое фото" >
+                <source media="(min-width:1200px)" srcset="img/photo-road-tablet@1x.jpg"  width="300" height="400">
+                <source media="(min-width:660px)" srcset="img/photo-road-tablet@1x.jpg"  width="300" height="400">
+                <img src="img/photo-road-mobile@1x.jpg" alt="Загружаемое фото" >
               </picture>
             </div>
             <div class="upload__toggles upload__toggles-form">
