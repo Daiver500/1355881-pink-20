@@ -81,7 +81,11 @@
             </li>
             <li class="catalog__item">
               <div class="catalog__image">
-                <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото карточки каталога" />
+                <picture>
+                  <source media="(min-width=660px)" srcset="img/photo-car-tablet@1x.jpg" width="300" height="300">
+                  <source media="(min-width=1200px)" srcset="img/photo-car-desktop@1x.jpg" width="300" height="400">
+                  <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото карточки каталога"></img>
+                </picture>
               </div>
                 <div class="catalog__item-info">
                   <p class="name"><span class="first-name">Левон</span><time class="time">(5 часов назад)</time></p>

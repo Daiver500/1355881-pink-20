@@ -105,8 +105,23 @@
   margin: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
 .catalog__item {
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 .catalog__item-info {
@@ -131,7 +146,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog__label-tablet img {
+  .catalog__label-tablet img,
+  .catalog__label-desktop img {
     display: block;
   }
 }
