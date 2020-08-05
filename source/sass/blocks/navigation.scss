@@ -3,18 +3,6 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-@media (min-width: $tablet-width) {
-  .navigation {
-    margin-bottom: 102px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .navigation {
-    margin-bottom: 114px;
-  }
-}
-
 .navigation__close {
   background-color: transparent;
   border: none;
@@ -126,7 +114,7 @@
     margin: 0;
     padding: 0;
     position: absolute;
-    /*display: none;*/
+    display: none;
   }
 }
 

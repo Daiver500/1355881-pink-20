@@ -1,3 +1,7 @@
+.catalog {
+  position: relative;
+}
+
 
 .catalog__inner {
   margin-bottom: 49px;
@@ -7,6 +11,27 @@
 .catalog__image-panorama {
   width: 100%;
   padding: 0;
+}
+
+@media (max-width: $mobile-width) {
+  .catalog__label-tablet,
+  .catalog__label-desktop {
+    display: none;
+  }
+}
+
+@media (width: $tablet-width) {
+  .catalog__label,
+  .catalog__label-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__label,
+  .catalog__label-tablet {
+    display: none;
+  }
 }
 
 .catalog__title {
@@ -19,13 +44,21 @@
   background-color: $white;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    font-size: 18px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
 .catalog__label {
   max-height: 180px;
 }
 
 .catalog__label::before {
   content: "Панорама дня";
-  top: 427px;
+  top: 204px;
   left: 150px;
   background-color: $secondary-color;
   color: $white;

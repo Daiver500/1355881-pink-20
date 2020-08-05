@@ -1,7 +1,14 @@
+@media (min-width: $tablet-width) {
+  .download {
+    padding-top: 102px;
+  }
+}
 
-/*.download {
-  margin-bottom: -7px;
-}*/
+@media (min-width: $desktop-width) {
+  .download {
+    padding-top: 114px;
+  }
+}
 
 .download__inner {
   padding: 0;
