@@ -258,8 +258,8 @@
     grid-template-columns: 380px 560px;
     grid-template-rows: min-content min-content;
     background-color: $primary-bg-color;
-    margin-left: 130px;
-    margin-right: 130px;
+    margin-left: 110px;
+    margin-right: 110px;
     min-width: 940px;
   }
 }
@@ -358,22 +358,15 @@
     padding-top: 0;
   }
 
-  .upload__controls::after {
-    content: "";
-    position: absolute;
-    border: 1px solid red;
-    width: 275px;
-    top: 25px;
-    left: -25px;
-  }
-
+  .upload__controls::after,
   .upload__controls-1::after {
     content: "";
     position: absolute;
-    border: 1px solid red;
+    border: 1px solid $primary-color;
     width: 275px;
     top: 25px;
     left: -25px;
+    opacity: 0.3;
   }
 }
 
@@ -409,19 +402,11 @@
     position: relative;
   }
 
-  .upload__controls::after {
-    content: "";
-    position: absolute;
-    border: 1px solid red;
-    width: 410px;
-    top: 35px;
-    left: 90px;
-  }
-
+  .upload__controls::after,
   .upload__controls-1::after {
-    content: "";
     position: absolute;
-    border: 1px solid red;
+    border: 1px solid $primary-color;
+    opacity: 0.3;
     width: 410px;
     top: 35px;
     left: 90px;
