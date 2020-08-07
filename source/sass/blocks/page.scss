@@ -59,6 +59,16 @@ html {
 }
 
 @media (min-width: $tablet-width) {
+  .formpage-title {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 81px;
+    padding-bottom: 74px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .page {
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet.jpg");
     background-position: 50% 57%, 50% 0%;
