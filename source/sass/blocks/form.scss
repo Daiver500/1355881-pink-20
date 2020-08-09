@@ -10,16 +10,19 @@
   }
 }
 
-.form__group {
-  border: none;
-  margin-bottom: 15px;
-  padding: 0;
+@media (max-width: $mobile-width) {
+  .form__group {
+    border: none;
+    margin-bottom: 44px;
+    padding: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .form__group:nth-child(1) {
     order: 1;
     margin-bottom: 55px;
+    border: none;
   }
 
   .form__group:nth-child(2) {
@@ -184,7 +187,7 @@
   }
 
   .contacts__legend {
-    margin-bottom: 40px;
+    margin-bottom: 46px;
   }
 }
 
@@ -273,7 +276,7 @@
 
 @media (min-width: $tablet-width) {
   .app {
-  padding-bottom: 54px;
+    padding-bottom: 54px;
   }
 }
 
@@ -467,5 +470,74 @@
   .form__lower {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__group .contacts {
+    margin-bottom: 65px;
+    position: relative;
+  }
+
+  .contacts .form__item {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 41px;
+  }
+
+  .contacts .form__name {
+    margin-bottom: 0;
+    align-self: flex-start;
+    padding-left: 30px;
+    padding-right: 0;
+  }
+
+  .form__input[type="tel"],
+  .form__input[type="email"] {
+    margin-bottom: 22px;
+  }
+
+  .form__input[type="tel"] {
+    padding-right: 303px;
+  }
+
+  .form__input[type="email"] {
+    padding-right: 303px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts .form__item-phone {
+    position: relative;
+  }
+
+  .contacts .form__item-phone::after {
+    content: "";
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    background-image: url("../img/phone-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: $light-grey;
+    right: 25px;
+    top: 0;
+  }
+
+  .contacts .form__item-mail {
+    position: relative;
+  }
+
+  .contacts .form__item-mail::after {
+    content: "";
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    background-image: url("../img/mail-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: $light-grey;
+    right: 25px;
+    top: 0;
   }
 }

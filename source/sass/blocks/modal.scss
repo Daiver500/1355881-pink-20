@@ -1,0 +1,108 @@
+@media (max-width: $mobile-width) {
+  .page-modal {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal-decline,
+  .modal-accept {
+    padding-top: 49px;
+    max-width: 460px;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+    border-radius: 5px;
+    position: fixed;
+    background-color: $white;
+    left: 15%;
+  }
+
+  .modal-decline {
+    padding-bottom: 54px;
+    min-height: 363px;
+    background-color: $white;
+    top: 1%;
+    left: 15%;
+  }
+
+  .modal-accept {
+    padding-bottom: 52px;
+    min-height: 432px;
+    top: 50%;
+    left: 15%;
+  }
+
+  .modal-decline__title,
+  .modal-decline__text,
+  .modal-accept__title,
+  .modal-accept__text {
+    margin-top: 0;
+  }
+
+  .modal-decline__title,
+  .modal-accept__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: $dark-blue;
+    margin-bottom: 37px;
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+
+  .modal-decline__text,
+  .modal-accept__text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .modal-decline__text {
+    margin-bottom: 40px;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .modal-accept__text {
+    margin-bottom: 35px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .modal-decline__button,
+  .modal-accept__button {
+    background-color: $green;
+    border: 2px solid $green;
+    border-radius: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $white;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal-decline__button {
+    padding-right: 134px;
+    padding-left: 135px;
+  }
+
+  .modal-accept__button {
+    padding-right: 75px;
+    padding-left: 75px;
+    margin-top: 52px;
+    margin-bottom: 52px;
+  }
+
+  .modal-decline__lower,
+  .modal-accept__lower {
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal-accept__lower {
+    background-color: $primary-bg-color;
+  }
+}
