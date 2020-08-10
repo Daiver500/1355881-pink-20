@@ -53,6 +53,40 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 64px;
+    grid-template-rows: min-content min-content min-content min-content min-content;
+    padding-left: 112px;
+    padding-right: 112px;
+  }
+
+  .achievements,
+  .message,
+  .contacts,
+  .form__lower {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .achievements__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .achievements {}
+
+  .contacts {
+
+  }
+
+  .message {
+
+  }
+}
+
 
 .form__title {
   font-size: 14px;
@@ -68,7 +102,6 @@
     display: none;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .form__title {
