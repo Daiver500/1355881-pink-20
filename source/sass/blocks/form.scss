@@ -58,9 +58,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 64px;
-    grid-template-rows: min-content min-content min-content min-content min-content;
+    grid-template-rows: 307px min-content min-content min-content min-content;
     padding-left: 112px;
     padding-right: 112px;
+  }
+
+  .form__group:nth-child(1) {
+    margin-top: 11px;
+    margin-right: 37px;
+    margin-bottom: 0;
   }
 
   .achievements,
@@ -76,17 +82,55 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .achievements {}
+  .apps {
+    margin-left: 37px;
+    margin-bottom: 0;
+  }
+
+  .achievements {
+    padding-bottom: 0;
+  }
 
   .contacts {
-
+    margin-bottom: 0;
   }
 
-  .message {
+  .contacts__legend {
+    margin-bottom: 44px;
+  }
 
+  .form__item-phone,
+  .form__item-mail {
+    display: inline-flex;
+  }
+
+  .form__input[type="tel"],
+  .form__input[type="email"] {
+    margin-bottom: 23px;
+    padding-right: 119px;
+  }
+
+  .form__input[type="tel"],
+  .form__input[type="email"] {
+    margin-left: 60px;
+  }
+
+  .contacts .form__item-phone,
+  .contacts .form__item-mail {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    margin-top: 0;
+    margin-bottom: 23px;
+  }
+
+  .contacts .form__name {
+    padding-left: 85px;
+  }
+
+  .contacts {
+    padding: 0;
   }
 }
-
 
 .form__title {
   font-size: 14px;
@@ -123,15 +167,24 @@
   }
 }
 
-.form__item {
-  display: flex;
-  flex-direction: column;
-  margin-top: 0;
-  margin-bottom: 29px;
+@media (min-width: $desktop-width) {
+  .form__title-tablet {
+    padding-bottom: 84px;
+  }
+}
+
+@media (min-width: $mobile-width) {
+  .form__item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 29px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .form__item {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -145,9 +198,19 @@
   .form__input {
     flex-grow: 1;
   }
+}
 
+@media (min-width: $tablet-width) {
   .form__item:not(:last-child) {
     margin-bottom: 56px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .full-name .form__item:not(:last-child) {
+    margin-bottom: 56px;
+    margin-top: 0;
   }
 }
 
@@ -155,13 +218,13 @@
   font-size: 14px;
   line-height: 30px;
   color: $secondary-color;
-  margin-bottom: 17px;
 }
 
 
 @media (max-width: $mobile-width) {
   .form__name {
     padding-left: 23px;
+    margin-bottom: 17px;
   }
 }
 
@@ -218,11 +281,20 @@
     background-color: $white;
     padding-top: 0;
   }
+}
 
+@media (max-width: $tablet-width) {
   .contacts__legend {
     margin-bottom: 46px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts__legend {
+    margin-bottom: 39px;
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .apps__legend {
@@ -299,7 +371,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .apps,
   .achievements {
     margin-bottom: 65px;
@@ -307,18 +379,12 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .app {
-    padding-bottom: 54px;
-  }
-}
 
-@media (min-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .achievements {
     padding-bottom: 50px;
   }
 }
-
 
 .apps__list {
   list-style: none;
@@ -477,6 +543,22 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .message__text {
+    padding: 22px 343px 89px 20px;
+    min-width: 816px;
+    max-height: 124px;
+    margin-top: 44px;
+    margin-bottom: 45px;
+  }
+
+  .message {
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+
+
 .message__text:hover,
 .message__text:focus {
   border: 2px solid $primary-color;
@@ -506,36 +588,45 @@
   }
 }
 
+@media (width: $tablet-width) {
+  .contacts .form__item {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 41px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form__group .contacts {
     margin-bottom: 65px;
     position: relative;
   }
 
-  .contacts .form__item {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 41px;
-  }
-
   .contacts .form__name {
     margin-bottom: 0;
     align-self: flex-start;
-    padding-left: 30px;
     padding-right: 0;
   }
+}
 
-  .form__input[type="tel"],
-  .form__input[type="email"] {
-    margin-bottom: 22px;
+@media (max-width: $tablet-width) {
+  .contacts .form__name {
+    padding-left: 30px;
   }
+}
 
+@media (width: $tablet-width) {
   .form__input[type="tel"] {
     padding-right: 303px;
   }
 
   .form__input[type="email"] {
     padding-right: 303px;
+  }
+
+  .form__input[type="tel"],
+  .form__input[type="email"] {
+    margin-bottom: 22px;
   }
 }
 
@@ -572,5 +663,15 @@
     background-color: $light-grey;
     right: 25px;
     top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts .form__item-phone::after {
+    right: 0;
+  }
+
+  .contacts .form__item-mail::after {
+    right: 0;
   }
 }
