@@ -207,6 +207,13 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .form__item:not(:last-child) {
+    margin-bottom: 23px;
+    margin-top: 0;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .full-name .form__item:not(:last-child) {
     margin-bottom: 56px;
