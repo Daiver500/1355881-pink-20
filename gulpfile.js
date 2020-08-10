@@ -49,31 +49,3 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
-
-var gulp = require('gulp');
-var csso = require('gulp-csso');
-
-gulp.task('default', function () {
-    return gulp.src('./main.css')
-        .pipe(csso())
-        .pipe(gulp.dest('./out'));
-});
-
-gulp.task('development', function () {
-    return gulp.src('./main.css')
-        .pipe(csso({
-            restructure: false,
-            sourceMap: true,
-            debug: true
-        }))
-        .pipe(gulp.dest('./out'));
-});
-
-const gulp = require('gulp');
-const webp = require('gulp-webp');
-
-gulp.task('default', () =>
-    gulp.src('src/image.jpg')
-        .pipe(webp())
-        .pipe(gulp.dest('dist'))
-);
