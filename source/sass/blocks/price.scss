@@ -6,6 +6,31 @@
   position: relative;
 }
 
+.price__list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 275px;
+  right: 0;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  min-height: 74px;
+  min-width: 74px;
+}
+
+.price__list::after {
+  content: "Хит";
+  color: $white;
+  font-size: 14px;
+  line-height: 30px;
+  position: absolute;
+  top: -200px;
+  left: 205px;
+  min-height: 27px;
+  min-width: 10px;
+  transform: rotate(-45deg);
+}
+
 .price__inner {
   padding: 0;
   overflow: hidden;
@@ -16,6 +41,7 @@
 .price__list {
   border-collapse: collapse;
   margin-top: 80px;
+  position: relative;
 }
 
 .price__item-title {

@@ -18,6 +18,40 @@ html {
   background-size: auto, auto;
 }
 
+@media (min-resolution: 2dppx) {
+  .page {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+    background-size: 280px, 320px;
+  }
+
+  .page-photo,
+  .page-form {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    .page {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+    }
+
+    .page-photo,
+    .page-form {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .page {
+      background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+    }
+
+    .page-photo,
+    .page-form {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+}
+
 .page-photo,
 .page-form {
   background-image: url("../img/bg-back-mobile.jpg");
