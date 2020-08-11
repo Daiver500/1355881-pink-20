@@ -84,14 +84,14 @@
   }
 }
 
-@media (width: 660px) {
+@media (width: $tablet-width) {
   .navigation__logo-1,
   .navigation__logo-3 {
     display: none;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .navigation__logo-1,
   .navigation__logo-2 {
     display: none;
