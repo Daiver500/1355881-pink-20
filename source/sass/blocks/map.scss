@@ -2,25 +2,69 @@
   position: relative;
   background-image: url("../img/bg-map-desktop.jpg");
   background-repeat: no-repeat;
-  background-position: 60% 100%;
+  background-position: 59% 95%;
   min-height: 200px;
 }
 
-.map::before {
-  content: "";
-  position: absolute;
-  top: -15px;
-  left: -140px;
-  background-image: url("../img/bg-triangle-white-footer.svg");
-  min-height: 62px;
-  min-width: 460px;
+@media (min-width: $tablet-width) {
+  .map {
+    background-position: 60% 80%;
+    min-height: 374px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    background-position: 10% 60%;
+    min-height: 502px;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .map::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background-image: url("../img/triangle-white-footer-desktop.svg");
+    min-height: 123px;
+    min-width: 1200px;
+    z-index: 1;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .map::before {
+    content: "";
+    position: absolute;
+    top: -55px;
+    left: 0;
+    background-image: url("../img/triangle-white-footer-tablet.svg");
+    min-height: 123px;
+    min-width: 660px;
+    z-index: 1;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .map::before {
+    content: "";
+    position: absolute;
+    top: -75px;
+    left: 0;
+    background-image: url("../img/triangle-white-footer.svg");
+    min-height: 123px;
+    min-width: 320px;
+    z-index: 1;
+  }
 }
 
 .map__marker {
   border: none;
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: transparent;
   background-image: url("../img/map-marker.svg");
   width: 36px;

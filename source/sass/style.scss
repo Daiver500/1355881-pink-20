@@ -1,6 +1,9 @@
+@import "viewports";
+@import "colors";
 @import "fonts";
 @import "different";
 @import "container";
+@import "normalize";
 @import "blocks/page";
 @import "blocks/navigation";
 @import "blocks/download";
@@ -10,8 +13,8 @@
 @import "blocks/price";
 @import "blocks/reviews";
 @import "blocks/form";
-@import "normalize";
 @import "blocks/catalog";
 @import "blocks/map";
 @import "blocks/slogan";
-
+@import "blocks/research";
+@import "blocks/modal";
