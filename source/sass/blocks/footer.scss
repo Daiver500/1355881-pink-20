@@ -54,7 +54,6 @@
 }
 
 .footer__logo {
-  padding-left: 68px;
   margin-bottom: 41px;
   display: inline-flex;
 }
@@ -81,7 +80,7 @@
 
 .copyright__text {
   margin: 0;
-  padding-right: 15px;
+  margin-right: 15px;
   font-size: 14px;
   line-height: 18px;
 }
@@ -142,9 +141,17 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $mobile-width) {
   .footer__inner {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer__inner {
+    flex-direction: row;
     justify-content: space-between;
   }
 }

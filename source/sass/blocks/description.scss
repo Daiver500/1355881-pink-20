@@ -2,7 +2,7 @@
 
 .description {
   background-color: $primary-bg-color;
-  margin-bottom: 50px;
+  margin-bottom: 54px;
   position: relative;
 }
 
@@ -34,8 +34,6 @@
   .description__list {
     display: grid;
     grid-template-columns: 252px 252px 252px;
-    min-width: 1200px;
-    min-height: 415px;
     padding-top: 366px;
     padding-left: 134px;
     column-gap: 68px;
@@ -86,11 +84,12 @@
   .description__image-1 {
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     position: absolute;
-    top: -115px;
+    top: -67px;
     left: 20px;
     background-size: 268px;
     min-width: 268px;
     min-height: 545px;
+    margin-top: 0;
   }
 
   @media (min-resolution: 2dppx) {
@@ -114,7 +113,7 @@
     position: absolute;
     top: 0;
     background-repeat: no-repeat;
-    min-height: 382px;
+    min-height: 268px;
     background-size: 268px;
     min-width: 268px;
   }
