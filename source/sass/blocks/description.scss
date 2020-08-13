@@ -1,4 +1,3 @@
-
 .description {
   background-color: $primary-bg-color;
   margin-bottom: 50px;
@@ -221,20 +220,21 @@
 
 .description::before {
   content: "";
-  position: absolute;
-  top: -30px;
-  left: -490px;
-  right: 0;
   background-image: url("../img/bg-triangle-white.svg");
   min-height: 94px;
+  background-repeat: no-repeat;
+  display: block;
+  background-size: auto;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .description::before {
-    top: 0;
+    position: absolute;
+    right: 0;
     left: 0;
   }
 }
+
 
 @media (width: $tablet-width) {
   .description__item:first-child {

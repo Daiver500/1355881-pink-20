@@ -113,24 +113,10 @@ tr:first-child {
 
 .price::before {
   content: "";
-  position: absolute;
-  top: -30px;
-  left: -490px;
-  right: 0;
   background-image: url("../img/bg-triangle-white.svg");
   min-height: 94px;
+  background-repeat: no-repeat;
+  display: block;
+  background-size: auto;
 }
 
-@media (min-width: $tablet-width) {
-  .price::before {
-    top: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .price::before {
-    left: 0;
-    right: 0;
-    top: 0;
-  }
-}
