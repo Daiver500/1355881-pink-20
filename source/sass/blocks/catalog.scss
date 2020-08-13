@@ -7,7 +7,7 @@
   background-color: $white;
 }
 
-@media (min-width: $tablet-width) {
+/*@media (min-width: $tablet-width) {
   .catalog__inner {
     padding-top: 300px;
   }
@@ -17,7 +17,7 @@
   .catalog__inner {
     padding-top: 327px;
   }
-}
+}*/
 
 
 .catalog__image-panorama {
@@ -50,9 +50,6 @@
   }
 }
 
-.catalog__label {
-  max-height: 180px;
-}
 
 .catalog__label::before {
   content: "Панорама дня";

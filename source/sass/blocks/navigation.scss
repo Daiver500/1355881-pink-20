@@ -218,6 +218,12 @@
   border-bottom: 1px solid $white;
 }
 
+.navigation__link--active:hover,
+.navigation__link--active:focus,
+.navigation__link--active:active {
+  color: $white;
+}
+
 .navigation__toggle:hover,
 .navigation__toggle:focus {
   color: $secondary-color;
