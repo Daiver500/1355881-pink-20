@@ -172,8 +172,7 @@
     line-height: 18px;
     color: $white;
     display: flex;
-    padding-top: 16px;
-    padding-bottom: 6px;
+    padding-top: 22px;
   }
 }
 
@@ -216,6 +215,7 @@
 
 .navigation__link--active {
   border-bottom: 1px solid $white;
+  padding-bottom: 19px;
 }
 
 .navigation__link--active:hover,

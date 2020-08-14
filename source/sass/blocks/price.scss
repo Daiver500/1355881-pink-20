@@ -1,6 +1,6 @@
 
 .price {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   background-color: $primary-bg-color;
   min-height: 505px;
   position: relative;
@@ -83,7 +83,6 @@
   transform: translateX(-50%);
   display: flex;
   align-items: center;
-  padding-top: 10px;
 }
 
 @media (min-width: $tablet-width) {

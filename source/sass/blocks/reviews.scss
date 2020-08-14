@@ -1,5 +1,11 @@
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    padding-top: 13px;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .reviews__info {
     display: flex;
     flex-direction: column;
@@ -174,13 +180,7 @@
 }
 
 .reviews {
-  margin-bottom: 30px;
-}
-
-@media (min-width: $tablet-width) {
-  .reviews {
-    margin-bottom: 30px;
-  }
+  padding-bottom: 30px;
 }
 
 .slider__toggle {

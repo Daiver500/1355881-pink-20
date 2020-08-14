@@ -29,11 +29,24 @@
   content: "";
   position: absolute;
   background-image: url("../img/bg-triangle-white-footer.svg");
-  min-height: 62px;
+  min-height: 123px;
   min-width: 320px;
   background-repeat: no-repeat;
   display: block;
   background-size: 100%;
+  top: -1px;
+}
+
+@media (min-width: $tablet-width) {
+  .map::before {
+    min-width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map::before {
+    min-width: 1200px;
+  }
 }
 
 

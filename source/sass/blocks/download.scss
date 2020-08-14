@@ -1,3 +1,16 @@
+@media (min-width: $tablet-width) {
+  .download {
+    padding-top: 74px;
+    padding-bottom: 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    padding-top: 98px;
+  }
+}
+
 .download__inner {
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-position: left 80px;
