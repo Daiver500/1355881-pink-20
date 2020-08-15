@@ -213,10 +213,10 @@
 .description::before {
   content: "";
   background-image: url("../img/bg-triangle-white.svg");
-  min-height: 94px;
+  min-height: 30px;
   background-repeat: no-repeat;
   display: block;
-  background-size: auto;
+  background-size: 100% 100%;
 }
 
 @media (min-width: $desktop-width) {

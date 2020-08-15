@@ -1,15 +1,18 @@
 .catalog {
   position: relative;
+  background-color: $white;
 }
 
 .catalog__inner {
   margin-bottom: 49px;
-  background-color: $white;
+  /*background-color: $white;*/
 }
 
 .catalog__image-panorama {
   width: 100%;
   padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .catalog__title {
@@ -19,7 +22,7 @@
   padding-top: 54px;
   padding-bottom: 60px;
   margin: 0;
-  background-color: $white;
+  /*background-color: $white;*/
 }
 
 @media (min-width: $tablet-width) {

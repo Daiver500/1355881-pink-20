@@ -1,7 +1,13 @@
 
-@media (max-width: $mobile-width) {
+@media (min-width: $mobile-width) {
   .research {
     display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .research {
+    display: block;
   }
 }
 
