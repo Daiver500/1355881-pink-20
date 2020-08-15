@@ -2,8 +2,14 @@
   position: relative;
   background-image: url("../img/bg-map-desktop.jpg");
   background-repeat: no-repeat;
-  background-position: 59% 95%;
+  background-position: 50% 80%;
   min-height: 200px;
+}
+
+@media (min-resolution: 2dppx) {
+  .map {
+    background-image: url("../img/bg-map-desktop@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -15,49 +21,34 @@
 
 @media (min-width: $desktop-width) {
   .map {
-    background-position: 10% 60%;
     min-height: 502px;
   }
 }
 
-@media (max-width: $desktop-width) {
-  .map::before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: 0;
-    background-image: url("../img/triangle-white-footer-desktop.svg");
-    min-height: 123px;
-    min-width: 1200px;
-    z-index: 1;
-  }
+.map::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  min-height: 123px;
+  min-width: 320px;
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 100%;
+  top: -1px;
 }
 
-@media (max-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .map::before {
-    content: "";
-    position: absolute;
-    top: -55px;
-    left: 0;
-    background-image: url("../img/triangle-white-footer-tablet.svg");
-    min-height: 123px;
     min-width: 660px;
-    z-index: 1;
   }
 }
 
-@media (max-width: $mobile-width) {
+@media (min-width: $desktop-width) {
   .map::before {
-    content: "";
-    position: absolute;
-    top: -75px;
-    left: 0;
-    background-image: url("../img/triangle-white-footer.svg");
-    min-height: 123px;
-    min-width: 320px;
-    z-index: 1;
+    min-width: 1200px;
   }
 }
+
 
 .map__marker {
   border: none;

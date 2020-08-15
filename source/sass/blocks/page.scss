@@ -12,19 +12,30 @@ html {
   font-weight: normal;
   min-height: 100%;
   color: $primary-color;
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile.jpg");
-  background-position: 0 31%, 50% 0;
-  background-repeat: no-repeat;
-  background-size: auto, auto;
-}
-
-.page-photo,
-.page-form {
   background-image: url("../img/bg-back-mobile.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: auto;
 }
+
+@media (min-resolution: 2dppx) {
+  .page {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 100%;
+  }
+}
+
+/*@media (min-width: $tablet-width) {
+  .page-header {
+    margin-bottom: 74px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    margin-bottom: 98px;
+  }
+}*/
 
 .page-title {
   text-align: center;
@@ -70,34 +81,27 @@ html {
 
 @media (min-width: $tablet-width) {
   .page {
-    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet.jpg");
-    background-position: 50% 57%, 50% 0%;
-    background-repeat: no-repeat;
-    background-size: auto, auto;
+    background-image: url("../img/bg-back-tablet.jpg");
   }
 
-  .page-photo,
-  .page-form {
-    background-image: url("../img/bg-back-tablet.jpg");
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    background-size: auto;
+  @media (min-resolution: 2dppx) {
+    .page {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page {
-    background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop.jpg");
-    background-position: 95% 93%, 50% 0;
-    background-repeat: no-repeat;
-    background-size: auto, auto;
+    background-image: url("../img/bg-back-desktop.jpg");
+    background-size: auto;
   }
 
-  .page-photo,
-  .page-form {
-    background-image: url("../img/bg-back-desktop.jpg");
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    background-size: auto;
+  @media (min-resolution: 2dppx) {
+    .page {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px;
+    }
   }
 }

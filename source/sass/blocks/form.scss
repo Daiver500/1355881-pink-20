@@ -3,6 +3,10 @@
   background-color: $white;
 }
 
+fieldset {
+  padding: 0;
+}
+
 @media (min-width: $tablet-width) {
   .form__list {
     display: flex;
@@ -53,6 +57,20 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .form-contacts {
+    padding: 41px 30px 0 30px;
+    margin-bottom: 51px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-contacts {
+    padding: 44px 60px 0 60px;
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .form__list {
     display: grid;
@@ -71,7 +89,7 @@
 
   .achievements,
   .message,
-  .contacts,
+  .form-contacts,
   .form__lower {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -91,14 +109,6 @@
     padding-bottom: 0;
   }
 
-  .contacts {
-    margin-bottom: 0;
-  }
-
-  .contacts__legend {
-    margin-bottom: 44px;
-  }
-
   .form__item-phone,
   .form__item-mail {
     display: inline-flex;
@@ -106,29 +116,27 @@
 
   .form__input[type="tel"],
   .form__input[type="email"] {
-    margin-bottom: 23px;
     padding-right: 119px;
+    margin-bottom: 22px;
   }
 
-  .form__input[type="tel"],
   .form__input[type="email"] {
-    margin-left: 60px;
+    margin-left: 74px;
   }
 
-  .contacts .form__item-phone,
-  .contacts .form__item-mail {
+  .form-contacts .form__item-phone,
+  .form-contacts .form__item-mail {
     display: inline-flex;
     flex-direction: column-reverse;
     margin-top: 0;
-    margin-bottom: 23px;
   }
 
-  .contacts .form__name {
-    padding-left: 85px;
+  .form__item-phone .form__name {
+    padding-left: 25px;
   }
 
-  .contacts {
-    padding: 0;
+  .form__item-mail .form__name {
+    padding-left: 115px;
   }
 }
 
@@ -259,7 +267,7 @@
 .form__legend,
 .apps__legend,
 .achievements__legend,
-.contacts__legend {
+.form-contacts__legend {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -275,13 +283,13 @@
 
 
 @media (max-width: $mobile-width) {
-  .contacts__legend {
+  .form-contacts__legend {
     display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__legend,
+  .form-contacts__legend,
   .achievements__legend {
     padding-right: 31px;
     padding-left: 31px;
@@ -289,19 +297,6 @@
     padding-top: 0;
   }
 }
-
-@media (max-width: $tablet-width) {
-  .contacts__legend {
-    margin-bottom: 46px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .contacts__legend {
-    margin-bottom: 39px;
-  }
-}
-
 
 @media (min-width: $tablet-width) {
   .apps__legend {
@@ -523,48 +518,39 @@
 }
 
 .message__text {
-  padding: 22px 25px 132px 20px;
-  min-width: 276px;
-  max-height: 197px;
   border: 2px solid $light-grey;
   border-radius: 1px;
   font-size: 18px;
   line-height: 30px;
+  resize: none;
 }
 
 @media (min-width: $tablet-width) {
   .message__text {
-    padding: 23px 23px 153px 20px;
-    min-width: 496px;
-    max-height: 189px;
+    padding: 20px;
     border: 2px solid $light-grey;
     border-radius: 1px;
-    display: block;
-    margin-top: 40px;
-    margin-bottom: 54px;
-    margin-left: 60px;
+    display: inline-flex;
+    width: 100%;
+    min-height: 189px;
   }
 
   .message {
+    padding: 42px 60px 53px 60px;
     margin-bottom: 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .message__text {
-    padding: 22px 343px 89px 20px;
-    min-width: 816px;
-    max-height: 124px;
-    margin-top: 44px;
-    margin-bottom: 45px;
+    min-height: 124px;
   }
 
   .message {
-    padding: 0;
+    padding: 39px 60px 44px 60px;
     margin-bottom: 0;
   }
 }
-
 
 .message__text:hover,
 .message__text:focus {
@@ -596,7 +582,7 @@
 }
 
 @media (width: $tablet-width) {
-  .contacts .form__item {
+  .form-contacts .form__item {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 41px;
@@ -604,12 +590,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form__group .contacts {
+  .form__group .form-contacts {
     margin-bottom: 65px;
     position: relative;
   }
 
-  .contacts .form__name {
+  .form-contacts .form__name {
     margin-bottom: 0;
     align-self: flex-start;
     padding-right: 0;
@@ -617,18 +603,18 @@
 }
 
 @media (max-width: $tablet-width) {
-  .contacts .form__name {
-    padding-left: 30px;
+  .form-contacts .form__name {
+    padding-left: 60px;
   }
 }
 
 @media (width: $tablet-width) {
   .form__input[type="tel"] {
-    padding-right: 303px;
+    padding-right: 243px;
   }
 
   .form__input[type="email"] {
-    padding-right: 303px;
+    padding-right: 243px;
   }
 
   .form__input[type="tel"],
@@ -638,11 +624,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts .form__item-phone {
+  .form-contacts .form__item-phone {
     position: relative;
   }
 
-  .contacts .form__item-phone::after {
+  .form-contacts .form__item-phone::after {
     content: "";
     position: absolute;
     width: 59px;
@@ -651,15 +637,15 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color: $light-grey;
-    right: 25px;
+    right: 40px;
     top: 0;
   }
 
-  .contacts .form__item-mail {
+  .form-contacts .form__item-mail {
     position: relative;
   }
 
-  .contacts .form__item-mail::after {
+  .form-contacts .form__item-mail::after {
     content: "";
     position: absolute;
     width: 59px;
@@ -668,17 +654,17 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color: $light-grey;
-    right: 25px;
+    right: 40px;
     top: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .contacts .form__item-phone::after {
+  .form-contacts .form__item-phone::after {
     right: 0;
   }
 
-  .contacts .form__item-mail::after {
+  .form-contacts .form__item-mail::after {
     right: 0;
   }
 }
