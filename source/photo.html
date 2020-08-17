@@ -180,7 +180,7 @@
                           <p class="upload__title-1">Затмите их всех!</p>
                           <p class="upload__title-2">Выкладывайте все, что накопилось в телефоне!</p>
                               <form class="upload__form" action="https://echo.htmlacademy.ru/" method="get">
-                                <div class="upload__inner container"></div>
+                                <div class="upload__inner container">
                                   <div class="upload__picture">
                                       <picture>
                                           <source media="(min-width:1200px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x" />
@@ -192,31 +192,45 @@
                                     <div class="upload__buttons">
                                       <button class="upload__editor" type="button" aria-label="Первая кнопка">
                                         <picture>
-                                          <img src="img/icon-editor-crop.svg">
+                                          <img src="img/icon-editor-crop.svg"/>
                                         </picture>
                                       </button>
                                       <button class="upload__editor" type="button" aria-label="Вторая кнопка">
                                         <picture>
-                                         <img src="img/icon-editor-fill.svg">
+                                         <img src="img/icon-editor-fill.svg"/>
                                         </picture>
                                       </button>
                                       <button class="upload__editor" type="button" aria-label="Третья кнопка">
                                         <picture>
-                                         <img src="img/icon-editor-contrast.svg">
+                                         <img src="img/icon-editor-contrast.svg"/>
                                         </picture>
                                     </div>
                                     <div class="upload__controls">
-                                      <button class="upload__toggle upload__toggle-crop" type="button" aria-label="Третья кнопка"></button>
+                                      <button class="upload__control upload__control-crop" type="button" aria-label="Третья кнопка">
+                                        <picture>
+                                          <source media="(min-width:1200px)" srcset="img/icon-editor-crop.svg"/>
+                                          <img src="img/icon-editor-crop-small.svg"/>
+                                        </picture>
+                                      </button>
                                       <div class="upload__scale"></div>
                                       <div class="upload__range" tabindex="0"></div>
                                     </div>
                                     <div class="upload__controls-1">
-                                      <button class="upload__toggle upload__toggle-fill" type="button" aria-label="Третья кнопка"></button>
+                                      <button class="upload__control upload__control-fill" type="button" aria-label="Третья кнопка">
+                                        <picture>
+                                        <source  media="(min-width:1200px)" srcset="img/icon-editor-fill.svg"/>
+                                        <img src="img/icon-editor-fill-small.svg"/>
+                                       </picture>
+                                     </button>
                                       <div class="upload__scale-1"></div>
                                       <div class="upload__range-1" tabindex="0"></div>
                                     </div>
                                     <div class="upload__controls-2">
-                                      <button class="upload__toggle upload__toggle-svg" type="button" aria-label="Третья кнопка"></button>
+                                      <button class="upload__control upload__control-contrast" type="button" aria-label="Третья кнопка">
+                                        <picture>
+                                          <source media="(min-width:1200px)" srcset="img/icon-editor-contrast.svg"/>
+                                          <img src="img/icon-editor-contrast-small.svg"/>
+                                      </picture></button>
                                       <div class="upload__scale-2"></div>
                                       <div class="upload__range-2" tabindex="0"></div>
                                     </div>
