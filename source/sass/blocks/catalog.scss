@@ -466,7 +466,7 @@
 }*/
 
 @media (min-width: $mobile-width) {
-  .upload__buttons {
+  .upload__editors {
     display: flex;
     justify-content: space-around;
     margin-top: 42px;
@@ -474,7 +474,7 @@
 }
 
 @media (min-width: 321px) {
-  .upload__buttons {
+  .upload__editors {
     display: none;
   }
 }
@@ -560,20 +560,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .upload__button,
-  .upload__button-reset {
-    position: absolute;
-    left: 350px;
-  }
-
   .upload__button {
-    top: 320px;
     padding-left: 80px;
     padding-right: 80px;
   }
 
   .upload__button-reset {
-    top: 400px;
     padding-left: 93px;
     padding-right: 93px;
   }
@@ -581,15 +573,11 @@
 
 @media (min-width: $desktop-width) {
   .upload__button {
-    top: 400px;
-    left: 470px;
     padding-left: 39px;
     padding-right: 39px;
   }
 
   .upload__button-reset {
-    top: 400px;
-    left: 697px;
     padding-left: 52px;
     padding-right: 52px;
   }
