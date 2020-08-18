@@ -1,10 +1,12 @@
 .map {
   position: relative;
+}
+
+.map__inner {
   display: flex;
 }
 
 .map__image {
-  position: relative;
   margin: 0 auto;
 }
 
