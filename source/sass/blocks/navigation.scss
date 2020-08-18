@@ -54,6 +54,10 @@
   min-height: 23px;
 }
 
+.navigation__logo {
+  cursor: pointer;
+}
+
 @media (min-width: $mobile-width) {
   .navigation__logo-main,
   .navigation__logo {
@@ -208,12 +212,12 @@
   left: 0;
 }
 
-.navigation__link:not(.navigation__link--index):hover,
-.navigation__link:not(.navigation__link--index):focus {
+.navigation__link:hover,
+.navigation__link:focus {
   color: $secondary-color;
 }
 
-.navigation__link:not(.navigation__link--index):active {
+.navigation__link:active {
   color: $super-light-red;
 }
 
@@ -236,4 +240,10 @@
 .navigation__toggle:active {
   color: $secondary-color;
   opacity: 0.3;
+}
+
+.navigation__link--index:hover,
+.navigation__link--index:focus,
+.navigation__link--index:active {
+  color: $white;
 }

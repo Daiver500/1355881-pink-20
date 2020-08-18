@@ -69,9 +69,14 @@
   opacity: 0.3;
 }
 
-.footer__logo {
+.footer__logo,
+.footer__logo-main {
   margin-bottom: 41px;
   display: inline-flex;
+}
+
+.footer__logo {
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -127,41 +132,34 @@
   opacity: 0.3;
 }
 
-.footer__logo-tablet:hover > path {
-  fill: $secondary-color;
-}
-
-.footer__logo-tablet:active > path:nth-child(-n+4) {
-  opacity: 0.3;
-  fill: $primary-color;
-}
-
-.footer__logo-desktop:hover > path {
-  fill: $secondary-color;
-}
-
-.footer__logo-desktop:active > path:nth-child(-n+4) {
-  opacity: 0.3;
-  fill: $primary-color;
-}
-
-@media (min-width: $desktop-width) {
-  .footer__logo-tablet {
-    display: none;
-  }
-}
-
-@media (max-width: $tablet-width) {
-  .footer__logo-desktop {
-    display: none;
-  }
-}
-
 @media (min-width: $mobile-width) {
   .footer__inner {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .footer__logo-dots,
+  .footer__logo-glassesdesktop {
+    display: none;
+  }
+
+  .footer__logo-glassestablet {
+    color: $secondary-color;
+  }
+
+  .footer__logo:visited {
+    color: $primary-color;
+  }
+
+  .footer__logo:hover,
+  .footer__logo:focus {
+    color: $secondary-color;
+  }
+
+  .footer__logo:active {
+    opacity: 0.3;
+    color: $primary-color;
   }
 }
 
@@ -170,6 +168,23 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
+  }
+
+  .footer__logo-glassestablet {
+    display: none;
+  }
+
+  .footer__logo-dots,
+  .footer__logo-glassesdesktop {
+    display: block;
+  }
+
+  .footer__logo-dots {
+    color: $primary-color;
+  }
+
+  .footer__logo-glassesdesktop {
+    color: $secondary-color;
   }
 }
 
