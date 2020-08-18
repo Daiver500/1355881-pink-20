@@ -87,6 +87,10 @@
   opacity: 0.3;
 }
 
+.svg:hover {
+  fill: $secondary-color;
+}
+
 @media (max-width: $tablet-width) {
   .navigation__list {
     list-style: none;
