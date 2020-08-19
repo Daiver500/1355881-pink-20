@@ -253,92 +253,116 @@
   }
 }
 
-.upload__controls,
-.upload__controls-1,
-.upload__controls-2 {
+.upload__controls-mobile,
+.upload__controls {
   position: relative;
   height: 40px;
-  /*padding-top: 39px;*/
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 @media (min-width: $mobile-width) {
-  .upload__controls {
+  .upload__controls-mobile {
     padding-top: 39px;
     margin-bottom: 73px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .upload__controls-mobile::after {
+    content: "";
+    position: absolute;
+    border: 1px solid $primary-color;
+    width: 320px;
+    top: 75px;
+    opacity: 0.1;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .upload__controls,
-  .upload__controls-1 {
+  .upload__controls {
+    margin-bottom: 40px;
     padding-top: 0;
-    padding-left: 50px;
-    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
   }
 
-  .upload__controls-2 {
-    padding-left: 55px;
+  .upload__control {
+    padding: 0;
+  }
+
+  .upload__loading {
+    padding-left: 49px;
+    padding-top: 9px;
+  }
+
+  .upload__controls-mobile {
+    justify-content: stretch;
+  }
+
+  .upload__control-contrast {
+    margin-right: 35px;
+  }
+
+  .upload__control-crop,
+  .upload__control-fill {
+    margin-right: 30px;
+  }
+
+  .upload__controls-tablet::before {
+    content: "";
+    position: absolute;
+    border: 1px solid $primary-color;
+    width: 275px;
+    left: 0;
+    top: -15px;
+    opacity: 0.1;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .upload__controls,
-  .upload__controls-1 {
-    padding-top: 0;
+  .upload__loading {
     padding-left: 90px;
+    padding-top: 2px;
   }
 
-  .upload__controls-2 {
-    padding-left: 95px;
+  .upload__control-contrast {
+    margin-right: 54px;
+  }
+
+  .upload__control-crop,
+  .upload__control-fill {
+    margin-right: 45px;
   }
 }
 
 
-.upload__scale,
-.upload__scale-1,
-.upload__scale-2 {
+.upload__scale {
   height: 2px;
   background: $primary-color;
 }
 
 @media (min-width: $mobile-width) {
-  .upload__scale,
-  .upload__scale-1,
-  .upload__scale-2 {
+  .upload__scale {
     width: 240px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .upload__scale,
-  .upload__scale-1,
-  .upload__scale-2 {
+  .upload__scale {
     width: 202px;
-  }
-
-  .upload__scale,
-  .upload__scale-1 {
-    margin-left: 29px;
-  }
-
-  .upload__scale-2 {
-    margin-left: 33px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .upload__scale,
-  .upload__scale-1,
-  .upload__scale-2 {
+  .upload__scale {
     width: 288px;
   }
 }
 
-.upload__range,
-.upload__range-1,
-.upload__range-2 {
+.upload__range-crop,
+.upload__range-fill,
+.upload__range-contrast {
   position: absolute;
   top: 33px;
   left: 67%;
@@ -352,17 +376,17 @@
 }
 
 @media (min-width: $tablet-width) {
-  .upload__range {
+  .upload__range-crop {
     top: 13px;
     left: 77%;
   }
 
-  .upload__range-1 {
+  .upload__range-fill {
     top: 13px;
     left: 42%;
   }
 
-  .upload__range-2 {
+  .upload__range-contrast {
     top: 13px;
     left: 60%;
   }
@@ -399,9 +423,9 @@
   }
 }
 
-.upload__range:active,
-.upload__range-1:active,
-.upload__range-2:active {
+.upload__range-crop:active,
+.upload__range-fill:active,
+.upload__range-contrast:active {
   background-color: $secondary-color;
 }
 
@@ -418,52 +442,47 @@
   }
 }
 
-@media (max-width: $mobile-width) {
-  .upload__controls-1,
-  .upload__controls-2,
+@media (min-width: 321px) and (max-width: 659px) {
+  .upload__controls-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: 659px) {
+  .upload__controls-tablet,
   .upload__control-crop {
     display: none;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .upload__controls,
-  .upload__controls-1,
-  .upload__controls-2 {
-    display: flex;
-    align-items: center;
+@media (width: $tablet-width) {
+  .crop-svg {
+    width: 22px;
+    height: 22px;
   }
 
-  .upload__controls::after,
-  .upload__controls-1::after {
-    content: "";
-    position: absolute;
-    border: 1px solid $primary-color;
-    width: 275px;
-    left: 55px;
-    top: 50px;
-    opacity: 0.3;
+  .fill-svg {
+    width: 24px;
+    height: 22px;
+  }
+
+  .contrast-svg {
+    width: 16px;
+    height: 16px;
   }
 }
 
 .upload__control,
 .upload__editor {
   cursor: pointer;
+  border: none;
+  opacity: 0.3;
 }
 
 @media (min-width: $desktop-width) {
-  .upload__controls::after,
-  .upload__controls-1::after {
+  .upload__controls-tablet::before {
     width: 404px;
-    left: 95px;
-    top: 55px;
   }
-}
-
-.upload__editor,
-.upload__control {
-  border: none;
-  opacity: 0.3;
 }
 
 .upload__editor:hover,
@@ -471,6 +490,12 @@
 .upload__control:hover,
 .upload__control:focus {
   opacity: 0.5;
+}
+
+.upload__editor:active,
+.upload__control:active {
+  color: $secondary-color;
+  opacity: 1;
 }
 
 .upload__control-icon:active {
@@ -481,8 +506,8 @@
   background-color: $secondary-color;
 }
 
-.upload__title-1,
-.upload__title-2 {
+.upload__title-main,
+.upload__title-secondary {
   line-height: 30px;
   text-align: center;
   background-color: $white;
@@ -490,20 +515,20 @@
   padding-bottom: 52px;
 }
 
-.upload__title-1 {
+.upload__title-main {
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
-.upload__title-2 {
+.upload__title-secondary {
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
-  .upload__title-1,
-  .upload__title-2 {
+  .upload__title-main,
+  .upload__title-secondary {
     font-size: 18px;
     padding-left: 100px;
     padding-right: 100px;
@@ -529,13 +554,17 @@
     padding-left: 91px;
     padding-right: 91px;
   }
+
+  .upload__button-reset {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .upload__button {
     padding-left: 80px;
     padding-right: 80px;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
   }
 
   .upload__button-reset {
@@ -545,9 +574,7 @@
   }
 
   .upload__buttons {
-    padding-left: 47px;
-    padding-right: 37px;
-    margin-top: 77px;
+    margin-top: 58px;
   }
 }
 
@@ -566,9 +593,7 @@
   }
 
   .upload__buttons {
-    margin-top: 150px;
-    padding-left: 90px;
-    padding-right: 0;
+    margin-top: 140px;
   }
 }
 

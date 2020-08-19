@@ -1,6 +1,6 @@
 
-.slogan__text-1,
-.slogan__text-2 {
+.slogan__text-main,
+.slogan__text-lower {
   font-size: 24px;
   line-height: 120%;
   text-align: center;
@@ -10,22 +10,22 @@
 }
 
 @media (max-width: $mobile-width) {
-  .slogan__text-1 {
+  .slogan__text-main {
     padding-bottom: 20px;
   }
 }
 
 
 @media (min-width: $tablet-width) {
-  .slogan__text-2 {
+  .slogan__text-lower {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .slogan__text-1,
-  .slogan__text-2 {
+  .slogan__text-main,
+  .slogan__text-lower {
     font-size: 40px;
     line-height: 54px;
     margin-bottom: 0;
@@ -45,8 +45,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .slogan__text-1,
-  .slogan__text-2 {
+  .slogan__text-main,
+  .slogan__text-lower {
     font-size: 57px;
     line-height: 68px;
   }
@@ -55,7 +55,7 @@
     padding-top: 57px;
   }
 
-  .slogan__text-2 {
+  .slogan__text-lower {
     padding-left: 350px;
     padding-right: 350px;
   }

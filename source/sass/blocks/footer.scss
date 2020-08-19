@@ -69,10 +69,13 @@
   opacity: 0.3;
 }
 
-.footer__logo,
-.footer__logo-main {
-  margin-bottom: 41px;
-  display: inline-flex;
+
+@media (max-width: $mobile-width) {
+  .footer__logo,
+  .footer__logo-main {
+    margin-bottom: 41px;
+    display: inline-flex;
+  }
 }
 
 .footer__logo {
