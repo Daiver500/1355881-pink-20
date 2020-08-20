@@ -523,15 +523,16 @@ fieldset {
   font-size: 18px;
   line-height: 30px;
   resize: none;
+  width: 100%;
+  min-height: 197px;
+  padding: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .message__text {
-    padding: 20px;
     border: 2px solid $light-grey;
     border-radius: 1px;
     display: inline-flex;
-    width: 100%;
     min-height: 189px;
   }
 
@@ -667,4 +668,10 @@ fieldset {
   .form-contacts .form__item-mail::after {
     right: 0;
   }
+}
+
+.achievements__text,
+.apps__text,
+.form__button {
+  cursor: pointer;
 }

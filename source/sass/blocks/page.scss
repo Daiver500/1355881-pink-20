@@ -15,13 +15,12 @@ html {
   background-image: url("../img/bg-back-mobile.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 100%;
 }
 
 @media (min-resolution: 2dppx) {
   .page {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 100%;
   }
 }
 
@@ -70,12 +69,12 @@ html {
 @media (min-width: $tablet-width) {
   .page {
     background-image: url("../img/bg-back-tablet.jpg");
+    background-size: auto;
   }
 
   @media (min-resolution: 2dppx) {
     .page {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 1200px;
     }
   }
 }
@@ -89,7 +88,6 @@ html {
   @media (min-resolution: 2dppx) {
     .page {
       background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: 2560px;
     }
   }
 }

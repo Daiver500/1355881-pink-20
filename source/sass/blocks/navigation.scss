@@ -5,7 +5,7 @@
 .navigation__close {
   background-color: transparent;
   border: none;
-  margin-left: 270px;
+  /*margin-left: 270px;*/
   display: none;
   color: $white;
 }
@@ -135,7 +135,7 @@
 
 @media (min-width: $mobile-width) {
   .navigation__list {
-    top: 65px;
+    top: 67px;
     right: 0;
     left: 0;
   }
@@ -143,7 +143,7 @@
 
 @media (min-width: $tablet-width) {
   .navigation__list {
-    top: 90px;
+    top: 111px;
     display: none;
   }
 }
@@ -222,15 +222,17 @@
   color: $super-light-red;
 }
 
-.navigation__link--active {
-  border-bottom: 1px solid $white;
-  padding-bottom: 19px;
-}
+@media (min-width: $desktop-width) {
+  .navigation__link--active {
+    border-bottom: 1px solid $white;
+    padding-bottom: 19px;
+  }
 
-.navigation__link--active:hover,
-.navigation__link--active:focus,
-.navigation__link--active:active {
-  color: $white;
+  .navigation__link--active:hover,
+  .navigation__link--active:focus,
+  .navigation__link--active:active {
+    color: $white;
+  }
 }
 
 .navigation__toggle:hover,
@@ -247,4 +249,22 @@
 .navigation__link--index:focus,
 .navigation__link--index:active {
   color: $white;
+}
+
+.navigation__list--open {
+  display: block;
+  background-color: $primary-color;
+}
+
+.navigation__open--hide {
+  display: none;
+}
+
+.navigation__close--show {
+  display: block;
+}
+
+.navigation__inner--background {
+  background-color: $primary-color;
+  border-bottom: 1px solid #000000;
 }
