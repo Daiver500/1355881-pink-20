@@ -7,18 +7,17 @@
     border-radius: 5px;
     position: fixed;
     background-color: $white;
+    top: 25%;
   }
 
   .modal-decline {
     min-height: 289px;
     background-color: $white;
-    top: 1%;
     padding-bottom: 52px;
   }
 
   .modal-accept {
     min-height: 380px;
-    top: 50%;
   }
 
   .modal-decline__title,
@@ -105,6 +104,7 @@
     border-radius: 5px;
     position: fixed;
     background-color: $white;
+    top: 20%;
     left: 15%;
   }
 
@@ -112,14 +112,10 @@
     padding-bottom: 54px;
     min-height: 363px;
     background-color: $white;
-    top: 1%;
-    left: 15%;
   }
 
   .modal-accept {
     min-height: 432px;
-    top: 50%;
-    left: 15%;
   }
 
   .modal-decline__title,
@@ -172,7 +168,7 @@
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    cursor:pointer;
+    cursor: pointer;
   }
 
   .modal-decline__button {
@@ -202,7 +198,6 @@
   .modal-decline,
   .modal-accept {
     max-width: 780px;
-    left: 15%;
     min-height: 377px;
   }
 
@@ -236,4 +231,20 @@
   .modal-decline__lower {
     background-color: $primary-bg-color;
   }
+}
+
+.modal-accept {
+  display: none;
+}
+
+.modal-decline {
+  display: none;
+}
+
+.modal-decline--show {
+  display: block;
+}
+
+.modal-accept--show {
+  display: block;
 }
