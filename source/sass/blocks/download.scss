@@ -52,7 +52,7 @@
 @media (min-width: $desktop-width) {
   .download__inner {
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: center;
+    background-position: 98%;
     background-repeat: no-repeat;
     background-size: 1050px;
     min-height: 645px;
@@ -85,7 +85,7 @@
   .download__slogan {
     width: 250px;
     margin-bottom: 30px;
-    margin-left: 30px;
+    margin-left: 27px;
     padding-top: 20px;
   }
 }
@@ -93,6 +93,8 @@
 @media (min-width: $desktop-width) {
   .download__slogan {
     margin-left: 140px;
+    padding-top: 0;
+    margin-bottom: 35px;
   }
 }
 
@@ -167,18 +169,21 @@
   .download__button {
     padding-left: 44px;
     padding-right: 44px;
-    margin-bottom: 38px;
+    margin-bottom: 43px;
     padding-bottom: 15px;
+    padding-top: 14px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .download__button {
     margin-top: 0;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-bottom: 87px;
+    padding-left: 27px;
+    padding-right: 27px;
+    margin-bottom: 64px;
     font-size: 21px;
+    padding-bottom: 18px;
+    padding-top: 17px;
   }
 }
 
@@ -202,7 +207,7 @@
 
 @media (min-width: $tablet-width) {
   .download__list {
-    width: 310px;
+    width: 301px;
     position: relative;
     background-color: transparent;
   }
@@ -210,10 +215,10 @@
 
 @media (min-width: $desktop-width) {
   .download__list {
-    width: 300px;
+    width: 301px;
     position: relative;
     background-color: transparent;
-    margin-left: 115px;
+    margin-left: 110px;
   }
 }
 
@@ -240,7 +245,7 @@
 
 @media (min-width: $desktop-width) {
   .download__list-link {
-    margin-bottom: 58px;
+    margin-bottom: 45px;
   }
 }
 

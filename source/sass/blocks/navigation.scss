@@ -181,15 +181,18 @@
     line-height: 18px;
     color: $white;
     display: flex;
-    padding-top: 22px;
+    /*padding-top: 22px;*/
   }
-}
 
-@media (min-width: $desktop-width) {
   .navigation__item:not(:last-child) {
     padding-right: 79px;
   }
+
+  .navigation__list {
+    padding-top: 18px;
+  }
 }
+
 
 .navigation__toggle {
   margin: 0;

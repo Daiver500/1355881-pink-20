@@ -5,6 +5,12 @@
   position: relative;
 }
 
+@media (width: $desktop-width) {
+  .price {
+    margin-bottom: 42px;
+  }
+}
+
 
 .price__item-title:nth-child(3)::before {
   content: "";
@@ -75,6 +81,14 @@
     transform: translateX(0);
     margin-top: 57px;
     margin-bottom: 73px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__list {
+    transform: translateX(0);
+    margin-top: 57px;
+    margin-bottom: 103px;
   }
 }
 
@@ -291,5 +305,11 @@
 @media (min-width: $tablet-width) {
   .price::before {
     min-height: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price::before {
+    min-height: 98px;
   }
 }

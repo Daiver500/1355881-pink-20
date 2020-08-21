@@ -6,6 +6,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    padding-bottom: 37px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
   .reviews__info {
     display: flex;
     flex-direction: column;
@@ -33,6 +40,13 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 13px;
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__author-name {
+    font-size: 24px;
+    word-spacing: 0;
+  }
 }
 
 .reviews__image {
@@ -63,6 +77,9 @@
     border: none;
     background-color: transparent;
     opacity: 0.3;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16%;
   }
 
   .reviews__list {
@@ -71,18 +88,12 @@
 
   .reviews__button-left {
     background-image: url("../img/left-arrow.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 20%;
-    left: 10%;
+    left: 11%;
   }
 
   .reviews__button-right {
     background-image: url("../img/right-arrow.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 20%;
-    right: 10%;
+    right: 11%;
   }
 
   .reviews__button-left:hover,
@@ -103,6 +114,8 @@
   .reviews__author-name {
     order: 2;
     margin-bottom: 0;
+    font-size: 18px;
+    word-spacing: 11px;
   }
 }
 
@@ -126,7 +139,7 @@
   .reviews__author-job {
     order: 2;
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 30px;
     text-align: center;
   }
@@ -180,6 +193,12 @@
 
   .reviews {
     padding-bottom: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    padding-bottom: 37px;
   }
 }
 
