@@ -8,13 +8,11 @@
 @media (min-width: $tablet-width) {
   .research {
     display: block;
+    padding-top: 14px;
+    margin-bottom: 65px;
   }
 }
 
-.research {
-  padding-top: 14px;
-  margin-bottom: 110px;
-}
 
 @media (min-width: $desktop-width) {
   .research {
@@ -70,8 +68,8 @@
 
 .research__image-number {
   position: absolute;
-  top: 105px;
-  left: 65px;
+  top: 119px;
+  left: 67px;
   color: $secondary-color;
 }
 
@@ -80,7 +78,7 @@
   font-size: 30px;
   line-height: 36px;
   color: $dark-blue;
-  margin-bottom: 24px;
+  margin-bottom: 11px;
   margin-top: 0;
   padding-right: 140px;
 }
@@ -93,7 +91,7 @@
 
 .research__text {
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 
 .research__link {
@@ -133,6 +131,12 @@
 
 @media (max-width: 1199px) {
   .research__timer-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .research__space {
     display: none;
   }
 }

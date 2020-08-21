@@ -17,6 +17,19 @@
   position: relative;
 }
 
+@media (min-width: $mobile-width) {
+  .description__inner {
+    padding-top: 52px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .description__inner {
+    padding-top: 28px;
+    min-height: 440px;
+  }
+}
+
 .description__list {
   list-style: none;
   padding-left: 0;
@@ -26,7 +39,7 @@
 @media (min-width: $tablet-width) {
   .description__list {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 48% 52%;
   }
 }
 
@@ -44,6 +57,7 @@
   .description__item {
     grid-column-start: 2;
     grid-column-end: 2;
+    padding-left: 13px;
   }
 }
 
@@ -65,12 +79,12 @@
 }
 
 .description__image-1 {
-  margin-top: 48px;
+  margin-top: 41px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: 157px;
-  min-height: 286px;
+  min-height: 277px;
 }
 
 
@@ -84,11 +98,11 @@
   .description__image-1 {
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     position: absolute;
-    top: -67px;
+    top: -45px;
     left: 20px;
     background-size: 268px;
     min-width: 268px;
-    min-height: 545px;
+    min-height: 482px;
     margin-top: 0;
   }
 
@@ -160,14 +174,14 @@
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  padding-top: 43px;
+  /*padding-top: 43px;*/
   margin-top: 0;
   color: $dark-blue;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $mobile-width) {
   .description__title {
-    margin-bottom: 24px;
+    margin-bottom: 13px;
   }
 }
 
@@ -180,12 +194,17 @@
 .description__text {
   text-align: center;
   margin: 0;
+  padding: 0 10px;
 }
 
 @media (min-width: $tablet-width) {
   .description__text,
   .description__title {
     text-align: left;
+  }
+
+  .description__text {
+    padding: 0;
   }
 }
 
@@ -219,6 +238,12 @@
   background-size: 100% 100%;
 }
 
+@media (width: $tablet-width) {
+  .description::before {
+    min-height: 46px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .description::before {
     position: absolute;
@@ -234,9 +259,15 @@
   }
 }
 
+@media (width: $mobile-width) {
+  .description__item {
+    margin-bottom: 30px;
+  }
+}
+
 @media (width: $tablet-width) {
   .description__item {
-    margin-bottom: 26px;
+    margin-bottom: 33px;
   }
 }
 

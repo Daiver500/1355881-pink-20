@@ -1,6 +1,6 @@
 
 .price {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   background-color: $primary-bg-color;
   position: relative;
 }
@@ -52,7 +52,7 @@
 
 @media (max-width: $mobile-width) {
   .price__inner {
-    padding: 0;
+    padding-top: 44px;
   }
 }
 
@@ -73,6 +73,8 @@
 @media (min-width: $tablet-width) {
   .price__list {
     transform: translateX(0);
+    margin-top: 57px;
+    margin-bottom: 73px;
   }
 }
 
@@ -103,8 +105,8 @@
 
 @media (min-width: $mobile-width) {
   .price__item-title {
-    padding-top: 14px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 25px;
     min-width: 276px;
   }
 }
@@ -243,7 +245,7 @@
 
 .slider__toggles {
   position: absolute;
-  top: 385px;
+  top: 425px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -280,10 +282,14 @@
 .price::before {
   content: "";
   background-image: url("../img/bg-triangle-white.svg");
-  min-height: 30px;
+  min-height: 20px;
   background-repeat: no-repeat;
   display: block;
   background-size: 100% 100%;
 }
 
-
+@media (min-width: $tablet-width) {
+  .price::before {
+    min-height: 37px;
+  }
+}

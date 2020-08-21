@@ -1,7 +1,7 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding-top: 13px;
+    padding-top: 25px;
   }
 }
 
@@ -32,7 +32,7 @@
   color: $dark-blue;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 31px;
+  margin-bottom: 13px;
 }
 
 .reviews__image {
@@ -146,7 +146,7 @@
 @media (min-width: $tablet-width) {
   .reviews__text {
     margin-top: 0;
-    margin-bottom: 51px;
+    margin-bottom: 36px;
     font-size: 18px;
     line-height: 30px;
     text-align: center;
@@ -166,7 +166,7 @@
 
 .reviews__toggles {
   position: absolute;
-  top: 250px;
+  top: 255px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -175,12 +175,18 @@
 
 @media (min-width: $tablet-width) {
   .reviews__toggles {
-    top: 210px;
+    top: 221px;
+  }
+
+  .reviews {
+    padding-bottom: 65px;
   }
 }
 
-.reviews {
-  padding-bottom: 30px;
+@media (max-width: $mobile-width) {
+  .reviews {
+    padding-bottom: 80px;
+  }
 }
 
 .slider__toggle {
