@@ -1,16 +1,16 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
 
-@media (min-width: $tablet-width) {
+/*@media (min-width: $tablet-width) {
   .page-footer {
     padding-top: 37px;
   }
-}
+}*/
 
 @media (min-width: $desktop-width) {
   .page-footer {
@@ -223,7 +223,7 @@
   .footer__inner {
     padding-left: 130px;
     padding-right: 131px;
-    padding-top: 64px;
+    padding-top: 94px;
     padding-bottom: 75px;
   }
 }
