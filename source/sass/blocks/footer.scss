@@ -1,7 +1,9 @@
 
-.page-footer {
-  padding-bottom: 40px;
-  padding-top: 40px;
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -164,6 +166,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
 
   .footer__logo-dots,
