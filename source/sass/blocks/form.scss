@@ -14,11 +14,32 @@ fieldset {
   }
 }
 
-@media (max-width: $mobile-width) {
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
   .form__group {
     border: none;
-    margin-bottom: 44px;
+    margin-bottom: 25px;
     padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .full-name,
+  .form-contacts,
+  .message,
+  .form__header,
+  .form__lower {
+    padding: 0 20px;
+  }
+
+  .full-name {
+    margin-bottom: 23px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .form__inner {
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -239,7 +260,7 @@ fieldset {
 
 @media (max-width: $mobile-width) {
   .form__name {
-    padding-left: 23px;
+    padding-left: 25px;
     margin-bottom: 5px;
   }
 }
@@ -249,7 +270,7 @@ fieldset {
   min-height: 59px;
   padding-left: 20px;
   padding-top: 13px;
-  padding-bottom: 13px;
+  padding-bottom: 14px;
   border: 2px solid $light-grey;
   border-radius: 1px;
   font-size: 18px;
@@ -279,7 +300,7 @@ fieldset {
 .apps__legend,
 .achievements__legend {
   background-color: $primary-bg-color;
-  padding-top: 42px;
+  padding-top: 38px;
 }
 
 
@@ -316,14 +337,14 @@ fieldset {
 
 @media (max-width: $mobile-width) {
   .achievements__legend {
-    padding-left: 21px;
-    padding-right: 21px;
-    margin-bottom: 44px;
+    padding-left: 49px;
+    padding-right: 45px;
+    margin-bottom: 35px;
   }
 }
 
 .apps__legend {
-  margin-bottom: 40px;
+  margin-bottom: 31px;
 }
 
 @media (min-width: $tablet-width) {
@@ -369,12 +390,12 @@ fieldset {
   .achievements {
     background-color: $primary-bg-color;
     padding: 0;
-    margin-bottom: 42px;
+    margin-bottom: 34px;
     padding-bottom: 44px;
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (width: $tablet-width) {
   .apps,
   .achievements {
     margin-bottom: 65px;
@@ -383,7 +404,7 @@ fieldset {
 }
 
 
-@media (max-width: $tablet-width) {
+@media (width: $tablet-width) {
   .achievements {
     padding-bottom: 50px;
   }
@@ -393,6 +414,8 @@ fieldset {
   list-style: none;
   padding-left: 22px;
   margin: 0;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -458,7 +481,7 @@ fieldset {
 }
 
 .achievements__item:not(:last-child) {
-  margin-bottom: 47px;
+  margin-bottom: 45px;
 }
 
 .achievements__label {
@@ -467,6 +490,8 @@ fieldset {
   display: flex;
   min-height: 37px;
   align-items: center;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .achievements__text {
@@ -507,7 +532,7 @@ fieldset {
 }
 
 .form__legend {
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 }
 
 @media (min-width: $tablet-width) {
@@ -526,7 +551,8 @@ fieldset {
   resize: none;
   width: 100%;
   min-height: 197px;
-  padding: 20px;
+  padding: 12px;
+  padding-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -604,7 +630,7 @@ fieldset {
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (width: $tablet-width) {
   .form-contacts .form__name {
     padding-left: 60px;
   }
