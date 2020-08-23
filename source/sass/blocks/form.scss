@@ -525,6 +525,12 @@ fieldset {
   resize: none;
 }
 
+@media (min-width: $mobile-width) {
+  .message {
+    margin-bottom: 50px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .message__text {
     padding: 20px;
