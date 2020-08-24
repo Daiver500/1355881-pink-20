@@ -170,6 +170,14 @@
     padding-bottom: 36px;
   }
 
+  .footer__inner-main {
+    padding-top: 42px;
+  }
+
+  .footer__inner-photo {
+    padding-top: 38px;
+  }
+
   .footer__logo-dots,
   .footer__logo-glassesdesktop {
     display: none;
@@ -203,6 +211,14 @@
     padding-bottom: 36px;
   }
 
+  .footer__inner-main {
+    padding-top: 39px;
+  }
+
+  .footer__inner-photo {
+    padding-top: 35px;
+  }
+
   .footer__logo-glassestablet {
     display: none;
   }
@@ -225,7 +241,15 @@
   .footer__inner {
     padding-left: 130px;
     padding-right: 131px;
-    padding-top: 94px;
+    padding-top: 76px;
     padding-bottom: 75px;
+  }
+
+  .footer__inner-main {
+    padding-top: 64px;
+  }
+
+  .footer__inner-photo {
+    padding-top: 93px;
   }
 }

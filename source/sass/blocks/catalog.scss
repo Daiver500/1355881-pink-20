@@ -501,6 +501,22 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .upload__range-crop {
+    left: 39%;
+  }
+
+  .upload__range-fill {
+    top: -6px;
+    left: 83%;
+  }
+
+  .upload__range-contrast {
+    top: -8px;
+    left: 61%;
+  }
+}
+
 @media (min-width: $mobile-width) {
   .upload__inner {
     display: flex;
