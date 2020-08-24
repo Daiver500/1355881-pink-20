@@ -82,6 +82,13 @@ html {
   }
 }
 
+@media (min-width: $desktop-width) {
+  .formpage-title {
+    padding-top: 49px;
+    padding-bottom: 88px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page {
     background-image: url("../img/bg-back-tablet.jpg");
