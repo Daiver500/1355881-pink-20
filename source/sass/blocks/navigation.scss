@@ -137,13 +137,13 @@
     top: 67px;
     right: 0;
     left: 0;
+    display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
   .navigation__list {
     top: 111px;
-    display: none;
   }
 }
 
