@@ -42,6 +42,3 @@ formList.addEventListener("submit", function (evt) {
       }
     }
   });
-
-
-
