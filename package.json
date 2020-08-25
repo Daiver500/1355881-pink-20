@@ -10,9 +10,10 @@
     "gulp-csso": "^4.0.1",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "8.0.0",
-    "gulp-sass": "4.1.0",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "2.6.5",
     "gulp-webp": "^4.0.1",
+    "node-sass": "^4.14.1",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
   },
@@ -22,6 +23,7 @@
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
     "start": "gulp"
+
   },
   "browserslist": [
     "last 2 versions",
@@ -39,4 +41,4 @@
   "engines": {
     "node": "12.18.2"
   }
-}
+ }
