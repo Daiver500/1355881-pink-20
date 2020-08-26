@@ -9,12 +9,25 @@
 @media (min-width: $desktop-width) {
   .description {
     margin-bottom: 0;
-    padding-bottom: 59px;
+    padding-bottom: 41px;
   }
 }
 
 .description__inner {
   position: relative;
+}
+
+@media (min-width: $mobile-width) {
+  .description__inner {
+    padding-top: 52px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .description__inner {
+    padding-top: 28px;
+    min-height: 440px;
+  }
 }
 
 .description__list {
@@ -26,7 +39,7 @@
 @media (min-width: $tablet-width) {
   .description__list {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 48% 52%;
   }
 }
 
@@ -34,7 +47,7 @@
   .description__list {
     display: grid;
     grid-template-columns: 252px 252px 252px;
-    padding-top: 366px;
+    padding-top: 235px;
     padding-left: 134px;
     column-gap: 68px;
   }
@@ -44,6 +57,7 @@
   .description__item {
     grid-column-start: 2;
     grid-column-end: 2;
+    padding-left: 13px;
   }
 }
 
@@ -62,15 +76,19 @@
     grid-column-start: 3;
     grid-column-end: 4;
   }
+
+  .description__item {
+    padding: 0;
+  }
 }
 
 .description__image-1 {
-  margin-top: 48px;
+  margin-top: 41px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: 157px;
-  min-height: 286px;
+  min-height: 277px;
 }
 
 
@@ -84,11 +102,11 @@
   .description__image-1 {
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     position: absolute;
-    top: -67px;
+    top: -45px;
     left: 20px;
     background-size: 268px;
     min-width: 268px;
-    min-height: 545px;
+    min-height: 482px;
     margin-top: 0;
   }
 
@@ -111,19 +129,19 @@
   .description__image-2,
   .description__image-3 {
     position: absolute;
-    top: 0;
+    top: -93px;
     background-repeat: no-repeat;
-    min-height: 268px;
-    background-size: 268px;
+    min-height: 300px;
+    background-size: 289px;
     min-width: 268px;
   }
+}
 
-
+@media (min-width: $desktop-width) {
   .description__image-1 {
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
     margin-top: 0;
-    top: 0;
-    left: 789px;
+    left: 791px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -134,7 +152,7 @@
 
   .description__image-2 {
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
-    left: 466px;
+    left: 460px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -145,7 +163,7 @@
 
   .description__image-3 {
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
-    left: 143px;
+    left: 135px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -155,37 +173,44 @@
   }
 }
 
+
 .description__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  padding-top: 43px;
+  /*padding-top: 43px;*/
   margin-top: 0;
   color: $dark-blue;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $mobile-width) {
   .description__title {
-    margin-bottom: 24px;
+    margin-bottom: 13px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .description__title {
-    margin-bottom: 35px;
+    margin-bottom: 23px;
+    padding: 0 10px;
   }
 }
 
 .description__text {
   text-align: center;
   margin: 0;
+  padding: 0 10px;
 }
 
 @media (min-width: $tablet-width) {
   .description__text,
   .description__title {
     text-align: left;
+  }
+
+  .description__text {
+    padding: 0;
   }
 }
 
@@ -203,6 +228,7 @@
   .description__text {
     font-size: 18px;
     line-height: 30px;
+    padding: 0 5px;
   }
 }
 
@@ -213,17 +239,21 @@
 .description::before {
   content: "";
   background-image: url("../img/bg-triangle-white.svg");
-  min-height: 94px;
+  min-height: 30px;
   background-repeat: no-repeat;
   display: block;
-  background-size: auto;
+  background-size: 100% 100%;
+}
+
+@media (width: $tablet-width) {
+  .description::before {
+    min-height: 46px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .description::before {
-    position: absolute;
-    right: 0;
-    left: 0;
+    min-height: 100px;
   }
 }
 
@@ -234,9 +264,15 @@
   }
 }
 
+@media (width: $mobile-width) {
+  .description__item {
+    margin-bottom: 30px;
+  }
+}
+
 @media (width: $tablet-width) {
   .description__item {
-    margin-bottom: 26px;
+    margin-bottom: 33px;
   }
 }
 
@@ -245,4 +281,3 @@
     padding-top: 0;
   }
 }
-

@@ -1,54 +1,59 @@
 .map {
   position: relative;
-  background-image: url("../img/bg-map-desktop.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 80%;
-  min-height: 200px;
 }
 
-@media (min-resolution: 2dppx) {
-  .map {
-    background-image: url("../img/bg-map-desktop@2x.jpg");
-  }
+.map__inner {
+  display: flex;
+  max-height: 200px;
+  overflow: hidden;
 }
 
 @media (min-width: $tablet-width) {
-  .map {
-    background-position: 60% 80%;
-    min-height: 374px;
+  .map__inner {
+    max-height: 374px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .map {
-    min-height: 502px;
+  .map__inner {
+    max-height: 502px;
   }
 }
 
-.map::before {
+.map__image {
+  margin: 0 auto;
+}
+
+.map__image::before {
   content: "";
   position: absolute;
   background-image: url("../img/bg-triangle-white-footer.svg");
-  min-height: 123px;
-  min-width: 320px;
   background-repeat: no-repeat;
   display: block;
-  background-size: 100%;
-  top: -1px;
+  background-size: 100% 100%;
+  top: 0;
+}
+
+@media (min-width: $mobile-width) {
+  .map__image::before {
+    min-width: 320px;
+    min-height: 40px;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .map::before {
+  .map__image::before {
     min-width: 660px;
+    min-height: 68px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .map::before {
+  .map__image::before {
     min-width: 1200px;
+    min-height: 100px;
   }
 }
-
 
 .map__marker {
   border: none;
