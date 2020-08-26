@@ -25,8 +25,8 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp clean && gulp copy styles images imageswebp sprite",
-    "start": "gulp"
+    "build": "gulp build",
+    "start": "gulp build && gulp"
   },
 
   "browserslist": [

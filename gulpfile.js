@@ -80,7 +80,20 @@ const copy = () => {
   .pipe(gulp.dest("build"));
 };
 
-exports.copy = copy
+exports.copy = copy;
+
+//HTML
+
+const html = () => {
+  return gulp.src(["source/*.html"
+], {
+  base: "source"
+})
+.pipe(gulp.dest("build"));
+};
+
+exports.html = html;
+
 
 //Clean
 
@@ -88,20 +101,20 @@ const clean = () => {
   return del("build");
 };
 
-exports.clean = clean
+exports.clean = clean;
 
 //Build
 
 const build = () => gulp.series (
-  "clean",
-  "copy",
-  "styles",
-  "images",
-  "sprite",
-  "imageswebp"
+  clean,
+  copy,
+  styles,
+  images,
+  sprite,
+  imageswebp
 );
 
-exports.build = build;
+exports.build = build();
 
 
 // Server
@@ -124,10 +137,10 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html").on("change", gulp.series("html", sync.reload));
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
+  server, watcher
 );
 
