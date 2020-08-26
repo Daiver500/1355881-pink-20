@@ -613,6 +613,12 @@
   }
 }
 
+.upload__control--active,
+.upload__editor--active {
+  color: $secondary-color;
+  opacity: 1;
+}
+
 .upload__editor:hover,
 .upload__editor:focus,
 .upload__control:hover,
@@ -626,9 +632,9 @@
   opacity: 1;
 }
 
-.upload__control-icon:active {
+/*.upload__control-icon:active {
   fill: $secondary-color;
-}
+}*/
 
 .upload__range:active {
   background-color: $secondary-color;
