@@ -82,19 +82,6 @@ const copy = () => {
 
 exports.copy = copy;
 
-//HTML
-
-const html = () => {
-  return gulp.src(["source/*.html"
-], {
-  base: "source"
-})
-.pipe(gulp.dest("build"));
-};
-
-exports.html = html;
-
-
 //Clean
 
 const clean = () => {
@@ -132,6 +119,19 @@ const server = (done) => {
 }
 
 exports.server = server;
+
+//HTML
+
+const html = () => {
+  return gulp.src(["source/*.html"
+], {
+  base: "source"
+})
+.pipe(gulp.dest("build"));
+};
+
+exports.html = html;
+
 
 // Watcher
 
