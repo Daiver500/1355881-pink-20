@@ -1,19 +1,23 @@
 
-@media (max-width: $mobile-width) {
+@media (min-width: $mobile-width) {
   .research {
     display: none;
   }
 }
 
-.research {
-  padding-top: 14px;
-  margin-bottom: 110px;
+@media (min-width: $tablet-width) {
+  .research {
+    display: block;
+    padding-top: 14px;
+    margin-bottom: 65px;
+  }
 }
+
 
 @media (min-width: $desktop-width) {
   .research {
     background-color: $primary-bg-color;
-    margin-bottom: 193px;
+    margin-bottom: 160px;
   }
 }
 
@@ -26,7 +30,7 @@
 
 @media (min-width: $desktop-width) {
   .research__inner {
-    grid-template-columns: 520px 660px;
+    grid-template-columns: 480px 700px;
   }
 }
 
@@ -49,9 +53,9 @@
 
 @media (min-width: $desktop-width) {
   .research__item {
-    padding-top: 115px;
+    padding-top: 90px;
     padding-right: 166px;
-    padding-bottom: 120px;
+    padding-bottom: 113px;
   }
 }
 
@@ -64,8 +68,8 @@
 
 .research__image-number {
   position: absolute;
-  top: 105px;
-  left: 65px;
+  top: 119px;
+  left: 67px;
   color: $secondary-color;
 }
 
@@ -74,20 +78,31 @@
   font-size: 30px;
   line-height: 36px;
   color: $dark-blue;
-  margin-bottom: 24px;
+  margin-bottom: 11px;
   margin-top: 0;
-  padding-right: 140px;
+  padding-right: 152px;
+  letter-spacing: -1px;
 }
 
 @media (min-width: $desktop-width) {
   .research__title {
     padding-right: 0;
+    margin-bottom: 23px;
+    letter-spacing: 0;
   }
 }
 
 .research__text {
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
+  padding-right: 5px;
+}
+
+@media (min-width: $desktop-width) {
+  .research__text {
+    padding-right: 13px;
+    min-width: 550px;
+  }
 }
 
 .research__link {
@@ -102,6 +117,7 @@
 
   .research__image-desktop {
     color: $timer-color;
+    margin-left: 40px;
   }
 
   .research__timer-desktop {
@@ -119,14 +135,27 @@
 
   .research__image-numberdesktop {
     position: absolute;
-    top: 145px;
+    top: 150px;
     left: 195px;
     color: $secondary-color;
   }
+
+  .research__text,
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 29px;
+  }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: 1199px) {
   .research__timer-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .research__space {
     display: none;
   }
 }
