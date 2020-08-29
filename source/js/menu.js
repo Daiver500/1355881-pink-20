@@ -20,7 +20,7 @@ Menu.addEventListener("click", function(evt) {
   }
 });
 
-window.addEventListener("keydown", function (evt) {
+/*window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
       if (menuSection.classList.contains("navigation__list--open")) {
           evt.preventDefault();
@@ -29,4 +29,4 @@ window.addEventListener("keydown", function (evt) {
           closeCross.classList.remove("navigation__close--show");
       }
   }
-});
+});*/

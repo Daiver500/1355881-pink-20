@@ -134,7 +134,7 @@
 
 @media (min-width: $mobile-width) {
   .navigation__list {
-    top: 67px;
+    top: 66px;
     right: 0;
     left: 0;
     display: none;
@@ -269,4 +269,5 @@
 .navigation__inner--background {
   background-color: $primary-color;
   border-bottom: 1px solid #000000;
+  padding-bottom: 11px;
 }
