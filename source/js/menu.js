@@ -1,10 +1,10 @@
-var Menu = document.querySelector(".navigation__toggle");
+var menu = document.querySelector(".navigation__toggle");
 var menuSection = document.querySelector(".navigation__list");
 var openBurger = document.querySelector(".navigation__open");
 var closeCross = document.querySelector(".navigation__close");
 var menuBackground = document.querySelector(".navigation__inner")
 
-Menu.addEventListener("click", function(evt) {
+menu.addEventListener("click", function(evt) {
   evt.preventDefault();
   if (menuSection.classList.contains("navigation__list--open")) {
     evt.preventDefault();

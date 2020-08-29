@@ -91,7 +91,7 @@ fieldset {
 
 @media (min-width: $desktop-width) {
   .form-contacts {
-    padding: 33px 60px 12px 45px;
+    padding: 33px 45px 12px 58px;
     margin-bottom: 0;
   }
 
@@ -147,10 +147,11 @@ fieldset {
   .form__input[type="email"] {
     padding-right: 119px;
     margin-bottom: 12px;
+    min-width: 371px;
   }
 
   .form__input[type="email"] {
-    margin-left: 84px;
+    margin-left: 71px;
   }
 
   .form-contacts .form__item-phone,
@@ -783,17 +784,21 @@ fieldset {
     position: relative;
   }
 
-  .form-contacts .form__item-phone::after {
+  .form-contacts .form__item-phone::after,
+  .form-contacts .form__item-mail::after {
     content: "";
     position: absolute;
     width: 59px;
-    height: 59px;
-    background-image: url("../img/phone-icon.svg");
+    height: 56px;
     background-repeat: no-repeat;
     background-position: 57% 50%;
-    background-color: $light-grey;
-    right: 0;
-    top: 0;
+    background-color: #e5e5e5;
+    right: 2px;
+    top: 2px;
+  }
+
+  .form-contacts .form__item-phone::after {
+    background-image: url("../img/phone-icon.svg");
   }
 
   .form-contacts .form__item-mail {
@@ -801,16 +806,7 @@ fieldset {
   }
 
   .form-contacts .form__item-mail::after {
-    content: "";
-    position: absolute;
-    width: 59px;
-    height: 59px;
     background-image: url("../img/mail-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 57% 50%;
-    background-color: $light-grey;
-    right: 0;
-    top: 0;
   }
 }
 
@@ -822,14 +818,14 @@ fieldset {
 
   .form-contacts .form__item-phone::after {
     content: "";
-    background-position: 51% 50%;
-    right: -16px;
+    background-position: 56% 50%;
+    right: 2px;
   }
 
   .form-contacts .form__item-mail::after {
     content: "";
     background-position: 54% 50%;
-    right: -28px;
+    right: 2px;
   }
 }
 
