@@ -1,18 +1,17 @@
 @media (min-width: $mobile-width) {
   .download {
-    margin-top: 25px;
+    background-image: url("img/bg-back-mobile.jpg");
+    background-size: 100%;
+    background-position: 50% 3px;
+    background-repeat: no-repeat;
+    margin-top: -67px;
+    padding-top: 67px;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .download {
-    margin-top: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .download {
-    margin-top: -7px;
+  @media (min-resolution: 2dppx) {
+    .download {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
   }
 }
 
@@ -20,21 +19,24 @@
   .download {
     padding-top: 74px;
     padding-bottom: 17px;
+    margin-top: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .download {
     padding-top: 98px;
+    margin-top: -7px;
   }
 }
 
 .download__inner {
   background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-position: left 85px;
+  background-position: left 108px;
   background-repeat: no-repeat;
   background-size: 258px;
   margin-top: 0;
+  padding-top: 25px;
 }
 
 @media (max-width: $mobile-width) {

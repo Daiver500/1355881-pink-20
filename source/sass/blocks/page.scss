@@ -12,7 +12,8 @@ html {
   font-weight: normal;
   min-height: 100%;
   color: $primary-color;
-  background-image: url("../img/bg-back-mobile.jpg");
+}
+  /*background-image: url("../img/bg-back-mobile.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -22,7 +23,7 @@ html {
   .page {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
-}
+}*/
 
 .page-title {
   text-align: center;
@@ -115,4 +116,8 @@ html {
       background-size: 2560px;
     }
   }
+}
+
+.page-header {
+  position: relative;
 }
