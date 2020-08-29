@@ -98,6 +98,7 @@ html {
   @media (min-resolution: 2dppx) {
     .page {
       background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px;
     }
   }
 }
@@ -111,6 +112,7 @@ html {
   @media (min-resolution: 2dppx) {
     .page {
       background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px;
     }
   }
 }
