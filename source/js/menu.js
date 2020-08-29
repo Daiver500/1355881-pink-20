@@ -19,4 +19,3 @@ menu.addEventListener("click", function(evt) {
       menuBackground.classList.add ("navigation__inner--background");
   }
 });
-
