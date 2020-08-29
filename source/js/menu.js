@@ -20,13 +20,3 @@ menu.addEventListener("click", function(evt) {
   }
 });
 
-/*window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-      if (menuSection.classList.contains("navigation__list--open")) {
-          evt.preventDefault();
-          menuSection.classList.remove("navigation__list--open");
-          openBurger.classList.remove("navigation__open--hide");
-          closeCross.classList.remove("navigation__close--show");
-      }
-  }
-});*/

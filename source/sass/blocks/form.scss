@@ -385,6 +385,7 @@ fieldset {
   background-color: $green;
   border: 2px solid $green;
   border-radius: 1px;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -465,6 +466,7 @@ fieldset {
   display: flex;
   min-height: 39px;
   align-items: center;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -555,6 +557,7 @@ fieldset {
   display: flex;
   min-height: 37px;
   align-items: center;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
