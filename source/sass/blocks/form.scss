@@ -712,7 +712,7 @@ fieldset {
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $desktop-width) {
+@media (min-width: $mobile-width) and (max-width: 1159px) {
   .form__required-desktop {
     display: none;
   }
