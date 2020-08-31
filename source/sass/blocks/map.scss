@@ -67,3 +67,24 @@
   height: 36px;
   padding: 0;
 }
+
+
+.map__inner iframe {
+  width: 100%;
+  min-height: 200px;
+  position: absolute;
+  z-index: 1;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .map__inner iframe {
+    min-height: 374px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__inner iframe {
+    min-height: 502px;
+  }
+}
