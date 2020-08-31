@@ -153,10 +153,17 @@
   .main-like {
     padding-left: 0;
     padding-right: 20px;
+    cursor: pointer;
   }
 
   .likes__number {
     letter-spacing: -0.1px;
+  }
+}
+
+@media (min-width: $mobile-width) {
+  .catalog__item-main {
+    flex-direction: column;
   }
 }
 
@@ -237,13 +244,6 @@
 .like-main {
   border: none;
 }
-
-@media (max-width: $mobile-width) {
-  .catalog__item-main {
-    flex-direction: column;
-  }
-}
-
 
 @media (min-width: $mobile-width) {
   .rate,

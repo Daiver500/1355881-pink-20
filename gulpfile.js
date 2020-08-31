@@ -11,6 +11,7 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const uglify = require("gulp-uglify");
 
 // Styles
 
@@ -31,6 +32,30 @@ const styles = () => {
 }
 
 exports.styles = styles;
+
+//JS
+
+const jsmenu = () => {
+  return gulp.src("source/js/menu.js")
+    .pipe(uglify())
+    .pipe(rename("menu.min.js"))
+    .pipe(gulp.dest("source/js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
+
+exports.jsmenu = jsmenu;
+
+const jsmodal = () => {
+  return gulp.src("source/js/modal.js")
+    .pipe(uglify())
+    .pipe(rename("modal.min.js"))
+    .pipe(gulp.dest("source/js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
+
+exports.jsmodal = jsmodal;
 
 //Images
 
@@ -72,7 +97,7 @@ const copy = () => {
   return gulp.src ([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
+    /*"source/js/**",*/
     "source/*.ico",
     "source/*.html"
   ], {
@@ -97,9 +122,11 @@ const build = () => gulp.series (
   clean,
   copy,
   styles,
+  jsmenu,
+  jsmodal,
   images,
   sprite,
-  imageswebp
+  imageswebp,
 );
 
 exports.build = build();
