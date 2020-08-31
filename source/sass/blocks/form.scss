@@ -582,7 +582,6 @@ fieldset {
   position: absolute;
   width: 39px;
   height: 39px;
-  /*margin-left: -67px;*/
   left: 0;
   background-image: url("../img/checkbox.svg");
   background-repeat: no-repeat;
@@ -605,12 +604,12 @@ fieldset {
   background-repeat: no-repeat;
 }
 
-.achievements__input:active /*+ .achievements__text*/ {
+.achievements__input:active + .achievements__text {
   background-image: url("../img/checkbox-active.svg");
   background-repeat: no-repeat;
 }
 
-.achievements__input:active:disabled + .achievements__text {
+.achievements__input:checked:active + .achievements__text {
   background-image: url("../img/checkbox-checked-active.svg");
   background-repeat: no-repeat;
 }
