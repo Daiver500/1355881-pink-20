@@ -513,13 +513,13 @@ fieldset {
   background-repeat: no-repeat;
 }
 
-.apps__input:disabled + .apps__text {
-  background-image: url("../img/radio-disabled.svg");
+.apps__input:active + .apps__text {
+  background-image: url("../img/radio-active.svg");
   background-repeat: no-repeat;
 }
 
-.apps__input:checked:disabled + .apps__text {
-  background-image: url("../img/radio-checked-disabled.svg");
+.apps__input:checked:active + .apps__text {
+  background-image: url("../img/radio-checked-active.svg");
   background-repeat: no-repeat;
 }
 
@@ -580,8 +580,8 @@ fieldset {
 
 .achievements__text {
   position: absolute;
-  width: 37px;
-  height: 37px;
+  width: 39px;
+  height: 39px;
   /*margin-left: -67px;*/
   left: 0;
   background-image: url("../img/checkbox.svg");
@@ -605,13 +605,13 @@ fieldset {
   background-repeat: no-repeat;
 }
 
-.achievements__input:disabled + .achievements__text {
-  background-image: url("../img/checkbox-disabled.svg");
+.achievements__input:active /*+ .achievements__text*/ {
+  background-image: url("../img/checkbox-active.svg");
   background-repeat: no-repeat;
 }
 
-.achievements__input:checked:disabled + .achievements__text {
-  background-image: url("../img/checkbox-checked-disabled.svg");
+.achievements__input:active:disabled + .achievements__text {
+  background-image: url("../img/checkbox-checked-active.svg");
   background-repeat: no-repeat;
 }
 
