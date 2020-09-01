@@ -30,7 +30,7 @@
 
 @media (min-width: $tablet-width) {
   .navigation__inner {
-    padding-top: 27px;
+    padding-top: 23px;
   }
 }
 
@@ -39,6 +39,8 @@
     padding-top: 27px;
     padding-bottom: 43px;
     display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: center;
   }
 }
 
@@ -70,6 +72,7 @@
   .navigation__logo {
     margin-right: 420px;
     margin-left: 0;
+    padding-bottom: 25px;
   }
 
   .navigation__logo-dots,
@@ -87,6 +90,8 @@
   .navigation__logo {
     margin-right: 90px;
     margin-left: 80px;
+    padding-bottom: 0;
+    padding-left: 0;
   }
 
   .navigation__logo-glassestablet {
@@ -124,6 +129,7 @@
     padding-right: 0;
     position: relative;
     border-top: 1px solid #000000;
+    display: none;
   }
 }
 

@@ -17,8 +17,9 @@
 @media (min-width: $tablet-width) {
   .download {
     background-image: url("../img/bg-back-tablet.jpg");
-    background-position: 50% -105px;
+    background-position: 50% -40px;
     background-size: auto;
+    margin-top: -88px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -33,6 +34,7 @@
   .download {
     background-image: url("../img/bg-back-desktop.jpg");
     background-size: auto;
+    margin-top: -110px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -40,22 +42,6 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 2560px;
     }
-  }
-}
-
-
-@media (min-width: $tablet-width) {
-  .download {
-    margin-top: 0;
-    padding-top: 74px;
-    padding-bottom: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .download {
-    margin-top: -7px;
-    padding-top: 98px;
   }
 }
 
@@ -79,10 +65,11 @@
 @media (min-width: $tablet-width) {
   .download__inner {
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: center;
+    background-position: 50% 75px;
     background-repeat: no-repeat;
     background-size: 700px;
     min-height: 545px;
+    padding-top: 75px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -95,10 +82,11 @@
 @media (min-width: $desktop-width) {
   .download__inner {
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: 98%;
+    background-position: -18% 115px;
     background-repeat: no-repeat;
     background-size: 1050px;
     min-height: 645px;
+    padding-bottom: 107px;
   }
 
   @media (min-resolution: 2dppx) {
