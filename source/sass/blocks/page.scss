@@ -35,21 +35,16 @@ html {
   line-height: 33px;
   padding-left: 10%;
   padding-right: 10%;
+  padding-top: 30px;
+  padding-bottom: 77px;
 }
 
-@media (min-width: $mobile-width) {
-  .page-title {
-    padding-top: 30px;
-    padding-bottom: 77px;
-  }
+
+.formpage-title {
+  padding-top: 29px;
+  padding-bottom: 42px;
 }
 
-@media (min-width: $mobile-width) {
-  .formpage-title {
-    padding-top: 29px;
-    padding-bottom: 42px;
-  }
-}
 
 @media (min-width: $tablet-width) {
   .page-title {

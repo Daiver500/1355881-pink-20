@@ -20,9 +20,9 @@
   }
 }
 
-.map__image {
+/*.map__image {
   margin: 0 auto;
-}
+}*/
 
 .map__image::before {
   content: "";
@@ -32,14 +32,10 @@
   display: block;
   background-size: 100% 100%;
   top: 0;
+  min-width: 320px;
+  min-height: 40px;
 }
 
-@media (min-width: $mobile-width) {
-  .map__image::before {
-    min-width: 320px;
-    min-height: 40px;
-  }
-}
 
 @media (min-width: $tablet-width) {
   .map__image::before {
@@ -50,7 +46,7 @@
 
 @media (min-width: $desktop-width) {
   .map__image::before {
-    min-width: 1200px;
+    min-width: 960px;
     min-height: 100px;
   }
 }
