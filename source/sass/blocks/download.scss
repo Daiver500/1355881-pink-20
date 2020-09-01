@@ -1,7 +1,47 @@
 
 .download {
-  margin-top: 25px;
+  margin-top: -67px;
+  padding-top: 67px;
+  background-image: url("../img/bg-back-mobile.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
+
+@media (min-resolution: 2dppx) {
+  .download {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .download {
+    background-image: url("../img/bg-back-tablet.jpg");
+    background-size: auto;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .download {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    background-image: url("../img/bg-back-desktop.jpg");
+    background-size: auto;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .download {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px;
+    }
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .download {

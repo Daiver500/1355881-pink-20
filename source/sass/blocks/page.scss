@@ -12,16 +12,6 @@ html {
   font-weight: normal;
   min-height: 100%;
   color: $primary-color;
-  background-image: url("../img/bg-back-mobile.jpg");
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-@media (min-resolution: 2dppx) {
-  .page {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-  }
 }
 
 .page-title {
@@ -39,12 +29,10 @@ html {
   padding-bottom: 77px;
 }
 
-
 .formpage-title {
   padding-top: 29px;
   padding-bottom: 42px;
 }
-
 
 @media (min-width: $tablet-width) {
   .page-title {
