@@ -71,31 +71,3 @@ html {
     padding-bottom: 88px;
   }
 }
-
-@media (min-width: $tablet-width) {
-  .page {
-    background-image: url("../img/bg-back-tablet.jpg");
-    background-size: auto;
-  }
-
-  @media (min-resolution: 2dppx) {
-    .page {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 1200px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page {
-    background-image: url("../img/bg-back-desktop.jpg");
-    background-size: auto;
-  }
-
-  @media (min-resolution: 2dppx) {
-    .page {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: 2560px;
-    }
-  }
-}
