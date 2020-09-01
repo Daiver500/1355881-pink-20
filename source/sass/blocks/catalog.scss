@@ -1,11 +1,9 @@
 .catalog {
-  /*position: relative;*/
   background-color: $white;
 }
 
 .catalog__inner {
   margin-bottom: 44px;
-  /*background-color: $white;*/
 }
 
 @media (min-width: $tablet-width) {
@@ -25,13 +23,9 @@
   padding: 0;
   max-width: 1200px;
   margin: 0 auto;
+  min-height: 137px;
 }
 
-@media (min-width: $mobile-width) {
-  .catalog__image-panorama {
-    min-height: 137px;
-  }
-}
 
 @media (min-width: $tablet-width) {
   .catalog__image-panorama {
@@ -54,7 +48,6 @@
   margin: 0;
   padding-right: 38px;
   padding-left: 38px;
-  /*background-color: $white;*/
 }
 
 @media (min-width: $tablet-width) {
@@ -148,23 +141,19 @@
   flex-direction: column;
 }
 
-@media (min-width: $mobile-width) {
-  .like,
-  .main-like {
-    padding-left: 0;
-    padding-right: 20px;
-    cursor: pointer;
-  }
-
-  .likes__number {
-    letter-spacing: -0.1px;
-  }
+.like,
+.main-like {
+  padding-left: 0;
+  padding-right: 20px;
+  cursor: pointer;
 }
 
-@media (min-width: $mobile-width) {
-  .catalog__item-main {
-    flex-direction: column;
-  }
+.likes__number {
+  letter-spacing: -0.1px;
+}
+
+.catalog__item-main {
+  flex-direction: column;
 }
 
 @media (min-width: $tablet-width) {
@@ -245,11 +234,9 @@
   border: none;
 }
 
-@media (min-width: $mobile-width) {
-  .rate,
-  .main-rate {
-    display: flex;
-  }
+.rate,
+.main-rate {
+  display: flex;
 }
 
 @media (min-width: $tablet-width) {
@@ -274,13 +261,12 @@
   }
 }
 
-@media (min-width: $mobile-width) {
-  .catalog__item-info .text,
-  .catalog__item-main .text {
-    margin-top: 0;
-    margin-bottom: 12px;
-  }
+.catalog__item-info .text,
+.catalog__item-main .text {
+  margin-top: 0;
+  margin-bottom: 12px;
 }
+
 
 @media (min-width: $tablet-width) {
   .catalog__item-info .text-main,
@@ -362,25 +348,22 @@
   height: 40px;
 }
 
-@media (min-width: $mobile-width) {
-  .upload__controls-mobile {
-    padding-top: 35px;
-    margin-bottom: 68px;
-    display: flex;
-    justify-content: center;
-  }
+.upload__controls-mobile {
+  padding-top: 35px;
+  margin-bottom: 68px;
+  display: flex;
+  justify-content: center;
 }
 
-@media (max-width: $mobile-width) {
-  .upload__controls-mobile::after {
-    content: "";
-    position: absolute;
-    border: 1px solid $primary-color;
-    width: 320px;
-    top: 71px;
-    opacity: 0.1;
-  }
+.upload__controls-mobile::after {
+  content: "";
+  position: absolute;
+  border: 1px solid $primary-color;
+  width: 320px;
+  top: 71px;
+  opacity: 0.1;
 }
+
 
 @media (min-width: $tablet-width) {
   .upload__controls {
@@ -447,16 +430,10 @@
   }
 }
 
-
 .upload__scale {
   height: 2px;
   background: $primary-color;
-}
-
-@media (min-width: $mobile-width) {
-  .upload__scale {
-    width: 240px;
-  }
+  width: 240px;
 }
 
 @media (min-width: $tablet-width) {
@@ -519,17 +496,16 @@
   }
 }
 
-@media (min-width: $mobile-width) {
-  .upload__inner {
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 41px;
-    padding-left: 20px;
-    padding-right: 20px;
-    align-items: center;
-  }
+.upload__inner {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 41px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
 }
+
 
 @media (min-width: $tablet-width) {
   .upload__inner {
@@ -556,12 +532,10 @@
   background-color: $secondary-color;
 }
 
-@media (min-width: $mobile-width) {
-  .upload__editors {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 26px;
-  }
+.upload__editors {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 26px;
 }
 
 @media (min-width: 321px) {
@@ -632,10 +606,6 @@
   opacity: 1;
 }
 
-/*.upload__control-icon:active {
-  fill: $secondary-color;
-}*/
-
 .upload__range:active {
   background-color: $secondary-color;
 }
@@ -685,24 +655,14 @@
   line-height: 18px;
   color: $secondary-color;
   padding-top: 18px;
-  padding-bottom: 18px;
   background-color: $white;
   border: 3px solid $secondary-color;
   border-radius: 30px;
   margin-bottom: 12px;
   cursor: pointer;
-}
-
-@media (min-width: $mobile-width) {
-  .upload__button {
-    padding-left: 87px;
-    padding-right: 87px;
-    padding-bottom: 15px;
-  }
-
-  .upload__button-reset {
-    margin-bottom: 0;
-  }
+  padding-left: 87px;
+  padding-right: 87px;
+  padding-bottom: 15px;
 }
 
 @media (min-width: $tablet-width) {
@@ -759,15 +719,10 @@
   border: 3px solid $primary-color;
   color: $primary-color;
   padding-top: 18px;
-  padding-bottom: 18px;
-}
-
-@media (max-width: $mobile-width) {
-  .upload__button-reset {
-    padding-left: 99px;
-    padding-right: 102px;
-    padding-bottom: 14px;
-  }
+  padding-left: 99px;
+  padding-right: 102px;
+  padding-bottom: 14px;
+  margin-bottom: 0;
 }
 
 .upload__button-reset:hover,
@@ -797,39 +752,12 @@
   }
 }
 
-/*@media (max-width: $mobile-width) {
-  .upload__image {
-    margin-bottom: 42px;
-    margin-top: 20px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .upload__image {
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-}
-
-/*@media (min-width: $desktop-width) {
-  .upload__image {
-    margin-left: 80px;
-    margin-bottom: 57px;
-    margin-top: 57px;
-  }
-}*/
-
 .upload__toggles {
-  /*background-color: $primary-bg-color;*/
   display: flex;
   justify-content: space-around;
+  padding: 0 20px;
 }
 
-@media (max-width: $mobile-width) {
-  .upload__toggles {
-    padding: 0 20px;
-  }
-}
 
 @media (min-width: $tablet-width) {
   .upload__toggles {
@@ -846,74 +774,3 @@
     top: 55px;
   }
 }
-
-
-/*.upload__toggle {
-  border: none;
-  opacity: 0.3;
-  padding: 0;
-}*/
-
-/*.upload__toggle:not(:last-child) {
-  margin-right: 35px;
-}
-
-.upload__toggle-cut {
-  margin-left: 37px;
-}
-
-.upload__toggle svg {
-  align-self: center;
-}*/
-
-/*.upload__toggle:hover,
-.upload__toggle:focus {
-  opacity: 0.5;
-}
-
-.upload__toggle:active {
-  opacity: 1;
-  fill: $secondary-color;
-}
-
-.upload__toggle svg:active > path {
-  fill: $secondary-color;
-}
-
-@media (width: $tablet-width) {
-  .upload__svg {
-    display: none;
-  }
-}
-
-@media (max-width: $mobile-width),
-  (min-width: $desktop-width) {
-  .upload__svg-tablet {
-    display: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .upload__toggle-cut {
-    margin-bottom: 52px;
-  }
-
-  .upload__toggle-paint {
-    margin-bottom: 50px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .upload__toggle-cut {
-    top: 55px;
-  }
-
-  .upload__toggle-paint {
-    top: 128px;
-  }
-
-  .upload__toggle-light {
-    top: 204px;
-    left: 475px;
-  }
-}*/
