@@ -7,7 +7,10 @@
     border-radius: 5px;
     position: fixed;
     background-color: $white;
-    top: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
   }
 
   .modal-decline {
@@ -103,8 +106,6 @@
     border-radius: 5px;
     position: fixed;
     background-color: $white;
-    top: 20%;
-    left: 15%;
   }
 
   .modal-decline {
