@@ -134,7 +134,7 @@
 
 @media (min-width: $mobile-width) {
   .navigation__list {
-    top: 67px;
+    top: 66px;
     right: 0;
     left: 0;
     display: none;
@@ -143,7 +143,7 @@
 
 @media (min-width: $tablet-width) {
   .navigation__list {
-    top: 111px;
+    top: 110px;
   }
 }
 
@@ -254,7 +254,7 @@
 }
 
 .navigation__list--open {
-  display: block;
+  display: flex;
   background-color: $primary-color;
 }
 
@@ -266,7 +266,20 @@
   display: block;
 }
 
+
 .navigation__inner--background {
   background-color: $primary-color;
   border-bottom: 1px solid #000000;
+}
+
+@media (min-width: $mobile-width) {
+  .navigation__inner--background {
+    padding-bottom: 11px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__inner--background {
+    padding-bottom: 35px;
+  }
 }

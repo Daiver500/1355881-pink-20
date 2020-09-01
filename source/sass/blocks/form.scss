@@ -91,7 +91,7 @@ fieldset {
 
 @media (min-width: $desktop-width) {
   .form-contacts {
-    padding: 33px 60px 12px 45px;
+    padding: 33px 45px 12px 58px;
     margin-bottom: 0;
   }
 
@@ -147,10 +147,11 @@ fieldset {
   .form__input[type="email"] {
     padding-right: 119px;
     margin-bottom: 12px;
+    min-width: 371px;
   }
 
   .form__input[type="email"] {
-    margin-left: 84px;
+    margin-left: 71px;
   }
 
   .form-contacts .form__item-phone,
@@ -317,7 +318,6 @@ fieldset {
   padding-top: 40px;
 }
 
-
 @media (max-width: $mobile-width) {
   .form-contacts__legend {
     display: none;
@@ -384,6 +384,7 @@ fieldset {
   background-color: $green;
   border: 2px solid $green;
   border-radius: 1px;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -464,6 +465,7 @@ fieldset {
   display: flex;
   min-height: 39px;
   align-items: center;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -511,13 +513,13 @@ fieldset {
   background-repeat: no-repeat;
 }
 
-.apps__input:disabled + .apps__text {
-  background-image: url("../img/radio-disabled.svg");
+.apps__input:active + .apps__text {
+  background-image: url("../img/radio-active.svg");
   background-repeat: no-repeat;
 }
 
-.apps__input:checked:disabled + .apps__text {
-  background-image: url("../img/radio-checked-disabled.svg");
+.apps__input:checked:active + .apps__text {
+  background-image: url("../img/radio-checked-active.svg");
   background-repeat: no-repeat;
 }
 
@@ -554,6 +556,7 @@ fieldset {
   display: flex;
   min-height: 37px;
   align-items: center;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -577,9 +580,8 @@ fieldset {
 
 .achievements__text {
   position: absolute;
-  width: 37px;
-  height: 37px;
-  /*margin-left: -67px;*/
+  width: 39px;
+  height: 39px;
   left: 0;
   background-image: url("../img/checkbox.svg");
   background-repeat: no-repeat;
@@ -602,13 +604,13 @@ fieldset {
   background-repeat: no-repeat;
 }
 
-.achievements__input:disabled + .achievements__text {
-  background-image: url("../img/checkbox-disabled.svg");
+.achievements__input:active + .achievements__text {
+  background-image: url("../img/checkbox-active.svg");
   background-repeat: no-repeat;
 }
 
-.achievements__input:checked:disabled + .achievements__text {
-  background-image: url("../img/checkbox-checked-disabled.svg");
+.achievements__input:checked:active + .achievements__text {
+  background-image: url("../img/checkbox-checked-active.svg");
   background-repeat: no-repeat;
 }
 
@@ -783,17 +785,21 @@ fieldset {
     position: relative;
   }
 
-  .form-contacts .form__item-phone::after {
+  .form-contacts .form__item-phone::after,
+  .form-contacts .form__item-mail::after {
     content: "";
     position: absolute;
     width: 59px;
-    height: 59px;
-    background-image: url("../img/phone-icon.svg");
+    height: 56px;
     background-repeat: no-repeat;
     background-position: 57% 50%;
-    background-color: $light-grey;
-    right: 0;
-    top: 0;
+    background-color: #e5e5e5;
+    right: 2px;
+    top: 2px;
+  }
+
+  .form-contacts .form__item-phone::after {
+    background-image: url("../img/phone-icon.svg");
   }
 
   .form-contacts .form__item-mail {
@@ -801,16 +807,7 @@ fieldset {
   }
 
   .form-contacts .form__item-mail::after {
-    content: "";
-    position: absolute;
-    width: 59px;
-    height: 59px;
     background-image: url("../img/mail-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 57% 50%;
-    background-color: $light-grey;
-    right: 0;
-    top: 0;
   }
 }
 
@@ -822,14 +819,14 @@ fieldset {
 
   .form-contacts .form__item-phone::after {
     content: "";
-    background-position: 51% 50%;
-    right: -16px;
+    background-position: 56% 50%;
+    right: 2px;
   }
 
   .form-contacts .form__item-mail::after {
     content: "";
     background-position: 54% 50%;
-    right: -28px;
+    right: 2px;
   }
 }
 
