@@ -750,9 +750,8 @@
 }
 
 .upload__button:active {
-  background-color: $light-grey;
-  color: $super-light-grey;
-  border-color: $super-light-grey;
+  background-color: $secondary-color;
+  color: $upload-button-active;
 }
 
 .upload__button-reset {
