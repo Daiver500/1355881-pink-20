@@ -39,7 +39,10 @@
     font-size: 40px;
     line-height: 54px;
     margin-bottom: 0;
-    word-spacing: -5px;
+  }
+
+  .slogan__text-lower {
+    word-spacing: 3px;
   }
 }
 
@@ -50,8 +53,7 @@
 
 @media (min-width: $tablet-width) {
   .slogan {
-    padding-top: 30px;
-    padding-bottom: 32px;
+    padding-top: 47px;
   }
 }
 
@@ -63,8 +65,8 @@
   }
 
   .slogan {
-    padding-top: 45px;
-    padding-bottom: 50px;
+    padding-top: 63px;
+    padding-bottom: 27px;
   }
 
   .slogan__text-lower {

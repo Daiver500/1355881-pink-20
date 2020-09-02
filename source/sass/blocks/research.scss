@@ -28,6 +28,7 @@
 @media (min-width: $desktop-width) {
   .research__inner {
     grid-template-columns: 340px 600px;
+    padding-bottom: 66px;
   }
 }
 
@@ -50,7 +51,7 @@
 
 @media (min-width: $desktop-width) {
   .research__item {
-    padding: 38px 20px 15px 50px;
+    padding: 92px 20px 15px 28px;
   }
 }
 
@@ -112,7 +113,7 @@
 
   .research__image-desktop {
     color: $timer-color;
-    margin-left: 40px;
+    margin-left: -38px;
   }
 
   .research__timer-desktop {
@@ -124,14 +125,14 @@
   .research__image-circledesktop {
     position: absolute;
     top: 67px;
-    left: 63px;
+    left: 23px;
     color: $secondary-color;
   }
 
   .research__image-numberdesktop {
     position: absolute;
     top: 150px;
-    left: 130px;
+    left: 86px;
     color: $secondary-color;
   }
 

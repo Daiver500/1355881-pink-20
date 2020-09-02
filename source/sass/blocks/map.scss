@@ -6,23 +6,26 @@
   display: flex;
   max-height: 200px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .map__inner {
     max-height: 374px;
+    max-width: 660px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map__inner {
     max-height: 502px;
+    max-width: 960px;
   }
 }
 
-/*.map__image {
+.map__image {
   margin: 0 auto;
-}*/
+}
 
 .map__image::before {
   content: "";
@@ -71,6 +74,8 @@
   position: absolute;
   z-index: 1;
   border: none;
+  left: 0;
+  right: 0;
 }
 
 @media (min-width: $tablet-width) {

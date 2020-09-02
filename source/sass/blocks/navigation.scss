@@ -40,7 +40,18 @@
     padding-bottom: 43px;
     display: flex;
     background-color: rgba(0, 0, 0, 0.3);
-    justify-content: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 961px) {
+  .navigation__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    justify-content: space-around;
   }
 }
 
@@ -53,7 +64,7 @@
   margin-left: -70px;
   padding-left: 20px;
   display: flex;
-  padding-bottom: 15px;
+  padding-bottom: 22px;
 }
 
 
@@ -72,7 +83,7 @@
   .navigation__logo {
     margin-right: 420px;
     margin-left: 0;
-    padding-bottom: 25px;
+    padding-bottom: 42px;
   }
 
   .navigation__logo-dots,
@@ -88,8 +99,7 @@
 @media (min-width: $desktop-width) {
   .navigation__logo-main,
   .navigation__logo {
-    margin-right: 90px;
-    margin-left: 80px;
+    margin-right: 0;
     padding-bottom: 0;
     padding-left: 0;
   }

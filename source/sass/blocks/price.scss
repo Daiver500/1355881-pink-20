@@ -5,6 +5,12 @@
   position: relative;
 }
 
+@media (width: $tablet-width) {
+  .price {
+    margin-bottom: 26px;
+  }
+}
+
 @media (width: $desktop-width) {
   .price {
     margin-bottom: 42px;
@@ -74,15 +80,14 @@
 @media (min-width: $tablet-width) {
   .price__list {
     transform: translateX(0);
-    margin-top: 57px;
-    margin-bottom: 73px;
+    margin-top: 65px;
+    margin-bottom: 72px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .price__list {
-    transform: translateX(0);
-    margin-top: 57px;
+    margin-top: 66px;
     margin-bottom: 103px;
   }
 }
@@ -277,6 +282,6 @@
 
 @media (min-width: $desktop-width) {
   .price::before {
-    min-height: 98px;
+    min-height: 85px;
   }
 }

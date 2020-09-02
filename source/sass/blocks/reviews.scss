@@ -2,15 +2,9 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding-top: 25px;
+    padding-bottom: 65px;
   }
 }
-
-@media (min-width: $tablet-width) {
-  .reviews {
-    padding-bottom: 37px;
-  }
-}
-
 
 @media (min-width: $tablet-width) {
   .reviews__info {
@@ -83,12 +77,12 @@
 
   .reviews__button-left {
     background-image: url("../img/left-arrow.svg");
-    left: 7%;
+    left: 1%;
   }
 
   .reviews__button-right {
     background-image: url("../img/right-arrow.svg");
-    right: 7%;
+    right: 1%;
   }
 
   .reviews__button-left:hover,
@@ -124,13 +118,14 @@
   display: none;
 }
 
-@media (max-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .reviews__author-job {
     order: 3;
     margin: 0;
     font-size: 14px;
     line-height: 30px;
     text-align: center;
+    display: block;
   }
 }
 
@@ -184,24 +179,25 @@
   align-items: center;
 }
 
+.reviews {
+  padding-bottom: 80px;
+}
+
 @media (min-width: $tablet-width) {
   .reviews__toggles {
-    top: 190px;
+    top: 225px;
   }
 
   .reviews {
     padding-bottom: 65px;
+    padding-top: 25px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-bottom: 37px;
+    padding-bottom: 43px;
   }
-}
-
-.reviews {
-  padding-bottom: 80px;
 }
 
 .slider__toggle {
