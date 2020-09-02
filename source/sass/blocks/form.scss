@@ -13,12 +13,25 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form__inner {
+    padding: 0 10px;
+  }
+}
+
 .full-name,
 .form-contacts,
 .message,
 .form__header,
 .form__lower {
   padding: 0 20px;
+}
+
+@media (min-width: $desktop-width) {
+  .full-name,
+  .form__lower {
+    padding: 0;
+  }
 }
 
 fieldset {
@@ -73,6 +86,15 @@ fieldset {
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form__group:nth-child(4) {
+    margin-left: 34px;
+    padding-bottom: -10px;
+    margin-bottom: 0;
+  }
+}
+
+
 @media (min-width: $tablet-width) {
   .form-contacts {
     padding: 36px 59px 0 57px;
@@ -95,14 +117,15 @@ fieldset {
   .form__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 57px;
+    grid-row-gap: 55px;
     grid-template-rows: 307px min-content min-content min-content min-content;
   }
 
   .form__group:nth-child(1) {
-    margin-top: 11px;
+    margin-top: 16px;
     margin-right: 37px;
     margin-bottom: 0;
+    margin-left: 0;
   }
 
   .achievements,
@@ -148,14 +171,6 @@ fieldset {
     display: inline-flex;
     flex-direction: column-reverse;
     margin-top: 0;
-  }
-
-  .form__item-phone .form__name {
-    padding-left: 32px;
-  }
-
-  .form__item-mail .form__name {
-    padding-left: 102px;
   }
 }
 
@@ -261,8 +276,16 @@ fieldset {
 }
 
 @media (min-width: $desktop-width) {
-  .form__name {
-    padding-right: 21px;
+  .form__item-tel .form__name {
+    padding-right: 16px;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .form__item-email .form__name {
+    padding-right: 26px;
+    padding-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -324,6 +347,13 @@ fieldset {
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form-contacts__legend,
+  .achievements__legend {
+    padding-top: 3px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .apps__legend {
     padding-top: 0;
@@ -357,8 +387,9 @@ fieldset {
 }
 
 @media (min-width: $desktop-width) {
-  .apps__legend {
-    margin-bottom: 41px;
+  .apps__legend,
+  .achievements__legend {
+    margin-bottom: 44px;
   }
 }
 
@@ -419,13 +450,20 @@ fieldset {
 
 @media (min-width: $tablet-width) {
   .achievements {
-    padding-bottom: 50px;
-    margin-bottom: 58px;
+    padding-bottom: 48px;
+    margin-bottom: 60px;
   }
 
   .apps {
     margin-bottom: 58px;
     padding-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .achievements {
+    padding-bottom: 9px;
+    margin-bottom: 4px;
   }
 }
 
@@ -448,6 +486,10 @@ fieldset {
 @media (min-width: $desktop-width) {
   .apps__list {
     padding-left: 73px;
+  }
+
+  .achievements__list {
+    padding-left: 57px;
   }
 }
 
@@ -563,7 +605,7 @@ fieldset {
 
 @media (min-width: $desktop-width) {
   .achievements__label {
-    padding-left: 62px;
+    padding-left: 60px;
   }
 }
 
@@ -661,8 +703,8 @@ fieldset {
   }
 
   .message {
-    padding: 34px 60px 44px 60px;
-    margin-bottom: 0;
+    padding: 35px 60px 39px 60px;
+    margin-bottom: 10px;
   }
 }
 
@@ -695,7 +737,7 @@ fieldset {
 }
 
 .form__required-desktop {
-  margin-top: 20px;
+  margin-top: 17px;
   margin-bottom: 0;
 }
 
@@ -739,6 +781,13 @@ fieldset {
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form-contacts .form__item {
+    display: inline-flex;
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form__group .form-contacts {
     margin-bottom: 65px;
@@ -759,17 +808,28 @@ fieldset {
 }
 
 @media (min-width: $tablet-width) {
-  .form__input[type="tel"] {
-    padding-right: 243px;
-  }
-
-  .form__input[type="email"] {
-    padding-right: 243px;
-  }
-
   .form__input[type="tel"],
   .form__input[type="email"] {
+    padding-right: 243px;
     margin-bottom: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__input[type="tel"],
+  .form__input[type="email"] {
+    padding-right: 117px;
+    margin-bottom: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__item-phone .form__name {
+    padding-left: 15px;
+  }
+
+  .form__item-mail .form__name {
+    padding-left: 87px;
   }
 }
 
@@ -839,9 +899,9 @@ fieldset {
   font-size: 18px;
   line-height: 30px;
   padding-top: 92px;
-  padding-bottom: 75px;
-  padding-right: 180px;
-  padding-left: 180px;
+  padding-bottom: 71px;
+  padding-right: 60px;
+  padding-left: 60px;
   margin: 0;
   text-align: center;
 }
