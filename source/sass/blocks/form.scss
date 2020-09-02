@@ -7,16 +7,18 @@
   padding: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .form__inner {
+    padding: 0 20px;
+  }
+}
+
 .full-name,
 .form-contacts,
 .message,
 .form__header,
 .form__lower {
   padding: 0 20px;
-}
-
-.achievements {
-  padding-bottom: 46px;
 }
 
 fieldset {
@@ -95,8 +97,6 @@ fieldset {
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 57px;
     grid-template-rows: 307px min-content min-content min-content min-content;
-    padding-left: 108px;
-    padding-right: 107px;
   }
 
   .form__group:nth-child(1) {
@@ -176,8 +176,8 @@ fieldset {
   .form__title {
     font-size: 18px;
     padding-top: 92px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -219,10 +219,25 @@ fieldset {
   line-height: 30px;
 }
 
-@media (width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .form__input {
-    min-width: 496px;
+    min-width: 499px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .form__input {
+    min-width: 276px;
+  }
+}
+
+.form__name {
+  font-size: 14px;
+  line-height: 30px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  padding-left: 23px;
+  margin-bottom: 5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -236,6 +251,7 @@ fieldset {
   .form__name {
     padding-left: 0;
     padding-right: 17px;
+    padding-top: 5px;
   }
 
   .form__input {
@@ -262,15 +278,6 @@ fieldset {
     margin-bottom: 0;
     min-width: 371px;
   }
-}
-
-.form__name {
-  font-size: 14px;
-  line-height: 30px;
-  color: $secondary-color;
-  text-transform: uppercase;
-  padding-left: 23px;
-  margin-bottom: 5px;
 }
 
 .form__input:hover,
@@ -396,23 +403,29 @@ fieldset {
 .achievements {
   background-color: $primary-bg-color;
   padding: 0;
-  margin-bottom: 34px;
-  padding-bottom: 44px;
   margin-right: 0;
   margin-left: 0;
 }
 
-@media (width: $tablet-width) {
-  .apps,
-  .achievements {
-    margin-bottom: 58px;
-    padding-bottom: 54px;
-  }
+.achievements {
+  margin-bottom: 32px;
+  padding-bottom: 46px;
 }
 
-@media (width: $tablet-width) {
+.apps {
+  margin-bottom: 37px;
+  padding-bottom: 41px;
+}
+
+@media (min-width: $tablet-width) {
   .achievements {
     padding-bottom: 50px;
+    margin-bottom: 58px;
+  }
+
+  .apps {
+    margin-bottom: 58px;
+    padding-bottom: 54px;
   }
 }
 
@@ -423,9 +436,12 @@ fieldset {
 }
 
 @media (min-width: $tablet-width) {
-  .apps__list,
   .achievements__list {
-    padding-left: 56px;
+    padding-left: 60px;
+  }
+
+  .apps__list {
+    padding-left: 62px;
   }
 }
 
@@ -715,7 +731,7 @@ fieldset {
   }
 }
 
-@media (width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .form-contacts .form__item {
     display: flex;
     flex-direction: column-reverse;
@@ -736,13 +752,13 @@ fieldset {
   }
 }
 
-@media (width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .form-contacts .form__name {
     padding-left: 19px;
   }
 }
 
-@media (width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .form__input[type="tel"] {
     padding-right: 243px;
   }
@@ -753,7 +769,7 @@ fieldset {
 
   .form__input[type="tel"],
   .form__input[type="email"] {
-    margin-bottom: 13px;
+    margin-bottom: 8px;
   }
 }
 
