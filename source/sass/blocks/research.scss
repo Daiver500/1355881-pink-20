@@ -1,20 +1,19 @@
 
 .research {
   display: none;
+  background-color: $white;
 }
 
 @media (min-width: $tablet-width) {
   .research {
     display: block;
-    padding-top: 14px;
-    margin-bottom: 65px;
+    padding-top: 80px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .research {
     background-color: $primary-bg-color;
-    margin-bottom: 160px;
   }
 }
 

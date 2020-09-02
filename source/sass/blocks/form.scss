@@ -726,15 +726,11 @@ fieldset {
 }
 
 .form__required {
-  margin-bottom: 26px;
   padding-left: 62px;
+  margin-bottom: 0;
+  padding-top: 37px;
 }
 
-@media (width: $mobile-width) {
-  .form__required {
-    padding-top: 37px;
-  }
-}
 
 .form__required-desktop {
   margin-top: 17px;
@@ -904,4 +900,14 @@ fieldset {
   padding-left: 60px;
   margin: 0;
   text-align: center;
+}
+
+/* FF only */
+@media (min-width: $tablet-width) {
+  @-moz-document url-prefix("") {
+    legend {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 }

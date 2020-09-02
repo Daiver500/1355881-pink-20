@@ -1,19 +1,18 @@
 
 .price {
-  margin-bottom: 32px;
   background-color: $primary-bg-color;
   position: relative;
 }
 
 @media (width: $tablet-width) {
   .price {
-    margin-bottom: 26px;
+    padding-bottom: 26px;
   }
 }
 
 @media (width: $desktop-width) {
   .price {
-    margin-bottom: 42px;
+    padding-bottom: 42px;
   }
 }
 

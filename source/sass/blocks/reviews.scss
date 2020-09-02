@@ -1,7 +1,13 @@
 
+
+.reviews {
+  background-color: $white;
+  padding-top: 40px;
+}
+
 @media (min-width: $tablet-width) {
   .reviews {
-    padding-top: 25px;
+    padding-top: 80px;
     padding-bottom: 65px;
   }
 }
@@ -197,6 +203,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     padding-bottom: 43px;
+    padding-top: 160px;
   }
 }
 
