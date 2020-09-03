@@ -27,7 +27,7 @@
   padding: 0 20px;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .full-name,
   .form__lower {
     padding: 0;
@@ -333,6 +333,12 @@ fieldset {
   display: none;
 }
 
+.apps__legend {
+  margin-bottom: 33px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 @media (min-width: $tablet-width) {
   .form-contacts__legend,
   .achievements__legend {
@@ -373,10 +379,6 @@ fieldset {
   padding-left: 38px;
   padding-right: 34px;
   margin-bottom: 38px;
-}
-
-.apps__legend {
-  margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {

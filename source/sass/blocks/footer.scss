@@ -76,7 +76,11 @@
 .footer__logo-main {
   margin-bottom: 41px;
   display: inline-flex;
+}
+
+.footer__logo {
   cursor: pointer;
+  color: $primary-color;
 }
 
 @media (min-width: $tablet-width) {
@@ -141,7 +145,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 26px;
+  padding-top: 55px;
   padding-bottom: 36px;
 }
 
@@ -160,10 +164,6 @@
 
 .footer__logo-glassestablet {
   color: $secondary-color;
-}
-
-.footer__logo {
-  color: $primary-color;
 }
 
 .footer__logo:hover,

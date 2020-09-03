@@ -6,16 +6,9 @@
 
 @media (width: $tablet-width) {
   .price {
-    padding-bottom: 26px;
+    padding-bottom: 0;
   }
 }
-
-@media (width: $desktop-width) {
-  .price {
-    padding-bottom: 42px;
-  }
-}
-
 
 .price__item-title:nth-child(3)::before {
   content: "";

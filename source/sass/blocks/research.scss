@@ -7,13 +7,14 @@
 @media (min-width: $tablet-width) {
   .research {
     display: block;
-    padding-top: 80px;
+    padding-top: 57px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .research {
     background-color: $primary-bg-color;
+    padding-top: 18px;
   }
 }
 
@@ -50,7 +51,7 @@
 
 @media (min-width: $desktop-width) {
   .research__item {
-    padding: 92px 20px 15px 28px;
+    padding: 90px 20px 15px 28px;
   }
 }
 
