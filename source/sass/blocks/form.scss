@@ -3,27 +3,34 @@
   background-color: $white;
 }
 
-@media (max-width: $mobile-width) {
-  .form__inner {
-    padding: 0;
-  }
+.form__inner {
+  padding: 0;
+}
 
-  .full-name,
-  .form-contacts,
-  .message,
-  .form__header,
-  .form__lower {
+@media (min-width: $tablet-width) {
+  .form__inner {
     padding: 0 20px;
   }
+}
 
-  .apps,
-  .achievements {
-    margin-right: 0;
-    margin-left: 0;
+@media (min-width: $desktop-width) {
+  .form__inner {
+    padding: 0 10px;
   }
+}
 
-  .achievements {
-    padding-bottom: 46px;
+.full-name,
+.form-contacts,
+.message,
+.form__header,
+.form__lower {
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .full-name,
+  .form__lower {
+    padding: 0;
   }
 }
 
@@ -38,12 +45,9 @@ fieldset {
   }
 }
 
-@media (max-width: $mobile-width) {
-  .form__group {
-    border: none;
-    margin-bottom: 23px;
-    /*padding: 0;*/
-  }
+.form__group {
+  border: none;
+  margin-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {
@@ -82,6 +86,15 @@ fieldset {
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form__group:nth-child(4) {
+    margin-left: 34px;
+    padding-bottom: -10px;
+    margin-bottom: 0;
+  }
+}
+
+
 @media (min-width: $tablet-width) {
   .form-contacts {
     padding: 36px 59px 0 57px;
@@ -104,16 +117,15 @@ fieldset {
   .form__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 57px;
+    grid-row-gap: 55px;
     grid-template-rows: 307px min-content min-content min-content min-content;
-    padding-left: 108px;
-    padding-right: 107px;
   }
 
   .form__group:nth-child(1) {
-    margin-top: 11px;
+    margin-top: 16px;
     margin-right: 37px;
     margin-bottom: 0;
+    margin-left: 0;
   }
 
   .achievements,
@@ -160,14 +172,6 @@ fieldset {
     flex-direction: column-reverse;
     margin-top: 0;
   }
-
-  .form__item-phone .form__name {
-    padding-left: 32px;
-  }
-
-  .form__item-mail .form__name {
-    padding-left: 102px;
-  }
 }
 
 .form__title {
@@ -179,18 +183,16 @@ fieldset {
   margin-top: 0;
 }
 
-@media (max-width: $mobile-width) {
-  .form__title-tablet {
-    display: none;
-  }
+.form__title-tablet {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .form__title {
     font-size: 18px;
     padding-top: 92px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -202,6 +204,7 @@ fieldset {
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
+    display: block;
   }
 }
 
@@ -211,14 +214,13 @@ fieldset {
   }
 }
 
-@media (min-width: $mobile-width) {
-  .form__item {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
+.form__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
+
 
 .form__input {
   min-width: 276px;
@@ -232,10 +234,25 @@ fieldset {
   line-height: 30px;
 }
 
-@media (width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .form__input {
-    min-width: 496px;
+    min-width: 499px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .form__input {
+    min-width: 276px;
+  }
+}
+
+.form__name {
+  font-size: 14px;
+  line-height: 30px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  padding-left: 23px;
+  margin-bottom: 5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -249,6 +266,7 @@ fieldset {
   .form__name {
     padding-left: 0;
     padding-right: 17px;
+    padding-top: 5px;
   }
 
   .form__input {
@@ -258,8 +276,16 @@ fieldset {
 }
 
 @media (min-width: $desktop-width) {
-  .form__name {
-    padding-right: 21px;
+  .form__item-tel .form__name {
+    padding-right: 16px;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .form__item-email .form__name {
+    padding-right: 26px;
+    padding-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -274,21 +300,6 @@ fieldset {
   .form-contacts .form__item {
     margin-bottom: 0;
     min-width: 371px;
-  }
-}
-
-.form__name {
-  font-size: 14px;
-  line-height: 30px;
-  color: $secondary-color;
-  text-transform: uppercase;
-}
-
-
-@media (max-width: $mobile-width) {
-  .form__name {
-    padding-left: 23px;
-    margin-bottom: 5px;
   }
 }
 
@@ -318,10 +329,14 @@ fieldset {
   padding-top: 40px;
 }
 
-@media (max-width: $mobile-width) {
-  .form-contacts__legend {
-    display: none;
-  }
+.form-contacts__legend {
+  display: none;
+}
+
+.apps__legend {
+  margin-bottom: 33px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 @media (min-width: $tablet-width) {
@@ -331,6 +346,17 @@ fieldset {
     padding-left: 31px;
     background-color: $white;
     padding-top: 0;
+  }
+
+  .form-contacts__legend {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-contacts__legend,
+  .achievements__legend {
+    padding-top: 3px;
   }
 }
 
@@ -349,16 +375,10 @@ fieldset {
   list-style: none;
 }
 
-@media (max-width: $mobile-width) {
-  .achievements__legend {
-    padding-left: 38px;
-    padding-right: 34px;
-    margin-bottom: 38px;
-  }
-}
-
-.apps__legend {
-  margin-bottom: 35px;
+.achievements__legend {
+  padding-left: 38px;
+  padding-right: 34px;
+  margin-bottom: 38px;
 }
 
 @media (min-width: $tablet-width) {
@@ -369,8 +389,9 @@ fieldset {
 }
 
 @media (min-width: $desktop-width) {
-  .apps__legend {
-    margin-bottom: 41px;
+  .apps__legend,
+  .achievements__legend {
+    margin-bottom: 44px;
   }
 }
 
@@ -411,28 +432,40 @@ fieldset {
   border-radius: 1px;
 }
 
-@media (max-width: $mobile-width) {
-  .apps,
-  .achievements {
-    background-color: $primary-bg-color;
-    padding: 0;
-    margin-bottom: 34px;
-    padding-bottom: 44px;
-  }
+.apps,
+.achievements {
+  background-color: $primary-bg-color;
+  padding: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
-@media (width: $tablet-width) {
-  .apps,
+.achievements {
+  margin-bottom: 32px;
+  padding-bottom: 46px;
+}
+
+.apps {
+  margin-bottom: 37px;
+  padding-bottom: 41px;
+}
+
+@media (min-width: $tablet-width) {
   .achievements {
+    padding-bottom: 48px;
+    margin-bottom: 60px;
+  }
+
+  .apps {
     margin-bottom: 58px;
     padding-bottom: 54px;
   }
 }
 
-
-@media (width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .achievements {
-    padding-bottom: 50px;
+    padding-bottom: 9px;
+    margin-bottom: 4px;
   }
 }
 
@@ -443,15 +476,22 @@ fieldset {
 }
 
 @media (min-width: $tablet-width) {
-  .apps__list,
   .achievements__list {
-    padding-left: 56px;
+    padding-left: 60px;
+  }
+
+  .apps__list {
+    padding-left: 62px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .apps__list {
     padding-left: 73px;
+  }
+
+  .achievements__list {
+    padding-left: 57px;
   }
 }
 
@@ -567,10 +607,9 @@ fieldset {
 
 @media (min-width: $desktop-width) {
   .achievements__label {
-    padding-left: 62px;
+    padding-left: 60px;
   }
 }
-
 
 .achievements__label,
 .apps__label {
@@ -639,10 +678,8 @@ fieldset {
   min-height: 200px;
 }
 
-@media (min-width: $mobile-width) {
-  .message {
-    margin-bottom: 43px;
-  }
+.message {
+  margin-bottom: 43px;
 }
 
 @media (min-width: $tablet-width) {
@@ -668,8 +705,8 @@ fieldset {
   }
 
   .message {
-    padding: 34px 60px 44px 60px;
-    margin-bottom: 0;
+    padding: 35px 60px 39px 60px;
+    margin-bottom: 10px;
   }
 }
 
@@ -691,18 +728,14 @@ fieldset {
 }
 
 .form__required {
-  margin-bottom: 26px;
   padding-left: 62px;
+  margin-bottom: 0;
+  padding-top: 37px;
 }
 
-@media (width: $mobile-width) {
-  .form__required {
-    padding-top: 37px;
-  }
-}
 
 .form__required-desktop {
-  margin-top: 20px;
+  margin-top: 17px;
   margin-bottom: 0;
 }
 
@@ -714,7 +747,7 @@ fieldset {
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: 1159px) {
+@media (min-width: $mobile-width) and (max-width: 959px) {
   .form__required-desktop {
     display: none;
   }
@@ -738,11 +771,18 @@ fieldset {
   }
 }
 
-@media (width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .form-contacts .form__item {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 29px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-contacts .form__item {
+    display: inline-flex;
+    margin-bottom: 0;
   }
 }
 
@@ -759,24 +799,35 @@ fieldset {
   }
 }
 
-@media (width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .form-contacts .form__name {
     padding-left: 19px;
   }
 }
 
-@media (width: $tablet-width) {
-  .form__input[type="tel"] {
-    padding-right: 243px;
-  }
-
-  .form__input[type="email"] {
-    padding-right: 243px;
-  }
-
+@media (min-width: $tablet-width) {
   .form__input[type="tel"],
   .form__input[type="email"] {
-    margin-bottom: 13px;
+    padding-right: 243px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__input[type="tel"],
+  .form__input[type="email"] {
+    padding-right: 117px;
+    margin-bottom: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__item-phone .form__name {
+    padding-left: 15px;
+  }
+
+  .form__item-mail .form__name {
+    padding-left: 87px;
   }
 }
 
@@ -846,9 +897,19 @@ fieldset {
   font-size: 18px;
   line-height: 30px;
   padding-top: 92px;
-  padding-bottom: 75px;
-  padding-right: 180px;
-  padding-left: 180px;
+  padding-bottom: 71px;
+  padding-right: 60px;
+  padding-left: 60px;
   margin: 0;
   text-align: center;
+}
+
+/* FF only */
+@media (min-width: $tablet-width) {
+  @-moz-document url-prefix("") {
+    legend {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 }

@@ -1,22 +1,26 @@
 .map {
   position: relative;
+  background-color: $white;
 }
 
 .map__inner {
   display: flex;
   max-height: 200px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .map__inner {
     max-height: 374px;
+    max-width: 660px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map__inner {
     max-height: 502px;
+    max-width: 960px;
   }
 }
 
@@ -32,14 +36,10 @@
   display: block;
   background-size: 100% 100%;
   top: 0;
+  min-width: 320px;
+  min-height: 40px;
 }
 
-@media (min-width: $mobile-width) {
-  .map__image::before {
-    min-width: 320px;
-    min-height: 40px;
-  }
-}
 
 @media (min-width: $tablet-width) {
   .map__image::before {
@@ -50,7 +50,7 @@
 
 @media (min-width: $desktop-width) {
   .map__image::before {
-    min-width: 1200px;
+    min-width: 960px;
     min-height: 100px;
   }
 }
@@ -75,6 +75,8 @@
   position: absolute;
   z-index: 1;
   border: none;
+  left: 0;
+  right: 0;
 }
 
 @media (min-width: $tablet-width) {

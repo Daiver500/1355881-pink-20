@@ -1,23 +1,20 @@
 
-@media (min-width: $mobile-width) {
-  .research {
-    display: none;
-  }
+.research {
+  display: none;
+  background-color: $white;
 }
 
 @media (min-width: $tablet-width) {
   .research {
     display: block;
-    padding-top: 14px;
-    margin-bottom: 65px;
+    padding-top: 57px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .research {
     background-color: $primary-bg-color;
-    margin-bottom: 160px;
+    padding-top: 18px;
   }
 }
 
@@ -30,7 +27,8 @@
 
 @media (min-width: $desktop-width) {
   .research__inner {
-    grid-template-columns: 480px 700px;
+    grid-template-columns: 340px 600px;
+    padding-bottom: 66px;
   }
 }
 
@@ -53,9 +51,7 @@
 
 @media (min-width: $desktop-width) {
   .research__item {
-    padding-top: 90px;
-    padding-right: 166px;
-    padding-bottom: 113px;
+    padding: 90px 20px 15px 28px;
   }
 }
 
@@ -117,7 +113,7 @@
 
   .research__image-desktop {
     color: $timer-color;
-    margin-left: 40px;
+    margin-left: -38px;
   }
 
   .research__timer-desktop {
@@ -129,14 +125,14 @@
   .research__image-circledesktop {
     position: absolute;
     top: 67px;
-    left: 135px;
+    left: 23px;
     color: $secondary-color;
   }
 
   .research__image-numberdesktop {
     position: absolute;
     top: 150px;
-    left: 195px;
+    left: 86px;
     color: $secondary-color;
   }
 
@@ -148,7 +144,7 @@
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 959px) {
   .research__timer-desktop {
     display: none;
   }

@@ -2,7 +2,6 @@
 
 .description {
   background-color: $primary-bg-color;
-  margin-bottom: 40px;
   position: relative;
 }
 
@@ -15,12 +14,7 @@
 
 .description__inner {
   position: relative;
-}
-
-@media (min-width: $mobile-width) {
-  .description__inner {
-    padding-top: 52px;
-  }
+  padding-top: 52px;
 }
 
 @media (min-width: $tablet-width) {
@@ -47,8 +41,8 @@
   .description__list {
     display: grid;
     grid-template-columns: 252px 252px 252px;
-    padding-top: 235px;
-    padding-left: 134px;
+    padding-top: 245px;
+    padding-left: 23px;
     column-gap: 68px;
   }
 }
@@ -102,7 +96,7 @@
   .description__image-1 {
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     position: absolute;
-    top: -45px;
+    top: -42px;
     left: 20px;
     background-size: 268px;
     min-width: 268px;
@@ -140,8 +134,7 @@
 @media (min-width: $desktop-width) {
   .description__image-1 {
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
-    margin-top: 0;
-    left: 791px;
+    left: 671px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -152,7 +145,7 @@
 
   .description__image-2 {
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
-    left: 460px;
+    left: 338px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -163,7 +156,7 @@
 
   .description__image-3 {
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
-    left: 135px;
+    left: 14px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -171,30 +164,22 @@
       background-image: url("../img/iphone-screen-1-desktop@2x.png");
     }
   }
-}
 
+  .description__image-1,
+  .description__image-2,
+  .description__image-3 {
+    top: -82px;
+  }
+}
 
 .description__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-  /*padding-top: 43px;*/
   margin-top: 0;
   color: $dark-blue;
-}
-
-@media (min-width: $mobile-width) {
-  .description__title {
-    margin-bottom: 13px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .description__title {
-    margin-bottom: 23px;
-    padding: 0 10px;
-  }
+  margin-bottom: 13px;
 }
 
 .description__text {
@@ -211,6 +196,13 @@
 
   .description__text {
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__title {
+    margin-bottom: 23px;
+    padding: 0 10px;
   }
 }
 
@@ -253,7 +245,7 @@
 
 @media (min-width: $desktop-width) {
   .description::before {
-    min-height: 100px;
+    min-height: 80px;
   }
 }
 

@@ -8,24 +8,28 @@
   padding-right: 20px;
   margin: 0;
   word-spacing: -1px;
+  font-weight: 300;
 }
 
-@media (max-width: $mobile-width) {
+.slogan__text-main {
+  padding-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
   .slogan__text-main {
-    padding-bottom: 32px;
-  }
-
-  .slogan__text-lower {
-    padding-bottom: 31px;
-    letter-spacing: -0.5px;
+    padding-bottom: 0;
   }
 }
 
+.slogan__text-lower {
+  padding-bottom: 31px;
+  letter-spacing: -0.5px;
+}
 
 @media (min-width: $tablet-width) {
   .slogan__text-lower {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
@@ -35,7 +39,10 @@
     font-size: 40px;
     line-height: 54px;
     margin-bottom: 0;
-    word-spacing: -5px;
+  }
+
+  .slogan__text-lower {
+    word-spacing: 3px;
   }
 }
 
@@ -46,8 +53,7 @@
 
 @media (min-width: $tablet-width) {
   .slogan {
-    padding-top: 30px;
-    padding-bottom: 32px;
+    padding-top: 47px;
   }
 }
 
@@ -59,12 +65,12 @@
   }
 
   .slogan {
-    padding-top: 45px;
-    padding-bottom: 50px;
+    padding-top: 63px;
+    padding-bottom: 27px;
   }
 
   .slogan__text-lower {
-    padding-left: 350px;
-    padding-right: 350px;
+    padding-left: 150px;
+    padding-right: 150px;
   }
 }

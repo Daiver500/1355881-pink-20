@@ -1,16 +1,14 @@
 
 .price {
-  margin-bottom: 32px;
   background-color: $primary-bg-color;
   position: relative;
 }
 
-@media (width: $desktop-width) {
+@media (width: $tablet-width) {
   .price {
-    margin-bottom: 42px;
+    padding-bottom: 0;
   }
 }
-
 
 .price__item-title:nth-child(3)::before {
   content: "";
@@ -49,11 +47,6 @@
   justify-content: center;
 }
 
-/*@media (min-width: $tablet-width) {
-  .price__inner {
-    overflow: auto;
-  }
-}*/
 
 @media (min-width: $mobile-width) and (max-width: 659px) {
   .price__inner {
@@ -79,15 +72,14 @@
 @media (min-width: $tablet-width) {
   .price__list {
     transform: translateX(0);
-    margin-top: 57px;
-    margin-bottom: 73px;
+    margin-top: 65px;
+    margin-bottom: 72px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .price__list {
-    transform: translateX(0);
-    margin-top: 57px;
+    margin-top: 66px;
     margin-bottom: 103px;
   }
 }
@@ -99,8 +91,10 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
-  /*border-right: 2px solid $primary-bg-color;*/
   position: relative;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  min-width: 276px;
 }
 
 .price__item-title:not(:first-child) {
@@ -115,14 +109,6 @@
 .price__item-title:nth-child(2) {
   border-left: none;
   border-radius: 3px 0 0 0;
-}
-
-@media (min-width: $mobile-width) {
-  .price__item-title {
-    padding-top: 10px;
-    padding-bottom: 25px;
-    min-width: 276px;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -218,26 +204,17 @@
 .price__item-description {
   font-size: 14px;
   line-height: 30px;
-  /*padding-left: 20px;
-  padding-top: 25px;
-  padding-bottom: 25px;*/
-  /*border: 2px solid $light-grey;
-  border-radius: 1px 0 0 0;*/
   position: relative;
   border-left: 2px solid $light-grey;
   border-bottom: 2px solid $light-grey;
   border-radius: 3px 0 0 0;
+  padding-left: 17px;
+  padding-right: 22px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-transform: uppercase;
 }
 
-@media (min-width: $mobile-width) {
-  .price__item-description {
-    padding-left: 17px;
-    padding-right: 22px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    text-transform: uppercase;
-  }
-}
 
 @media (min-width: $tablet-width) {
   .price__item-description {
@@ -272,19 +249,6 @@
   }
 }
 
-.price__icon {
-  /*position: absolute;
-  right: 20px;*/
-}
-
-/*.price__icon-yes {
-  margin-left: 90px;
-}
-
-.price__icon-no {
-  margin-left: 60px;
-}*/
-
 .price__item-price {
   font-size: 18px;
   line-height: 30px;
@@ -310,6 +274,6 @@
 
 @media (min-width: $desktop-width) {
   .price::before {
-    min-height: 98px;
+    min-height: 85px;
   }
 }

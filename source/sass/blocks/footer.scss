@@ -11,6 +11,7 @@
   padding: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 32px;
 }
 
@@ -71,21 +72,15 @@
   border: 3px solid rgba(0, 0, 0, 0.3);
 }
 
-.footer__logo:active {
-  opacity: 0.3;
-}
-
-
-@media (max-width: $mobile-width) {
-  .footer__logo,
-  .footer__logo-main {
-    margin-bottom: 41px;
-    display: inline-flex;
-  }
+.footer__logo,
+.footer__logo-main {
+  margin-bottom: 41px;
+  display: inline-flex;
 }
 
 .footer__logo {
   cursor: pointer;
+  color: $primary-color;
 }
 
 @media (min-width: $tablet-width) {
@@ -109,7 +104,6 @@
   margin: 0;
   margin-right: 15px;
   font-size: 14px;
-  /*line-height: 18px;*/
   padding-top: 5px;
 }
 
@@ -147,45 +141,39 @@
   opacity: 0.3;
 }
 
-@media (min-width: $mobile-width) {
-  .footer__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 36px;
-  }
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 36px;
+}
 
-  .footer__inner-main {
-    padding-top: 42px;
-  }
+.footer__inner-main {
+  padding-top: 42px;
+}
 
-  .footer__inner-photo {
-    padding-top: 38px;
-  }
+.footer__inner-photo {
+  padding-top: 38px;
+}
 
-  .footer__logo-dots,
-  .footer__logo-glassesdesktop {
-    display: none;
-  }
+.footer__logo-dots,
+.footer__logo-glassesdesktop {
+  display: none;
+}
 
-  .footer__logo-glassestablet {
-    color: $secondary-color;
-  }
+.footer__logo-glassestablet {
+  color: $secondary-color;
+}
 
-  .footer__logo {
-    color: $primary-color;
-  }
+.footer__logo:hover,
+.footer__logo:focus {
+  color: $secondary-color;
+}
 
-  .footer__logo:hover,
-  .footer__logo:focus {
-    color: $secondary-color;
-  }
-
-  .footer__logo:active {
-    opacity: 0.3;
-    color: $primary-color;
-  }
+.footer__logo:active {
+  opacity: 0.3;
+  color: $primary-color;
 }
 
 @media (min-width: $tablet-width) {
@@ -225,9 +213,9 @@
 
 @media (min-width: $desktop-width) {
   .footer__inner {
-    padding-left: 130px;
-    padding-right: 131px;
-    padding-top: 76px;
+    padding-left: 9px;
+    padding-right: 12px;
+    padding-top: 71px;
     padding-bottom: 75px;
   }
 

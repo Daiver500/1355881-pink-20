@@ -1,11 +1,17 @@
 .navigation {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: $primary-color;
+}
+
+@media (min-width: $desktop-width) {
+  .navigation {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
 }
 
 .navigation__close {
   background-color: transparent;
   border: none;
-  /*margin-left: 270px;*/
   display: none;
   color: $white;
 }
@@ -20,30 +26,34 @@
   opacity: 0.3;
 }
 
-@media (max-width: $mobile-width) {
+.navigation__inner {
+  /*background-color: #283645;*/
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+@media (min-width: $mobile-width) and (max-width: 959px) {
   .navigation__inner {
-    padding-top: 7px;
-    padding-bottom: 12px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 @media (min-width: $tablet-width) {
   .navigation__inner {
-    padding-top: 27px;
-    padding-bottom: 36px;
+    padding-top: 23px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .navigation__inner {
-    padding-top: 27px;
+    padding-top: 18px;
     padding-bottom: 43px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .navigation__inner {
     display: flex;
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+    justify-content: space-between;
+    width: 960px;
   }
 }
 
@@ -52,24 +62,22 @@
   min-width: 74px;
   color: $white;
   min-height: 23px;
+  margin-right: 145px;
+  margin-left: -70px;
+  padding-left: 20px;
+  display: flex;
+  padding-bottom: 23px;
 }
+
 
 .navigation__logo {
   cursor: pointer;
 }
 
-@media (min-width: $mobile-width) {
-  .navigation__logo-main,
-  .navigation__logo {
-    margin-right: 150px;
-    margin-left: -70px;
-  }
-
-  .navigation__logo-glassestablet,
-  .navigation__logo-glassesdesktop,
-  .navigation__logo-dots {
-    display: none;
-  }
+.navigation__logo-glassestablet,
+.navigation__logo-glassesdesktop,
+.navigation__logo-dots {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -77,6 +85,7 @@
   .navigation__logo {
     margin-right: 420px;
     margin-left: 0;
+    padding-bottom: 42px;
   }
 
   .navigation__logo-dots,
@@ -92,8 +101,9 @@
 @media (min-width: $desktop-width) {
   .navigation__logo-main,
   .navigation__logo {
-    margin-right: 173px;
-    margin-left: 110px;
+    margin-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
   }
 
   .navigation__logo-glassestablet {
@@ -120,32 +130,20 @@
   opacity: 0.3;
 }
 
-@media (max-width: $tablet-width) {
+@media (min-width: $mobile-width) and (max-width: 959px) {
   .navigation__list {
     list-style: none;
     display: flex;
     flex-direction: column;
     color: $white;
     margin: 0;
-    padding: 0;
-    position: absolute;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    border-top: 1px solid #000000;
   }
 }
 
-@media (min-width: $mobile-width) {
-  .navigation__list {
-    top: 66px;
-    right: 0;
-    left: 0;
-    display: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .navigation__list {
-    top: 110px;
-  }
-}
 
 @media (min-width: $desktop-width) {
   .navigation__list {
@@ -157,7 +155,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (min-width: $mobile-width) and (max-width: 959px) {
   .navigation__link {
     font-weight: bold;
     font-size: 18px;
@@ -169,6 +167,11 @@
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: 959px) {
+  .navigation__item {
     border-top: 1px solid #485461;
     border-bottom: 1px solid #000000;
   }
@@ -180,7 +183,6 @@
     line-height: 18px;
     color: $white;
     display: flex;
-    /*padding-top: 22px;*/
   }
 
   .navigation__item:not(:last-child) {
@@ -192,7 +194,6 @@
   }
 }
 
-
 .navigation__toggle {
   margin: 0;
   background-color: rgba(0, 0, 0, 0.1);
@@ -201,6 +202,7 @@
   width: 50px;
   min-height: 24px;
   position: relative;
+  display: none;
 }
 
 @media (min-width: $desktop-width) {
@@ -270,12 +272,7 @@
 .navigation__inner--background {
   background-color: $primary-color;
   border-bottom: 1px solid #000000;
-}
-
-@media (min-width: $mobile-width) {
-  .navigation__inner--background {
-    padding-bottom: 11px;
-  }
+  padding-bottom: 11px;
 }
 
 @media (min-width: $tablet-width) {
