@@ -16,10 +16,12 @@
   min-height: 289px;
   background-color: $white;
   padding-bottom: 52px;
+  display: none;
 }
 
 .modal-accept {
   min-height: 380px;
+  display: none;
 }
 
 .modal-decline__title,
@@ -230,14 +232,6 @@
   .modal-decline__lower {
     background-color: $primary-bg-color;
   }
-}
-
-.modal-accept {
-  display: none;
-}
-
-.modal-decline {
-  display: none;
 }
 
 .modal-decline--show {
