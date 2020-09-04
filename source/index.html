@@ -11,6 +11,9 @@
         <link rel="stylesheet" href="css/style.min.css" />
     </head>
     <body class="page">
+        <div class="include">
+          <include src="build/img/sprite.svg"></include>
+        </div>
         <header class="page-header">
             <nav class="navigation">
                 <div class="navigation__inner container">
@@ -412,7 +415,11 @@
                         <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта" />
                     </picture>
                 </div>
-                <div class="map__marker"></div>
+                <div>
+                  <svg class="map__marker" width="36" height="36">
+                    <use xlink:href="#sprite-icon-map-marker"></use>
+                  </svg>
+                </div>
             </section>
         </main>
         <footer class="footer">

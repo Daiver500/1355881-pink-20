@@ -152,6 +152,8 @@
     color: $white;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
+    max-width: 960px;
   }
 }
 

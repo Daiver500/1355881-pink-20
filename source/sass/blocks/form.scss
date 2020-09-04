@@ -523,8 +523,7 @@ fieldset {
 .apps__input,
 .achievements__input {
   position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  appearance: none;
 }
 
 .apps__text {
