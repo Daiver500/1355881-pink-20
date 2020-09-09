@@ -74,7 +74,7 @@ exports.imageswebp = imageswebp;
 //SVG sprite
 
 const sprite = () => {
-  return gulp.src("source/img/**/icon-*.svg")
+  return gulp.src("source/img/sprite/icon-*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
@@ -168,7 +168,7 @@ exports.html = html;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", gulp.series("html", sync.reload));
+  gulp.watch("source/*.html").on("change", gulp.series("html", "htmlinclude", sync.reload));
 }
 
 exports.default = gulp.series(

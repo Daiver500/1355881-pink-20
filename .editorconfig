@@ -20,3 +20,8 @@ trim_trailing_whitespace = true
 
 [*.md]
 trim_trailing_whitespace = false
+
+[sprite.svg]
+indent_style = false
+trim_trailing_whitespace = false
+insert_final_newline = false

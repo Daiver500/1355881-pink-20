@@ -10,11 +10,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  display: none;
 }
 
 .modal-decline {
   min-height: 289px;
-  background-color: $white;
   padding-bottom: 52px;
 }
 
@@ -110,7 +110,6 @@
   .modal-decline {
     padding-bottom: 54px;
     min-height: 363px;
-    background-color: $white;
   }
 
   .modal-accept {
@@ -230,14 +229,6 @@
   .modal-decline__lower {
     background-color: $primary-bg-color;
   }
-}
-
-.modal-accept {
-  display: none;
-}
-
-.modal-decline {
-  display: none;
 }
 
 .modal-decline--show {
