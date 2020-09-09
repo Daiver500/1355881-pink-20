@@ -77,6 +77,7 @@ const sprite = () => {
   return gulp.src("source/img/sprite/icon-*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"))
     .pipe(gulp.dest("build/img"))
 }
 
