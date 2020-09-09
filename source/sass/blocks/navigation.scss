@@ -155,7 +155,7 @@
     flex-wrap: wrap;
     max-width: 960px;*/
     list-style: none;
-    color: #fff;
+    color: $white;
     margin: 0;
     padding: 0;
     max-width: 780px;
@@ -185,8 +185,8 @@
 
 @media (min-width: $mobile-width) and (max-width: 959px) {
   .navigation__item {
-    border-top: 1px solid #485461;
-    border-bottom: 1px solid #000000;
+    border-top: 1px solid $border-menu;
+    border-bottom: 1px solid $dark-blue;
   }
 }
 
