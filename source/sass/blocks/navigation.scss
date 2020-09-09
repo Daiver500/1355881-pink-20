@@ -147,13 +147,24 @@
 
 @media (min-width: $desktop-width) {
   .navigation__list {
-    list-style: none;
+    /*list-style: none;
     display: flex;
     color: $white;
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
-    max-width: 960px;
+    max-width: 960px;*/
+    list-style: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    max-width: 780px;
+    display: grid;
+    grid-template-columns: min-content min-content min-content min-content;
+    grid-gap: 10px 79px;
+    position: absolute;
+    left: 60%;
+    transform: translateX(-50%);
   }
 }
 
@@ -179,6 +190,13 @@
   }
 }
 
+
+@media (min-width: $desktop-width) {
+  .navigation__item {
+    white-space: nowrap;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .navigation__link {
     font-size: 18px;
@@ -187,9 +205,9 @@
     display: flex;
   }
 
-  .navigation__item:not(:last-child) {
+  /*.navigation__item:not(:last-child) {
     padding-right: 79px;
-  }
+  }*/
 
   .navigation__list {
     padding-top: 18px;
