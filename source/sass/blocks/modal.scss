@@ -10,17 +10,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  display: none;
 }
 
 .modal-decline {
   min-height: 289px;
   padding-bottom: 52px;
-  display: none;
 }
 
 .modal-accept {
   min-height: 380px;
-  display: none;
 }
 
 .modal-decline__title,
