@@ -1,12 +1,5 @@
 .navigation {
-  background-color: $primary-color;
-}
-
-@media (min-width: $desktop-width) {
-  .navigation {
-    background-color: rgba(0, 0, 0, 0.3);
-    position: relative;
-  }
+  background-color: red;
 }
 
 .navigation__close {
